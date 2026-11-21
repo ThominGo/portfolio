@@ -143,16 +143,17 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--white-refonte);
 .collection-ux-ui-webflow { width: 100%; padding-left: 24px; padding-right: 24px; }
 .collection-list { display: grid; grid-template-columns: 1fr 1fr; grid-auto-columns: 1fr; gap: 40px; list-style: none; margin: 0; padding: 0; }
 .collection-item-3 { display: flex; flex-flow: column; gap: 16px; width: 100%; }
-.wrapper-image-ux { display: flex; flex: 1 1 0%; align-self: stretch; width: 100%; aspect-ratio: 3 / 2; }
-.image-case-ux { align-self: stretch; height: 100%; object-fit: cover; }
+.wrapper-image-ux { display: block; flex: none; width: 100%; aspect-ratio: 3 / 2; overflow: hidden; }
+.image-case-ux { display: block; width: 100%; height: 100%; object-fit: cover; }
 .sub-case { display: flex; justify-content: center; align-items: center; gap: 16px; }
 .link-block { display: flex; flex-flow: column; flex: 1 1 0%; gap: 4px; }
 .project-name {
   flex: 1 1 0%; text-align: right;
-  font-family: Peridiadisplay, 'Times New Roman', sans-serif; font-size: 40px;
+  font-family: Peridiadisplay, 'Times New Roman', sans-serif; font-size: 40px; line-height: 36px; margin: 0; font-weight: 400;
 }
-.link-3 { flex: 1 1 0%; text-decoration: underline; }
+.link-3 { flex: 1 1 0%; text-decoration: underline; font-size: 16px; text-align: left; }
 
+.wrapper-legals .nav-link { font-size: 13px; min-width: auto; }
 .wrapper-legals { display: flex; justify-content: space-between; align-items: center; padding: 80px 24px; }
 
 /* À propos */
@@ -223,7 +224,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--white-refonte);
   background: rgba(0, 0, 0, 0.9); cursor: zoom-out; opacity: 0; transition: opacity 0.25s;
 }
 .lightbox.is-open { opacity: 1; }
-.lightbox img { width: auto; max-width: 100vw; max-height: 100vh; object-fit: contain; }
+.lightbox img, .lightbox video { width: auto; max-width: 100vw; max-height: 100vh; object-fit: contain; }
 
 /* Mobile */
 @media screen and (max-width: 991px) {

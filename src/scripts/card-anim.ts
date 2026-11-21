@@ -20,6 +20,13 @@ function build(card: HTMLElement, amp: number, start: string, end: string) {
   const letters = (el: HTMLElement | null, from: number) => {
     if (!el) return;
     const s = SplitText.create(el, { type: 'chars', mask: 'chars', charsClass: 'gsap_split_letter' });
+    // le masque coupe sinon les jambages (y, g, p) à cause du line-height: 1
+    ((s as any).masks as HTMLElement[] | undefined)?.forEach((m) => {
+      m.style.paddingTop = '0.15em';
+      m.style.paddingBottom = '0.25em';
+      m.style.marginTop = '-0.15em';
+      m.style.marginBottom = '-0.25em';
+    });
     splits.push(s);
     tl.fromTo(s.chars, { y: `${from}svw` }, { y: '0svw', duration: 1, ease: 'power4.out', stagger: { amount: 0.1 } }, 0);
   };

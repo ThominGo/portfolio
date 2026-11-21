@@ -28,7 +28,9 @@ const jsonld = [
       {playground.map((it) => (
         <div class="collection-item-2" role="listitem">
           {it.kind === 'video' ? (
-            <Video media={it.media} variant="loop" label={it.name} />
+            <div class="cms-lightbox" data-lightbox-video>
+              <Video media={it.media} variant="loop" label={it.name} />
+            </div>
           ) : (
             <a href={it.media?.url ?? '#'} class="cms-lightbox" data-lightbox aria-label={it.name}>
               <Pic media={it.media} alt={it.alt ?? it.name} class="image-lightbox" sizes="(max-width: 479px) 50vw, 25vw" />
