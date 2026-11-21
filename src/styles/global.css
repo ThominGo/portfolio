@@ -82,16 +82,33 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--white-refonte);
   color: var(--white-refonte);
   font-family: Peridiadisplay, 'Times New Roman', sans-serif;
   font-size: 20px; line-height: 120%; text-decoration: none;
-  /* fond qui se remplit de gauche à droite, texte en fondu */
+  /* fond qui se remplit de gauche à droite ; le texte (calque ::after) change de couleur au même bord, comme un masque */
+  position: relative;
+  color: transparent;
   background-image: linear-gradient(var(--white-refonte), var(--white-refonte));
   background-repeat: no-repeat; background-position: left center; background-size: 0% 100%;
-  transition: background-size 0.45s cubic-bezier(0.76, 0, 0.24, 1), color 0.45s ease;
+  transition: background-size 0.45s cubic-bezier(0.76, 0, 0.24, 1);
+}
+.nav-link::after {
+  content: attr(data-label);
+  content: attr(data-label) / '';
+  position: absolute; inset: 0;
+  text-align: inherit; white-space: nowrap;
+  background-image: linear-gradient(90deg, var(--black-refonte) 50%, var(--white-refonte) 50%);
+  background-size: 200% 100%; background-position: 100% 0; background-repeat: no-repeat;
+  -webkit-background-clip: text; background-clip: text;
+  -webkit-text-fill-color: transparent; color: transparent;
+  transition: background-position 0.45s cubic-bezier(0.76, 0, 0.24, 1);
 }
 .nav-link:hover,
 .nav-link.is-current,
 .nav-link[aria-current='page'] {
   background-size: 100% 100%;
-  color: var(--black-refonte);
+}
+.nav-link:hover::after,
+.nav-link.is-current::after,
+.nav-link[aria-current='page']::after {
+  background-position: 0 0;
 }
 .nav-link.text-rigth-align { cursor: pointer; }
 .text-rigth-align { text-align: right; }

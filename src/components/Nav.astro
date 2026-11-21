@@ -12,9 +12,9 @@ const cur = (k: RouteKey) => (current === k ? 'page' : undefined);
 ---
 
 <nav class="wrapper-nav" aria-label={locale === 'fr' ? 'Navigation principale' : 'Main navigation'}>
-  <a href={route('home', locale)} aria-current={cur('home')} class="nav-link">{t.projects}</a>
-  <a href={route('about', locale)} aria-current={cur('about')} class="nav-link">{t.about}</a>
+  <a href={route('home', locale)} aria-current={cur('home')} class="nav-link" data-label={t.projects}>{t.projects}</a>
+  <a href={route('about', locale)} aria-current={cur('about')} class="nav-link" data-label={t.about}>{t.about}</a>
   <div class="separator" aria-hidden="true"></div>
-  <a href={route('playground', locale)} aria-current={cur('playground')} class="nav-link text-rigth-align">{t.playground}</a>
-  <a href={`mailto:${SITE.email}`} class="nav-link text-rigth-align">{t.contact}</a>
+  <a href={route('playground', locale)} aria-current={cur('playground')} class="nav-link text-rigth-align" data-label={t.playground}>{t.playground}</a>
+  <a href={`mailto:${SITE.email}`} class="nav-link text-rigth-align" data-label={t.contact}>{t.contact}</a>
 </nav>
