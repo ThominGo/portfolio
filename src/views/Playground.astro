@@ -20,8 +20,10 @@ const jsonld = [
 ---
 
 <Base locale={locale} title={m.title} description={m.description} path={path} alternates={{ en: route('playground', 'en'), fr: route('playground', 'fr') }} current="playground" jsonld={jsonld} bodyClass="playground">
-  <div class="wrapper-about-page" style="padding-left:24px;padding-right:24px">
-    <h1 class="title-case text-center" style="margin-bottom:80px">{ui[locale].playgroundTitle}</h1>
+  <div class="wrapper-hero">
+    <h1 class="title-case text-center">{ui[locale].playgroundTitle}</h1>
+  </div>
+  <div class="container-l">
     <div class="masonry-grid" role="list">
       {playground.map((it) => (
         <div class="collection-item-2" role="listitem">

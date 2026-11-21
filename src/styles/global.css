@@ -48,7 +48,7 @@ h1, h2 { margin: 0; font-weight: 400; font-size: inherit; line-height: inherit; 
 p { margin-top: 0; margin-bottom: 10px; }
 a { color: var(--white-refonte); text-decoration: none; background-color: transparent; }
 a:active, a:hover { outline: 0; }
-img { border: 0; vertical-align: middle; width: 100%; max-width: 100%; display: inline-block; }
+img { border: 0; vertical-align: middle; width: 100%; max-width: 100%; height: auto; display: inline-block; }
 
 /* Accessibilité (ajouts invisibles à la souris) */
 .visually-hidden {
@@ -292,3 +292,5 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--white-refonte);
 .rich-text-block p { line-height: 120%; }
 .double-image-mobile video, .video-embed video { width: 100%; height: auto; display: block; }
 video-player { display: block; width: 100%; }
+.masonry-grid .collection-item-2 { margin-bottom: 16px; }
+.masonry-grid img, .masonry-grid video { width: 100%; height: auto; display: block; }
