@@ -294,3 +294,4 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--white-refonte);
 video-player { display: block; width: 100%; }
 .masonry-grid .collection-item-2 { margin-bottom: 16px; }
 .masonry-grid img, .masonry-grid video { width: 100%; height: auto; display: block; }
+.card-project .title-case, .horizontal-space .cms-title-case { white-space: nowrap; }
