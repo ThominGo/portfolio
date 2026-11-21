@@ -1,0 +1,154 @@
+---
+import Base from '../layouts/Base.astro';
+import Pic from '../components/Pic.astro';
+import Video from '../components/Video.astro';
+import { hasFrench, isThreeD, localized, plain, type Project } from '../lib/content';
+import { meta, route, ui, workPath, type Locale } from '../lib/i18n';
+import { SITE } from '../lib/site';
+import { localImages } from '../lib/content';
+
+interface Props { locale: Locale; project: Project }
+const { locale, project: p } = Astro.props;
+const t = ui[locale];
+const name = `${p.name} ${p.secondName}`.trim();
+const intro = localized(p, 'intro', locale).html;
+const context = localized(p, 'context', locale).html;
+const process = localized(p, 'process', locale).html;
+const cats = localized(p, 'categoryHtml', locale).html;
+const untranslated = locale === 'fr' && !hasFrench(p);
+const path = workPath(p.slug, locale);
+const url = new URL(path, SITE.url).href;
+const description = plain(intro).slice(0, 158).replace(/\s+\S*$/, '') + '…';
+const title = `${name} | ${SITE.name}`;
+const img = p.images;
+const alt = (n: number) => `${name} – ${locale === 'fr' ? 'visuel' : 'visual'} ${n}`;
+const three = isThreeD(p);
+const mainMeta = img.main ? localImages[img.main.file] : undefined;
+const ogImage = img.main?.url ?? SITE.ogImage;
+
+const jsonld = [
+  {
+    '@type': 'CreativeWork', '@id': `${url}#work`, url, name, description: plain(intro), inLanguage: locale,
+    author: { '@id': `${SITE.url}/#person` }, creator: { '@id': `${SITE.url}/#person` },
+    image: img.main?.url ?? undefined, genre: plain(cats), isPartOf: { '@id': `${SITE.url}/#website` },
+    ...(p.link ? { sameAs: p.link } : {}),
+  },
+  {
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: t.nav.projects, item: new URL(route('home', locale), SITE.url).href },
+      { '@type': 'ListItem', position: 2, name, item: url },
+    ],
+  },
+];
+
+const blocks = [
+  { label: t.labels.project, html: intro },
+  { label: t.labels.context, html: context },
+  { label: t.labels.process, html: process },
+].filter((b) => b.html);
+---
+
+<Base
+  locale={locale}
+  title={title}
+  description={description}
+  path={path}
+  alternates={{ en: workPath(p.slug, 'en'), fr: workPath(p.slug, 'fr') }}
+  noindex={false}
+  canonicalPath={untranslated ? workPath(p.slug, 'en') : undefined}
+  ogImage={ogImage}
+  ogType="article"
+  jsonld={jsonld}
+  bodyClass="work"
+>
+  {untranslated && <meta slot="head" name="robots" content="noindex, follow" />}
+
+  <section class="horizontal-space" style={`--project-bg:${p.bgColor}`}>
+    <div class="cms-title-case top-name cms" aria-hidden="true">{p.name}</div>
+    <h1 class="visually-hidden">{name}</h1>
+    <Pic media={img.main} alt={name} class={`case-image ${three ? '_3d' : 'ux'}`} loading="eager" fetchpriority="high" sizes="(max-width: 479px) 80vw, 60vw" />
+    <div class="cms-title-case bot-name" aria-hidden="true">{p.secondName}</div>
+  </section>
+
+  <article class="main cms">
+    <div class="wrapper-cms-page">
+      <div class="container-l gap-120px">
+        <div class="wrapper-text-case">
+          <div class="max-width-s cate">
+            <div class="rich-text-block w-richtext" set:html={cats ?? ''} />
+            {p.link && <a href={p.link} class="project-link" target="_blank" rel="noopener">{t.projectLink}</a>}
+          </div>
+          <div class="max-width-s">
+            {blocks.map((b) => (
+              <section>
+                <h2 class="typo-heavy-10px full-caps" style="margin-bottom:8px">{b.label}</h2>
+                <div class="w-richtext" set:html={b.html} style="margin-bottom:24px" />
+              </section>
+            ))}
+          </div>
+        </div>
+
+        {img.i01 && <div class="image-full-cms"><Pic media={img.i01} alt={alt(1)} sizes="(min-width: 1200px) 1152px, 100vw" /></div>}
+        {(img.left01 || img.right01) && (
+          <div class="double-image-cms">
+            <div class="container-double-image"><Pic media={img.left01} alt={alt(2)} class="image-grid-cms" sizes="(max-width: 479px) 100vw, 576px" /></div>
+            <div class="container-double-image"><Pic media={img.right01} alt={alt(3)} class="image-grid-cms" sizes="(max-width: 479px) 100vw, 576px" /></div>
+          </div>
+        )}
+        {p.videos.landscape01 && <Video media={p.videos.landscape01} variant="player" label={name} />}
+        {img.i02 && <div class="image-full-cms"><Pic media={img.i02} alt={alt(4)} sizes="(min-width: 1200px) 1152px, 100vw" /></div>}
+      </div>
+
+      {(img.mobile01 || img.mobile02) && (
+        <div class="bg-image" style={img.bgMobile ? `background-color:${p.bgColor}` : undefined}>
+          <div class="double-image-mobile">
+            <div class="max-width-xs"><Pic media={img.mobile01} alt={alt(5)} sizes="260px" /></div>
+            <div class="max-width-xs image-mobile-01"><Pic media={img.mobile02} alt={alt(6)} sizes="260px" /></div>
+          </div>
+        </div>
+      )}
+
+      <div class="container-l gap-120px">
+        {img.i03 && <div class="image-full-cms"><Pic media={img.i03} alt={alt(7)} sizes="(min-width: 1200px) 1152px, 100vw" /></div>}
+        {img.i04 && <div class="image-full-cms"><Pic media={img.i04} alt={alt(8)} sizes="(min-width: 1200px) 1152px, 100vw" /></div>}
+        {p.videos.landscape02 && <Video media={p.videos.landscape02} variant="player" label={name} />}
+        {p.videos.square.length > 0 && (
+          <div class="double-image-cms">
+            {p.videos.square.map((v) => <div class="container-double-image"><Video media={v} variant="loop" label={name} /></div>)}
+          </div>
+        )}
+      </div>
+
+      {img.bgFull && <div class="image-full-cms"><Pic media={img.bgFull} alt={alt(9)} sizes="100vw" /></div>}
+
+      <div class="container-l gap-120px">
+        {img.i05 && <div class="image-full-cms"><Pic media={img.i05} alt={alt(10)} sizes="(min-width: 1200px) 1152px, 100vw" /></div>}
+        {(img.left02 || img.right02) && (
+          <div class="double-image-cms">
+            <div class="container-double-image"><Pic media={img.left02} alt={alt(11)} class="image-grid-cms para" sizes="(max-width: 479px) 100vw, 576px" /></div>
+            <div class="container-double-image"><Pic media={img.right02} alt={alt(12)} class="image-grid-cms para" sizes="(max-width: 479px) 100vw, 576px" /></div>
+          </div>
+        )}
+        {(img.left03 || img.right03) && (
+          <div class="double-image-cms">
+            <div class="container-double-image"><Pic media={img.left03} alt={alt(13)} class="image-grid-cms" sizes="(max-width: 479px) 100vw, 576px" /></div>
+            <div class="container-double-image"><Pic media={img.right03} alt={alt(14)} class="image-grid-cms" sizes="(max-width: 479px) 100vw, 576px" /></div>
+          </div>
+        )}
+        {p.videos.squareExtra.length > 0 && (
+          <div class="double-image-cms">
+            {p.videos.squareExtra.map((v) => <div class="container-double-image"><Video media={v} variant="loop" label={name} /></div>)}
+          </div>
+        )}
+        {p.videos.mobile.length > 0 && (
+          <div class="double-image-mobile video-mobile">
+            {p.videos.mobile.map((v) => <div class="max-width-xs"><Video media={v} variant="loop" label={name} /></div>)}
+          </div>
+        )}
+      </div>
+    </div>
+  </article>
+
+  <script is:inline type="module" src="https://cdn.jsdelivr.net/npm/@videojs/html@10.6.0/cdn/video-minimal.js"></script>
+</Base>

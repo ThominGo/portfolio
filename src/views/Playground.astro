@@ -1,0 +1,42 @@
+---
+import Base from '../layouts/Base.astro';
+import Pic from '../components/Pic.astro';
+import Video from '../components/Video.astro';
+import { playground } from '../lib/content';
+import { meta, route, ui, type Locale } from '../lib/i18n';
+import { SITE } from '../lib/site';
+
+interface Props { locale: Locale }
+const { locale } = Astro.props;
+const m = meta[locale].playground;
+const path = route('playground', locale);
+const url = new URL(path, SITE.url).href;
+const jsonld = [
+  {
+    '@type': 'CollectionPage', '@id': `${url}#page`, url, name: m.title, description: m.description, inLanguage: locale,
+    isPartOf: { '@id': `${SITE.url}/#website` }, author: { '@id': `${SITE.url}/#person` },
+  },
+];
+---
+
+<Base locale={locale} title={m.title} description={m.description} path={path} alternates={{ en: route('playground', 'en'), fr: route('playground', 'fr') }} current="playground" jsonld={jsonld} bodyClass="playground">
+  <div class="wrapper-about-page" style="padding-left:24px;padding-right:24px">
+    <h1 class="title-case text-center" style="margin-bottom:80px">{ui[locale].playgroundTitle}</h1>
+    <div class="masonry-grid" role="list">
+      {playground.map((it) => (
+        <div class="collection-item-2" role="listitem">
+          {it.kind === 'video' ? (
+            <Video media={it.media} variant="loop" label={it.name} />
+          ) : (
+            <a href={it.media?.url ?? '#'} class="cms-lightbox" data-lightbox aria-label={it.name}>
+              <Pic media={it.media} alt={it.alt ?? it.name} class="image-lightbox" sizes="(max-width: 479px) 50vw, 25vw" />
+            </a>
+          )}
+        </div>
+      ))}
+    </div>
+  </div>
+  <script>
+    import '../scripts/playground';
+  </script>
+</Base>

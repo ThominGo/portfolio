@@ -1,0 +1,1966 @@
+{
+ "projets": [
+  {
+   "id": "6ab8468159f40417f15f1df1",
+   "cmsLocaleId": "6605b8aa45d40660f8a7b348",
+   "lastPublished": "2026-09-28T14:12:59.333Z",
+   "lastUpdated": "2026-09-28T11:59:18.565Z",
+   "createdOn": "2026-09-26T22:26:09.961Z",
+   "isArchived": false,
+   "isDraft": false,
+   "fieldData": {
+    "second-name": "Jour",
+    "main-image": {
+     "fileId": "6ab83f70b1b6eb96b40c859e",
+     "url": "https://cdn.prod.website-files.com/6605b8aa45d40660f8a7b349/6ab83f70b1b6eb96b40c859e_ubj.jpg",
+     "alt": null
+    },
+    "bg-color": "#f4364c",
+    "categorie-3": "<p>UX/UI</p><p>Webflow</p><p>Shopify</p>",
+    "lien-du-projet": "https://www.unbeaujour.fr/",
+    "explication-2": "<p>Un Beau Jour is France's first all-in-one wedding destination: editorial blog, vendor directory, guides, and a soon-to-launch e-shop. During my apprenticeship at <a href=\"https://studio9p.com/\">Studio 9P</a>, I co-designed the full site redesign with <a href=\"https://www.nicolasalain.com/\">Nicolas Alain</a>, covering UX, design, 33 pages and 26 modules, as well as the entire Shopify shop, before co-developing everything in Webflow.</p>",
+    "image-01": {
+     "fileId": "6ab8445fb1b6eb96b40d144d",
+     "url": "https://cdn.prod.website-files.com/6605b8aa45d40660f8a7b349/6ab8445fb1b6eb96b40d144d_Capture%20d%E2%80%99e%CC%81cran%202026-09-27%20a%CC%80%2000.15.09.jpg",
+     "alt": null
+    },
+    "image-left-01": null,
+    "image-right-01": null,
+    "second-explication": "<p>The existing site was outdated, unclear and no longer reflected the brand's ambition. Working as an equal partner with Nicolas Alain, I handled the UX and design redesign end to end: page architecture, user flow design, and the construction of a shared 26-module design system built to hold timelines and maintain visual consistency. Content migration from WordPress to the Webflow CMS was handled by developer Ludo. Everything else in Webflow, meaning the entire site build, was developed by Nicolas and me.</p>",
+    "image-02": {
+     "fileId": "6ab8449000af94501400645e",
+     "url": "https://cdn.prod.website-files.com/6605b8aa45d40660f8a7b349/6ab8449000af94501400645e_Capture%20d%E2%80%99e%CC%81cran%202026-09-27%20a%CC%80%2000.01.00.jpg",
+     "alt": null
+    },
+    "image-mobile-01": {
+     "fileId": "6ab8467e5f5798e865ecae89",
+     "url": "https://cdn.prod.website-files.com/6605b8aa45d40660f8a7b349/6ab8467e5f5798e865ecae89_www.unbeaujour.fr-a-propos-dubj(iPhone%2016)o.jpg",
+     "alt": null
+    },
+    "image-mobile-02": {
+     "fileId": "6ab845c06c52cff6514d615e",
+     "url": "https://cdn.prod.website-files.com/6605b8aa45d40660f8a7b349/6ab845c06c52cff6514d615e_www.unbeaujour.fr-journal-articles-le-dernier-so(iPhone%2016).jpg",
+     "alt": null
+    },
+    "image-bg-mobile": {
+     "fileId": "6ab8471eefae1ac1d560be07",
+     "url": "https://cdn.prod.website-files.com/6605b8aa45d40660f8a7b349/6ab8471eefae1ac1d560be07_6a6b1fc831044df8daa79ea7_ben-atkins-r4SnSfPyYKo-unsplash.webp",
+     "alt": null
+    },
+    "third-explication": "<p>The main challenge was twofold: making a dense flow of information, covering articles, inspirations, testimonials, guides and a vendor directory, both easy to manage on the client side and effortless to browse on the user side, without ever compromising the premium feel of the brand. Component work was central to achieving this: 26 reusable modules designed to cover all 33 pages while enabling fast updates.</p><p>In parallel, Nicolas and I designed the e-shop in Shopify within the same art direction: a large-scale structure with 9 main categories, dozens of sub-categories and hundreds of product references, from wedding dresses to sugared almonds, decorative arches and smoke cannons. The e-shop launches in 2027.</p>",
+    "image-03": {
+     "fileId": "6ab8448bc90cd041d7e57877",
+     "url": "https://cdn.prod.website-files.com/6605b8aa45d40660f8a7b349/6ab8448bc90cd041d7e57877_Capture%20d%E2%80%99e%CC%81cran%202026-09-27%20a%CC%80%2000.01.20.jpg",
+     "alt": null
+    },
+    "image-04": {
+     "fileId": "6ab84658394b229a3fb65056",
+     "url": "https://cdn.prod.website-files.com/6605b8aa45d40660f8a7b349/6ab84658394b229a3fb65056_Capture%20d%E2%80%99e%CC%81cran%202026-09-27%20a%CC%80%2000.24.39.jpg",
+     "alt": null
+    },
+    "image-bg-full": {
+     "fileId": "6ab8465a6d6a2d249a6dc1df",
+     "url": "https://cdn.prod.website-files.com/6605b8aa45d40660f8a7b349/6ab8465a6d6a2d249a6dc1df_6aa4120dc249dadf99ad6fe9_6a798c86f1f89bc9d785994a_A%252BC-665.jpeg",
+     "alt": null
+    },
+    "image-05": {
+     "fileId": "6ab8449818824586526b766f",
+     "url": "https://cdn.prod.website-files.com/6605b8aa45d40660f8a7b349/6ab8449818824586526b766f_Capture%20d%E2%80%99e%CC%81cran%202026-09-27%20a%CC%80%2000.01.39.jpg",
+     "alt": null
+    },
+    "image-left-02": null,
+    "image-right-02": null,
+    "image-left-03": null,
+    "image-right-03": null,
+    "webm": null,
+    "video-url-02": null,
+    "video-url-03": null,
+    "video-url-04": null,
+    "video-url-05": null,
+    "04-video-1-1": null,
+    "video-mobile-01": null,
+    "video-mobile-02": null,
+    "video-mobile-03": null,
+    "video-square-01": null,
+    "video-square-02": null,
+    "video-square-03": null,
+    "ordre-2": null,
+    "type-3": [
+     "6ab8269afc48dd534c270e3d"
+    ],
+    "name": "Un Beau ",
+    "slug": "un-beau-jour"
+   }
+  },
+  {
+   "id": "68c2b50b7b7112de1f3e15cf",
+   "cmsLocaleId": "6605b8aa45d40660f8a7b348",
+   "lastPublished": "2026-09-28T11:47:30.646Z",
+   "lastUpdated": "2026-09-28T11:47:30.646Z",
+   "createdOn": "2025-09-11T11:39:55.922Z",
+   "isArchived": false,
+   "isDraft": false,
+   "fieldData": {
+    "second-name": "Molazone",
+    "main-image": {
+     "fileId": "69beaebc61113fa6d807fa62",
+     "url": "https://cdn.prod.website-files.com/6605b8aa45d40660f8a7b349/69beaebc61113fa6d807fa62_yame.avif",
+     "alt": null
+    },
+    "bg-color": "#1b1b1b",
+    "categorie-3": "<p>3D Blender</p>",
+    "lien-du-projet": "https://mola-zone.com/",
+    "explication-2": "<p>Yamê is a Cameroonian artist who built a complete universe around his album Ebêm: short film, lore, exclusive content. At Studio 9P, I modeled all the 3D environments for the experience website, coordinating my work with studio Mathematics to ensure our environments told the same story as the film.</p>",
+    "image-01": {
+     "fileId": "69c468c7ac8493482d6ee7d4",
+     "url": "https://cdn.prod.website-files.com/6605b8aa45d40660f8a7b349/69c468c7ac8493482d6ee7d4_68c2b4f3584dc3fcb97e4faa_Image-1.avif",
+     "alt": null
+    },
+    "image-left-01": {
+     "fileId": "69c474d32be94b8f2d48297c",
+     "url": "https://cdn.prod.website-files.com/6605b8aa45d40660f8a7b349/69c474d32be94b8f2d48297c_Weight_painting.avif",
+     "alt": null
+    },
+    "image-right-01": {
+     "fileId": "69c47495fd353a454f0a3fb0",
+     "url": "https://cdn.prod.website-files.com/6605b8aa45d40660f8a7b349/69c47495fd353a454f0a3fb0_node.avif",
+     "alt": null
+    },
+    "second-explication": "<p>Project completed at Studio 9P. Yamê wanted an experience website allowing users to freely explore the universe of his album Ebêm, following his avatar on a motorcycle through various landscapes — desert, forest, palace — in visual coherence with the short film produced by studio Mathematics. Under the art direction of Hugo Maury (senior AD), I handled the 3D modeling of all the sets and scene objects in Blender, as well as texturing in collaboration with Hugo. The motorcycle, the only asset I did not model, was provided.</p>",
+    "image-02": {
+     "fileId": "69c468d1c3073f0ffa839cb2",
+     "url": "https://cdn.prod.website-files.com/6605b8aa45d40660f8a7b349/69c468d1c3073f0ffa839cb2_68c2b4f3f8c790fff601baf2_Capture%20d%E2%80%99e%CC%81cran%2C%20le%202022-02-09%20a%CC%80%2018.50%202.avif",
+     "alt": null
+    },
+    "image-mobile-01": {
+     "fileId": "69c469364d953b610eae9cf8",
+     "url": "https://cdn.prod.website-files.com/6605b8aa45d40660f8a7b349/69c469364d953b610eae9cf8_68c2b563b36652e336ce1ecf_GMF__02.avif",
+     "alt": null
+    },
+    "image-mobile-02": {
+     "fileId": "69c4693cb1bc96751fbb8876",
+     "url": "https://cdn.prod.website-files.com/6605b8aa45d40660f8a7b349/69c4693cb1bc96751fbb8876_68c2b563155a012d7386624b_GMF__03.avif",
+     "alt": null
+    },
+    "image-bg-mobile": {
+     "fileId": "69dd56fcbd5520327ffc6be0",
+     "url": "https://cdn.prod.website-files.com/6605b8aa45d40660f8a7b349/69dd56fcbd5520327ffc6be0_IMG_5534.jpg",
+     "alt": null
+    },
+    "third-explication": "<p>I modeled all 3D elements, from the ground to the birds, across the four universes of the site: the desert, the forest, the king's temple, and the ocean. The process followed three stages: brainstorming on the elements to illustrate for each section, generating visual references on Midjourney by Hugo, then modeling in Blender with synchronization through Blender's Object Data Linking system. The complexity of the project also lay in its coordination: studio Mathematics was developing the short film in parallel, which meant many visual directions remained unclear until late in the process. We had to keep moving on the sets while staying aligned with a universe that was still evolving at the same time.</p>",
+    "image-03": {
+     "fileId": "69c468ccff3b84928f4c658f",
+     "url": "https://cdn.prod.website-files.com/6605b8aa45d40660f8a7b349/69c468ccff3b84928f4c658f_68c2b4f39e85ec192dbc6970_Capture%20d%E2%80%99e%CC%81cran%2C%20le%202022-02-09%20a%CC%80%2018.50%204.avif",
+     "alt": null
+    },
+    "image-04": {
+     "fileId": "69c47476a3191df361ced549",
+     "url": "https://cdn.prod.website-files.com/6605b8aa45d40660f8a7b349/69c47476a3191df361ced549_Asset_Manager.avif",
+     "alt": null
+    },
+    "image-bg-full": {
+     "fileId": "69dd57af3b3cd107b3f11648",
+     "url": "https://cdn.prod.website-files.com/6605b8aa45d40660f8a7b349/69dd57af3b3cd107b3f11648_IMG_5520.jpg",
+     "alt": null
+    },
+    "image-05": {
+     "fileId": "69dd582c625fa61a82473489",
+     "url": "https://cdn.prod.website-files.com/6605b8aa45d40660f8a7b349/69dd582c625fa61a82473489_yamebantu_1776101501_3874541712215385980_36399792000.jpg",
+     "alt": null
+    },
+    "image-left-02": {
+     "fileId": "69c4749a905e2b3f7b4bbb7a",
+     "url": "https://cdn.prod.website-files.com/6605b8aa45d40660f8a7b349/69c4749a905e2b3f7b4bbb7a_asset_browser_palace.avif",
+     "alt": null
+    },
+    "image-right-02": {
+     "fileId": "69c4749e11826349161a2863",
+     "url": "https://cdn.prod.website-files.com/6605b8aa45d40660f8a7b349/69c4749e11826349161a2863_asset_drive.avif",
+     "alt": null
+    },
+    "image-left-03": {
+     "fileId": "69dd58ccf6ac2dcdf8798733",
+     "url": "https://cdn.prod.website-files.com/6605b8aa45d40660f8a7b349/69dd58ccf6ac2dcdf8798733_IMG_5543.jpg",
+     "alt": null
+    },
+    "image-right-03": {
+     "fileId": "69dd56fcbd5520327ffc6be0",
+     "url": "https://cdn.prod.website-files.com/6605b8aa45d40660f8a7b349/69dd56fcbd5520327ffc6be0_IMG_5534.jpg",
+     "alt": null
+    },
+    "webm": "https://cdn.prod.website-files.com/65f09a13418ba26057ac98e7%2F69f62d41e55bbae6f06cffe1_yame_loop_thumb_mp4.mp4",
+    "video-url-02": null,
+    "video-url-03": null,
+    "video-url-04": null,
+    "video-url-05": null,
+    "04-video-1-1": null,
+    "video-mobile-01": "https://cdn.prod.website-files.com/65f09a13418ba26057ac98e7%2F69f631fe9a6e00b5668cd352_studio_9p_1754386731_3692382640355221423_23092027_mp4.mp4",
+    "video-mobile-02": "https://cdn.prod.website-files.com/65f09a13418ba26057ac98e7%2F69f62d7b233f675b25a5f2e8_yame_mobile_mp4.mp4",
+    "video-mobile-03": null,
+    "video-square-01": null,
+    "video-square-02": null,
+    "video-square-03": null,
+    "ordre-2": 10,
+    "type-3": [
+     "6ab8268e8e5eb4e325eae9b9"
+    ],
+    "name": "Yamé",
+    "slug": "yame"
+   }
+  },
+  {
+   "id": "67699a2999f609f0974123a8",
+   "cmsLocaleId": "6605b8aa45d40660f8a7b348",
+   "lastPublished": "2026-09-28T11:49:53.302Z",
+   "lastUpdated": "2026-09-28T11:47:30.661Z",
+   "createdOn": "2024-12-23T17:13:13.890Z",
+   "isArchived": false,
+   "isDraft": false,
+   "fieldData": {
+    "second-name": "IA",
+    "main-image": {
+     "fileId": "69beaeca854042c09301e3bd",
+     "url": "https://cdn.prod.website-files.com/6605b8aa45d40660f8a7b349/69beaeca854042c09301e3bd_ricky.avif",
+     "alt": null
+    },
+    "bg-color": "#07001e",
+    "categorie-3": "<p>3D Blender</p><p>&amp; Animation</p>",
+    "lien-du-projet": "https://www.whoisricky.lol/",
+    "explication-2": "<p>Ricky is an internal <a href=\"https://studio9p.com\">Studio 9P</a> project: a full-scale prank built around a fake AI product, presented as a real device. I designed the 3D object and directed the project trailer, while also creating the conversational AI interface integrated into the device.</p>",
+    "image-01": {
+     "fileId": "69c4f82333469639221498a2",
+     "url": "https://cdn.prod.website-files.com/6605b8aa45d40660f8a7b349/69c4f82333469639221498a2_676997d7ffcfd0b6b8d64cd3_Slide%2016_9%20-%2020%402x%20(1).avif",
+     "alt": null
+    },
+    "image-left-01": {
+     "fileId": "69c4f82f0e201e4574248a16",
+     "url": "https://cdn.prod.website-files.com/6605b8aa45d40660f8a7b349/69c4f82f0e201e4574248a16_6769c179f5df332629c2ea43_Slide%2016_9%20-%2030%402x%20(1).avif",
+     "alt": null
+    },
+    "image-right-01": {
+     "fileId": "69c4f88d006c95c72e04046b",
+     "url": "https://cdn.prod.website-files.com/6605b8aa45d40660f8a7b349/69c4f88d006c95c72e04046b_6769c1791381a16d8797a764_Slide%2016_9%20-%2025%402x%20(1).avif",
+     "alt": null
+    },
+    "second-explication": "<p>Internal Studio 9P project. The concept: build an immersive site around a fake tech product : Ricky, an AI device designed to make its users funnier. My role covered three areas: 3D modeling of the device, design and animation of the conversational AI interface embedded in the object, and production of the Instagram reel trailer.</p>",
+    "image-02": {
+     "fileId": "69c4f842319fb2c5660d1ea3",
+     "url": "https://cdn.prod.website-files.com/6605b8aa45d40660f8a7b349/69c4f842319fb2c5660d1ea3_6769c179285d57e01db08ee2_Slide%2016_9%20-%2015%402x%20(1).avif",
+     "alt": null
+    },
+    "image-mobile-01": null,
+    "image-mobile-02": null,
+    "image-bg-mobile": null,
+    "third-explication": "<p>The device went through several iterations with very different visual directions before reaching the final result. The internal brief set the intention but left room to explore. Alongside the modeling, I designed and animated the AI interface inside the object — the element that brings the product to life and makes it believable. The trailer then packaged everything into a short format built for social media.</p><p>‍</p>",
+    "image-03": {
+     "fileId": "69de0cb0a181485603238327",
+     "url": "https://cdn.prod.website-files.com/6605b8aa45d40660f8a7b349/69de0cb0a181485603238327_laborilleau_1719083423_3396240374546802240_57753013483.jpg",
+     "alt": null
+    },
+    "image-04": null,
+    "image-bg-full": null,
+    "image-05": {
+     "fileId": "69de0ca7f96d656c04b4648b",
+     "url": "https://cdn.prod.website-files.com/6605b8aa45d40660f8a7b349/69de0ca7f96d656c04b4648b_laborilleau_1719083587_3396241746981617234_57753013483.jpg",
+     "alt": null
+    },
+    "image-left-02": {
+     "fileId": "69de0c9575a49d18cff015db",
+     "url": "https://cdn.prod.website-files.com/6605b8aa45d40660f8a7b349/69de0c9575a49d18cff015db_laborilleau_1719083587_3396241747233290790_57753013483.jpg",
+     "alt": null
+    },
+    "image-right-02": {
+     "fileId": "69de0c9b0a06658827be697a",
+     "url": "https://cdn.prod.website-files.com/6605b8aa45d40660f8a7b349/69de0c9b0a06658827be697a_laborilleau_1719083587_3396241747006940205_57753013483.jpg",
+     "alt": null
+    },
+    "image-left-03": {
+     "fileId": "69de0cb883da4e834d3b187c",
+     "url": "https://cdn.prod.website-files.com/6605b8aa45d40660f8a7b349/69de0cb883da4e834d3b187c_laborilleau_1728567887_3475801824704027807_57753013483.jpg",
+     "alt": null
+    },
+    "image-right-03": {
+     "fileId": "69de0cbcd68a9d35ec8d4bff",
+     "url": "https://cdn.prod.website-files.com/6605b8aa45d40660f8a7b349/69de0cbcd68a9d35ec8d4bff_laborilleau_1728567968_3475802503149356489_57753013483.jpg",
+     "alt": null
+    },
+    "webm": "https://cdn.prod.website-files.com/65f09a13418ba26057ac98e7%2F69f62dae3db6854c22cb1955_ricky_desktop_mp4.mp4",
+    "video-url-02": null,
+    "video-url-03": "https://cdn.prod.website-files.com/65f09a13418ba26057ac98e7%2F6769c1eda1fa1a3298601f0d_Ricky%20story-transcode.mp4",
+    "video-url-04": null,
+    "video-url-05": null,
+    "04-video-1-1": null,
+    "video-mobile-01": "https://cdn.prod.website-files.com/65f09a13418ba26057ac98e7%2F69f62dbb249e122463a0f431_ricky_loop_mobile_mp4.mp4",
+    "video-mobile-02": "https://cdn.prod.website-files.com/65f09a13418ba26057ac98e7%2F69f631fac321ab254b956199_studio_9p_1732617402_3509771126705691868_23092027_mp4.mp4",
+    "video-mobile-03": null,
+    "video-square-01": null,
+    "video-square-02": null,
+    "video-square-03": null,
+    "ordre-2": 20,
+    "type-3": [
+     "6ab8268e8e5eb4e325eae9b9"
+    ],
+    "name": "Ricky",
+    "slug": "ricky"
+   }
+  },
+  {
+   "id": "69beb03244b4f23fa7c05672",
+   "cmsLocaleId": "6605b8aa45d40660f8a7b348",
+   "lastPublished": "2026-11-12T18:09:53.038Z",
+   "lastUpdated": "2026-11-12T18:09:53.038Z",
+   "createdOn": "2026-03-21T14:50:26.268Z",
+   "isArchived": false,
+   "isDraft": false,
+   "fieldData": {
+    "second-name": "Boissons",
+    "main-image": {
+     "fileId": "6af600d0b3d9e23e567a5efc",
+     "url": "https://cdn.prod.website-files.com/6605b8aa45d40660f8a7b349/6af600d0b3d9e23e567a5efc_accent.png",
+     "alt": null
+    },
+    "bg-color": "hsla(251, 89.74%, 45.88%, 1.00)",
+    "categorie-3": "<p>3D Blender</p><p>&amp; Animation</p>",
+    "lien-du-projet": "https://accentboissons.com/",
+    "explication-2": "<p>Accent is a French beverage brand with a strong visual identity, blending immersive 3D and natural 2D elements. At Studio 9P, I handled the web design of the pages and the animation of 3D bottles and ingredients, drawing on the brand's existing art direction to create a dynamic and cohesive website.</p>",
+    "image-01": {
+     "fileId": "6ada0b84884d90696949641b",
+     "url": "https://cdn.prod.website-files.com/6605b8aa45d40660f8a7b349/6ada0b84884d90696949641b_hero-desktop.jpg",
+     "alt": null
+    },
+    "image-left-01": null,
+    "image-right-01": null,
+    "second-explication": "<p>Project completed at Studio 9P. Accent wanted to redesign their website based on their existing art direction, with the ambition of making it more dynamic through 3D, while preserving a natural feel carried by the 2D elements. I designed the pages based on the brand's visual universe, then animated all 3D elements in Blender with full creative freedom over movement and timing.</p>",
+    "image-02": {
+     "fileId": "6ada0bdab0f4c43099e74de0",
+     "url": "https://cdn.prod.website-files.com/6605b8aa45d40660f8a7b349/6ada0bdab0f4c43099e74de0_text-01-desktop.jpg",
+     "alt": null
+    },
+    "image-mobile-01": {
+     "fileId": "6ada0bdeeb9e6781ad7b600b",
+     "url": "https://cdn.prod.website-files.com/6605b8aa45d40660f8a7b349/6ada0bdeeb9e6781ad7b600b_limo-mobile.jpg",
+     "alt": null
+    },
+    "image-mobile-02": {
+     "fileId": "6ada0be28dde2f247b414d76",
+     "url": "https://cdn.prod.website-files.com/6605b8aa45d40660f8a7b349/6ada0be28dde2f247b414d76_tonic-mobile.jpg",
+     "alt": null
+    },
+    "image-bg-mobile": {
+     "fileId": "6ada0d08cbe5b2908b9261f6",
+     "url": "https://cdn.prod.website-files.com/6605b8aa45d40660f8a7b349/6ada0d08cbe5b2908b9261f6_jp-valery-htvM3Xw1GyY-unsplash%20(1).jpg",
+     "alt": null
+    },
+    "third-explication": null,
+    "image-03": {
+     "fileId": "6ada0bf79447049e623bf609",
+     "url": "https://cdn.prod.website-files.com/6605b8aa45d40660f8a7b349/6ada0bf79447049e623bf609_texte-02-desktop.jpg",
+     "alt": null
+    },
+    "image-04": {
+     "fileId": "6ada0bfb9f7c45efd55ec2a5",
+     "url": "https://cdn.prod.website-files.com/6605b8aa45d40660f8a7b349/6ada0bfb9f7c45efd55ec2a5_red-desktop.jpg",
+     "alt": null
+    },
+    "image-bg-full": {
+     "fileId": "6a8d62ee944ad3a1f915b8b5",
+     "url": "https://cdn.prod.website-files.com/6605b8aa45d40660f8a7b349/6a8d62ee944ad3a1f915b8b5_c7ccba95d4597bb18923f6ac871b3cb2.jpg",
+     "alt": null
+    },
+    "image-05": null,
+    "image-left-02": null,
+    "image-right-02": null,
+    "image-left-03": null,
+    "image-right-03": null,
+    "webm": "https://s3.amazonaws.com/webflow-prod-assets/65f09a13418ba26057ac98e7/6ada0df93934d4b94efeff3c_accent-screen.mp4",
+    "video-url-02": null,
+    "video-url-03": "https://assets-global.website-files.com/65f09a13418ba26057ac98e7/661067489b2644a4dbb0c433_Caddie-transcode.mp4",
+    "video-url-04": null,
+    "video-url-05": null,
+    "04-video-1-1": null,
+    "video-mobile-01": null,
+    "video-mobile-02": null,
+    "video-mobile-03": null,
+    "video-square-01": null,
+    "video-square-02": null,
+    "video-square-03": null,
+    "ordre-2": 30,
+    "type-3": [
+     "6ab8268e8e5eb4e325eae9b9"
+    ],
+    "name": "Accent",
+    "slug": "accent"
+   }
+  },
+  {
+   "id": "6af5dfe9a231bf864a3d834b",
+   "cmsLocaleId": "6605b8aa45d40660f8a7b348",
+   "lastPublished": "2026-11-12T18:23:54.605Z",
+   "lastUpdated": "2026-11-12T18:23:54.605Z",
+   "createdOn": "2026-11-12T15:48:57.495Z",
+   "isArchived": false,
+   "isDraft": false,
+   "fieldData": {
+    "second-name": "Thomson",
+    "main-image": {
+     "fileId": "6af6000f50a140e92bb94f3b",
+     "url": "https://cdn.prod.website-files.com/6605b8aa45d40660f8a7b349/6af6000f50a140e92bb94f3b_louis-3D%201.png",
+     "alt": null
+    },
+    "bg-color": "hsla(11.0126582278481, 85.12%, 43.29%, 1.00)",
+    "categorie-3": "<p>DA,</p><p>Claude &amp;</p><p>3D Blender</p>",
+    "lien-du-projet": "https://thomingo.github.io/louis-thomson/",
+    "explication-2": "<p>Louis Thomson is a Swiss percussionist and composer. I designed an immersive website where visitors explore a concert stage made of points and play its instruments. I handled the art direction and all the 2D in Figma, and built the rest with Claude.</p>",
+    "image-01": {
+     "fileId": "6af5f4e3e94bdaf3d844277a",
+     "url": "https://cdn.prod.website-files.com/6605b8aa45d40660f8a7b349/6af5f4e3e94bdaf3d844277a_Capture%20d%E2%80%99e%CC%81cran%202026-11-12%20a%CC%80%2018.15.54.png",
+     "alt": null
+    },
+    "image-left-01": {
+     "fileId": "6af5f8bcd65e65cd668ac7eb",
+     "url": "https://cdn.prod.website-files.com/6605b8aa45d40660f8a7b349/6af5f8bcd65e65cd668ac7eb_01.png",
+     "alt": null
+    },
+    "image-right-01": {
+     "fileId": "6af5f8c251a072c2ee8bb150",
+     "url": "https://cdn.prod.website-files.com/6605b8aa45d40660f8a7b349/6af5f8c251a072c2ee8bb150_02.png",
+     "alt": null
+    },
+    "second-explication": "<p>Louis's site listed his dates, biography and videos, but gave no sense of standing in front of a stage. Each instrument became a menu entry: the camera glides toward it and opens the matching section. I started from two Figma frames and already had ideas in mind, like a depth map and a point cloud look.</p>",
+    "image-02": {
+     "fileId": "6af5f4f27f6b79ed1f6f75d9",
+     "url": "https://cdn.prod.website-files.com/6605b8aa45d40660f8a7b349/6af5f4f27f6b79ed1f6f75d9_Capture%20d%E2%80%99e%CC%81cran%202026-11-12%20a%CC%80%2018.16.06.png",
+     "alt": null
+    },
+    "image-mobile-01": {
+     "fileId": "6af5f4fe9b43184cf0a2cedd",
+     "url": "https://cdn.prod.website-files.com/6605b8aa45d40660f8a7b349/6af5f4fe9b43184cf0a2cedd_thomingo.github.io_louis-thomson_(iPhone%2016)%20(2).jpg",
+     "alt": null
+    },
+    "image-mobile-02": {
+     "fileId": "6af5f509ae065d633ef28296",
+     "url": "https://cdn.prod.website-files.com/6605b8aa45d40660f8a7b349/6af5f509ae065d633ef28296_thomingo.github.io_louis-thomson_(iPhone%2016)%20(1).png",
+     "alt": null
+    },
+    "image-bg-mobile": {
+     "fileId": "6af5f5925e3c064ed7f02949",
+     "url": "https://cdn.prod.website-files.com/6605b8aa45d40660f8a7b349/6af5f5925e3c064ed7f02949_IMG_9741.jpg",
+     "alt": null
+    },
+    "third-explication": "<p>Art direction. Claude let me test my ideas quickly and choose the best rendering: a point cloud that reacts to the cursor and to each strike, plus a depth mode. Same for the animations. I designed everything 2D in Figma myself and kept the final say.</p><p>3D and code. Claude modeled the full percussion set directly in my Blender file, so I could rearrange the scene without back and forth. It then wrote the Three.js site: camera navigation, playable instruments with live Web Audio sounds, day and night lighting, FR/EN, a dedicated mobile scene, and a back office so Louis edits his content himself.</p><p>Templates and app. Louis only posts from his phone. Figma Make fit the job (variables, auto layout) but does not work on mobile, and Canva lacked the gradient effects and auto layout. So I designed 8 templates in Figma and built a custom app with Claude: <a href=\"https://thomingo.github.io/louis-template/\">Studio LT</a>. Louis fills in his text, frames a photo or video, applies the effects and exports a JPEG or MP4. The code is on <a href=\"https://github.com/ThominGo/louis-template\">GitHub</a>.</p>",
+    "image-03": {
+     "fileId": "6af5f51fc5cc12b736e107ef",
+     "url": "https://cdn.prod.website-files.com/6605b8aa45d40660f8a7b349/6af5f51fc5cc12b736e107ef_Capture%20d%E2%80%99e%CC%81cran%202026-11-12%20a%CC%80%2018.16.18.png",
+     "alt": null
+    },
+    "image-04": {
+     "fileId": "6af5f58694de4800439f5f55",
+     "url": "https://cdn.prod.website-files.com/6605b8aa45d40660f8a7b349/6af5f58694de4800439f5f55_IMG_9859.jpg",
+     "alt": null
+    },
+    "image-bg-full": null,
+    "image-05": {
+     "fileId": "6af5f78c52bc00cd9a02081c",
+     "url": "https://cdn.prod.website-files.com/6605b8aa45d40660f8a7b349/6af5f78c52bc00cd9a02081c_Capture%20d%E2%80%99e%CC%81cran%202026-11-12%20a%CC%80%2018.29.33.png",
+     "alt": null
+    },
+    "image-left-02": {
+     "fileId": "6af5f64d17d8687e54a82eb9",
+     "url": "https://cdn.prod.website-files.com/6605b8aa45d40660f8a7b349/6af5f64d17d8687e54a82eb9_thomingo.github.io_louis-template_(iPhone%2016)%20(1).png",
+     "alt": null
+    },
+    "image-right-02": {
+     "fileId": "6af5f652f557ad967ec49905",
+     "url": "https://cdn.prod.website-files.com/6605b8aa45d40660f8a7b349/6af5f652f557ad967ec49905_thomingo.github.io_louis-template_(iPhone%2016)%20(2).png",
+     "alt": null
+    },
+    "image-left-03": null,
+    "image-right-03": null,
+    "webm": "https://cdn.prod.website-files.com/65f09a13418ba26057ac98e7%2F6af603b76859ed5a610f48da_l-sc_mp4.mp4",
+    "video-url-02": null,
+    "video-url-03": null,
+    "video-url-04": null,
+    "video-url-05": null,
+    "04-video-1-1": null,
+    "video-mobile-01": null,
+    "video-mobile-02": null,
+    "video-mobile-03": null,
+    "video-square-01": null,
+    "video-square-02": null,
+    "video-square-03": null,
+    "ordre-2": 35,
+    "type-3": [
+     "6ab8268e8e5eb4e325eae9b9"
+    ],
+    "name": "Louis",
+    "slug": "louis-thomson"
+   }
+  },
+  {
+   "id": "69beafe629b481be3c683ac0",
+   "cmsLocaleId": "6605b8aa45d40660f8a7b348",
+   "lastPublished": "2026-09-28T11:49:53.302Z",
+   "lastUpdated": "2026-09-28T11:47:30.515Z",
+   "createdOn": "2026-03-21T14:49:10.789Z",
+   "isArchived": false,
+   "isDraft": false,
+   "fieldData": {
+    "second-name": "Fanzine",
+    "main-image": {
+     "fileId": "6ab84ce3af1c61b16de5bd36",
+     "url": "https://cdn.prod.website-files.com/6605b8aa45d40660f8a7b349/6ab84ce3af1c61b16de5bd36_climax-thumb.jpg",
+     "alt": null
+    },
+    "bg-color": "#0247fa",
+    "categorie-3": "<p>Webflow,</p><p>Shopify</p><p>&amp; Design</p>",
+    "lien-du-projet": "https://climaxfanzine.fr/",
+    "explication-2": "<p>Climax is an independent media engaged on the climate, a free and enraged voice that takes apart depressing narratives and imagines more desirable futures. It runs on a newsletter, a quarterly fanzine, and an online shop. At Studio 9P, I contributed to the design and built the entire Webflow integration, including the Shopify connection through Smoothify.</p>",
+    "image-01": {
+     "fileId": "69c503f4dbeddb6a9806f1fe",
+     "url": "https://cdn.prod.website-files.com/6605b8aa45d40660f8a7b349/69c503f4dbeddb6a9806f1fe_climaxfanzine.fr_(MacBook%20Pro%2014_).avif",
+     "alt": null
+    },
+    "image-left-01": null,
+    "image-right-01": null,
+    "second-explication": "<p>Project completed at Studio 9P. Climax exists through its readers and its editorial line, so the site had to serve the writing before anything else. The goal was to put the content back at the center of the shop experience, highlighting the fanzine's key messages through a clean, readable layout where each visual element reinforces the editorial purpose of the project.</p>",
+    "image-02": {
+     "fileId": "69c50400f16c20b935f8c68b",
+     "url": "https://cdn.prod.website-files.com/6605b8aa45d40660f8a7b349/69c50400f16c20b935f8c68b_climaxfanzine.fr_articles_contre-le-deni-ou-le-desespoir-tous-solar-punks(MacBook%20Pro%2014_).avif",
+     "alt": null
+    },
+    "image-mobile-01": {
+     "fileId": "69c5045f587bd851cbd14d37",
+     "url": "https://cdn.prod.website-files.com/6605b8aa45d40660f8a7b349/69c5045f587bd851cbd14d37_mobile01.avif",
+     "alt": null
+    },
+    "image-mobile-02": {
+     "fileId": "69c504624c70a69288460e04",
+     "url": "https://cdn.prod.website-files.com/6605b8aa45d40660f8a7b349/69c504624c70a69288460e04_mobile%2002.avif",
+     "alt": null
+    },
+    "image-bg-mobile": null,
+    "third-explication": "<p>I built the full Webflow integration, laying out the pages and structuring the CMS so the articles and the fanzine stay easy to read and easy to browse. On the shop side, I connected Webflow to Shopify through Smoothify, so the team can sell the zine and handle orders while keeping the whole experience inside the site's editorial identity.</p>",
+    "image-03": {
+     "fileId": "69c504066560360e4d462b98",
+     "url": "https://cdn.prod.website-files.com/6605b8aa45d40660f8a7b349/69c504066560360e4d462b98_climaxfanzine.fr_newsletter(MacBook%20Pro%2014_).avif",
+     "alt": null
+    },
+    "image-04": {
+     "fileId": "69c5040eed8c8bfa34b4e43b",
+     "url": "https://cdn.prod.website-files.com/6605b8aa45d40660f8a7b349/69c5040eed8c8bfa34b4e43b_climaxfanzine.fr_zine_rage-against-the-fascism(MacBook%20Pro%2014_).avif",
+     "alt": null
+    },
+    "image-bg-full": null,
+    "image-05": {
+     "fileId": "69c50417cb1b0cfe5ab5bcb9",
+     "url": "https://cdn.prod.website-files.com/6605b8aa45d40660f8a7b349/69c50417cb1b0cfe5ab5bcb9_climaxfanzine.fr_zine(MacBook%20Pro%2014_)%20(1).avif",
+     "alt": null
+    },
+    "image-left-02": null,
+    "image-right-02": null,
+    "image-left-03": null,
+    "image-right-03": null,
+    "webm": null,
+    "video-url-02": null,
+    "video-url-03": null,
+    "video-url-04": null,
+    "video-url-05": null,
+    "04-video-1-1": null,
+    "video-mobile-01": null,
+    "video-mobile-02": null,
+    "video-mobile-03": null,
+    "video-square-01": null,
+    "video-square-02": null,
+    "video-square-03": null,
+    "ordre-2": 40,
+    "type-3": [
+     "6ab8269afc48dd534c270e3d"
+    ],
+    "name": "Climax",
+    "slug": "climax"
+   }
+  },
+  {
+   "id": "69beb014f63bfcf86e34ca10",
+   "cmsLocaleId": "6605b8aa45d40660f8a7b348",
+   "lastPublished": "2026-09-28T11:49:53.302Z",
+   "lastUpdated": "2026-09-28T11:47:30.458Z",
+   "createdOn": "2026-03-21T14:49:56.816Z",
+   "isArchived": false,
+   "isDraft": false,
+   "fieldData": {
+    "second-name": "Académie",
+    "main-image": {
+     "fileId": "6ab84a9f2b179a49d032b4ed",
+     "url": "https://cdn.prod.website-files.com/6605b8aa45d40660f8a7b349/6ab84a9f2b179a49d032b4ed_aca.jpg",
+     "alt": null
+    },
+    "bg-color": "#4a18a7",
+    "categorie-3": "<p>DA,</p><p>Design </p><p>&amp;&nbsp;Webflow</p>",
+    "lien-du-projet": "https://www.momentumacademie.com/",
+    "explication-2": "<p>Momentum Académie is a biblical school in Bordeaux offering 4 distinct programs to a wide range of profiles. As a freelancer, I redesigned their site from scratch : art direction, UX, design and Webflow integration, with one clear priority: staying accessible to all ages, while giving the client the tools to maintain the site independently.</p>",
+    "image-01": {
+     "fileId": "69c531b965f1363559ef7be8",
+     "url": "https://cdn.prod.website-files.com/6605b8aa45d40660f8a7b349/69c531b965f1363559ef7be8_www.momentumacademie.com_(MacBook%20Pro%2014_).jpg",
+     "alt": null
+    },
+    "image-left-01": null,
+    "image-right-01": null,
+    "second-explication": "<p>Momentum Académie had an outdated site that no longer reflected the school's quality or ambition. I handled the entire project: full art direction redesign from scratch, UX, page design and Webflow integration. The only constraint given by the client: keep one identifying color per program. From there, I had full creative freedom to build a coherent and modern visual identity.</p>",
+    "image-02": {
+     "fileId": "69c533043be0b85fdb6d1e0f",
+     "url": "https://cdn.prod.website-files.com/6605b8aa45d40660f8a7b349/69c533043be0b85fdb6d1e0f_www.momentumacademie.com_(MacBook%20Pro%2014_)%20(3).jpg",
+     "alt": null
+    },
+    "image-mobile-01": {
+     "fileId": "69c531e85930cf8a8ea263b2",
+     "url": "https://cdn.prod.website-files.com/6605b8aa45d40660f8a7b349/69c531e85930cf8a8ea263b2_www.momentumacademie.com_formation-louange(iPhone%2014%20Pro%20Max)%20(1).jpg",
+     "alt": null
+    },
+    "image-mobile-02": {
+     "fileId": "69c531ee3bd3e6c10efacf5e",
+     "url": "https://cdn.prod.website-files.com/6605b8aa45d40660f8a7b349/69c531ee3bd3e6c10efacf5e_www.momentumacademie.com_formation-louange(iPhone%2014%20Pro%20Max).jpg",
+     "alt": null
+    },
+    "image-bg-mobile": {
+     "fileId": "69c5320d5088d25ebe8a6a04",
+     "url": "https://cdn.prod.website-files.com/6605b8aa45d40660f8a7b349/69c5320d5088d25ebe8a6a04_IMG_0516.jpg",
+     "alt": null
+    },
+    "third-explication": "<p>The art direction is built around a strong creative choice: Renaissance paintings as an iconographic foundation, paired with serif typography, contrasted by real photos of the academy to bring a human touch. The paintings illustrate biblical concepts, compensate for the lack of visuals, and create an instantly recognizable identity.</p><p>This choice is both generational, the old/new mix appeals to 18-30 year olds while inspiring trust in older generations and strategic: the identity clearly stands apart from the Église Momentum brand, scales across all communication channels, and since artworks can be AI-generated, the client has an almost unlimited content source.</p><p>I built a design system in Figma and developed the Webflow components so the client could be fully autonomous after handoff.</p>",
+    "image-03": {
+     "fileId": "69c5330a4c3003570a040910",
+     "url": "https://cdn.prod.website-files.com/6605b8aa45d40660f8a7b349/69c5330a4c3003570a040910_www.momentumacademie.com_relation-daide(MacBook%20Pro%2014_).jpg",
+     "alt": null
+    },
+    "image-04": {
+     "fileId": "69c531cffbc30893a0a5556e",
+     "url": "https://cdn.prod.website-files.com/6605b8aa45d40660f8a7b349/69c531cffbc30893a0a5556e_www.momentumacademie.com_a-propos(MacBook%20Pro%2014_).jpg",
+     "alt": null
+    },
+    "image-bg-full": {
+     "fileId": "69c5323f34e5bff9759abf87",
+     "url": "https://cdn.prod.website-files.com/6605b8aa45d40660f8a7b349/69c5323f34e5bff9759abf87_IMG_5968.jpg",
+     "alt": null
+    },
+    "image-05": {
+     "fileId": "69c531c623db76ef3883eb6b",
+     "url": "https://cdn.prod.website-files.com/6605b8aa45d40660f8a7b349/69c531c623db76ef3883eb6b_www.momentumacademie.com_(MacBook%20Pro%2014_)%20(2).jpg",
+     "alt": null
+    },
+    "image-left-02": null,
+    "image-right-02": null,
+    "image-left-03": null,
+    "image-right-03": null,
+    "webm": null,
+    "video-url-02": null,
+    "video-url-03": null,
+    "video-url-04": null,
+    "video-url-05": null,
+    "04-video-1-1": null,
+    "video-mobile-01": null,
+    "video-mobile-02": null,
+    "video-mobile-03": null,
+    "video-square-01": null,
+    "video-square-02": null,
+    "video-square-03": null,
+    "ordre-2": 50,
+    "type-3": [
+     "6ab8269afc48dd534c270e3d"
+    ],
+    "name": "Momentum",
+    "slug": "momentum-academie"
+   }
+  },
+  {
+   "id": "68d1ba2b074fad1c04618aed",
+   "cmsLocaleId": "6605b8aa45d40660f8a7b348",
+   "lastPublished": "2026-09-28T11:49:53.302Z",
+   "lastUpdated": "2026-09-28T11:47:30.612Z",
+   "createdOn": "2025-09-22T21:05:47.241Z",
+   "isArchived": false,
+   "isDraft": false,
+   "fieldData": {
+    "second-name": "Bakala",
+    "main-image": {
+     "fileId": "6ab84d01f4abbf2c6f0845f9",
+     "url": "https://cdn.prod.website-files.com/6605b8aa45d40660f8a7b349/6ab84d01f4abbf2c6f0845f9_andre-thumb.jpg",
+     "alt": null
+    },
+    "bg-color": "#6a6d74",
+    "categorie-3": "<p>Design </p><p>&amp; Webflow</p>",
+    "lien-du-projet": "https://andre-photographe.webflow.io/",
+    "explication-2": "<p>André Bakala is a photographer. For his portfolio I chose a clean, immersive design that leaves all the space to the images, since they are the ones that tell the story first. My intention was a simple, fluid experience where each photo carries the emotion and the authenticity of André's work. I handled the whole project on my own, as a freelance, from the design to the full Webflow build.</p>",
+    "image-01": {
+     "fileId": "69c482d930cf82c0383cc8b1",
+     "url": "https://cdn.prod.website-files.com/6605b8aa45d40660f8a7b349/69c482d930cf82c0383cc8b1_68d1ba1ed171cb6dbe951775_f2b57972-0f53-400b-af26-81e0336f7e40-1751975800468.avif",
+     "alt": null
+    },
+    "image-left-01": null,
+    "image-right-01": null,
+    "second-explication": "<p>A photographer's site lives or dies on its images, so the interface had to step back and let them lead. The intention was to let the work speak without noise: no heavy layout, no decoration competing with the photos, just a calm frame that puts the emotion and the authenticity of André's shots in front.</p>",
+    "image-02": {
+     "fileId": "69c482e043efc570e9f2e36c",
+     "url": "https://cdn.prod.website-files.com/6605b8aa45d40660f8a7b349/69c482e043efc570e9f2e36c_68d1ba1ed171cb6dbe951781_f2b57972-0f53-400b-af26-81e0336f7e40-1751975800069.avif",
+     "alt": null
+    },
+    "image-mobile-01": {
+     "fileId": "69c482f970ec5e0b0e15d168",
+     "url": "https://cdn.prod.website-files.com/6605b8aa45d40660f8a7b349/69c482f970ec5e0b0e15d168_andre-photographe.webflow.io_(iPhone%20SE).avif",
+     "alt": null
+    },
+    "image-mobile-02": {
+     "fileId": "69c482fd374b2e525aab32b8",
+     "url": "https://cdn.prod.website-files.com/6605b8aa45d40660f8a7b349/69c482fd374b2e525aab32b8_andre-photographe.webflow.io_categorie_concert(iPhone%20SE).avif",
+     "alt": null
+    },
+    "image-bg-mobile": null,
+    "third-explication": "<p>Working solo, I designed the site and built it entirely in Webflow, structuring the CMS by category (concert and others) so the galleries stay easy to browse and simple to update. The real work was curation: I selected and arranged the featured photos so the home page reads as a coherent whole from the first scroll, setting the tone before the visitor even enters a category. I also made sure the experience holds up cleanly on mobile.</p>",
+    "image-03": {
+     "fileId": "69c4830a1f9782dfcada7fda",
+     "url": "https://cdn.prod.website-files.com/6605b8aa45d40660f8a7b349/69c4830a1f9782dfcada7fda_68d1ba1e66735520e7d068b5_f2b57972-0f53-400b-af26-81e0336f7e40-1751975799429.avif",
+     "alt": null
+    },
+    "image-04": {
+     "fileId": "69c4830ea00d2d5c4814289a",
+     "url": "https://cdn.prod.website-files.com/6605b8aa45d40660f8a7b349/69c4830ea00d2d5c4814289a_68d1ba1ecba5cf199d7ddcf9_f2b57972-0f53-400b-af26-81e0336f7e40-1751975798982.avif",
+     "alt": null
+    },
+    "image-bg-full": {
+     "fileId": "69c484241b959c162ac5fe99",
+     "url": "https://cdn.prod.website-files.com/6605b8aa45d40660f8a7b349/69c484241b959c162ac5fe99_6685b64a28c3c5c7bc357a76_14082022-0S5A4209.avif",
+     "alt": null
+    },
+    "image-05": null,
+    "image-left-02": null,
+    "image-right-02": null,
+    "image-left-03": null,
+    "image-right-03": null,
+    "webm": null,
+    "video-url-02": null,
+    "video-url-03": null,
+    "video-url-04": null,
+    "video-url-05": null,
+    "04-video-1-1": null,
+    "video-mobile-01": null,
+    "video-mobile-02": null,
+    "video-mobile-03": null,
+    "video-square-01": null,
+    "video-square-02": null,
+    "video-square-03": null,
+    "ordre-2": 60,
+    "type-3": [
+     "6ab8269afc48dd534c270e3d"
+    ],
+    "name": "André",
+    "slug": "andre"
+   }
+  },
+  {
+   "id": "6605ce0fa03cd57875412209",
+   "cmsLocaleId": "6605b8aa45d40660f8a7b348",
+   "lastPublished": "2026-09-28T11:47:30.620Z",
+   "lastUpdated": "2026-09-28T11:47:30.620Z",
+   "createdOn": "2024-03-28T20:07:43.919Z",
+   "isArchived": false,
+   "isDraft": false,
+   "fieldData": {
+    "second-name": "Signature",
+    "main-image": {
+     "fileId": "6ab84e4b0d823bf32fb29865",
+     "url": "https://cdn.prod.website-files.com/6605b8aa45d40660f8a7b349/6ab84e4b0d823bf32fb29865_9864f331-9c77-44f3-92dc-08ef2697a647.webp",
+     "alt": null
+    },
+    "bg-color": "#a71877",
+    "categorie-3": "<p>Webflow</p>",
+    "lien-du-projet": "https://letsignit.com/",
+    "explication-2": "<p>Letsignit is a bilingual (FR/EN) B2B platform for email signature management. With Studio 9P, I contributed to the Webflow development of the site, which runs on a large CMS, dozens of collections spread across the blog, success stories, and resources.</p>",
+    "image-01": {
+     "fileId": "69c555ff1d96f754b893c7d1",
+     "url": "https://cdn.prod.website-files.com/6605b8aa45d40660f8a7b349/69c555ff1d96f754b893c7d1_Capture%20d%E2%80%99e%CC%81cran%202026-03-26%20a%CC%80%2009.45.57.png",
+     "alt": null
+    },
+    "image-left-01": null,
+    "image-right-01": null,
+    "second-explication": "<p>Letsignit is a big marketing site with a lot of content to maintain in multiple languages, so the priority was a solid, scalable Webflow structure the team could keep feeding without the experience breaking. Less about a single visual gesture, more about making a large, content-heavy platform hold together cleanly at scale.</p><p>‍</p>",
+    "image-02": {
+     "fileId": "69c4f27b32365e9451ec4631",
+     "url": "https://cdn.prod.website-files.com/6605b8aa45d40660f8a7b349/69c4f27b32365e9451ec4631_661c373c10b7611a7727e228_LSI_05.avif",
+     "alt": null
+    },
+    "image-mobile-01": null,
+    "image-mobile-02": null,
+    "image-bg-mobile": null,
+    "third-explication": "<p>I contributed part of the Webflow integration, building pages and wiring them to a CMS that spans dozens of collections, blog, success stories, resources and more. Each collection had to stay consistent across the French and English versions, so the work came down to clean, reusable structure: components and templates that hold up whatever content the team adds later, and that keep the bilingual site coherent from one section to the next.</p>",
+    "image-03": {
+     "fileId": "69c556441ccaff055ced19db",
+     "url": "https://cdn.prod.website-files.com/6605b8aa45d40660f8a7b349/69c556441ccaff055ced19db_661c373ce38b63eeaaadb758_LSI_03.avif",
+     "alt": null
+    },
+    "image-04": {
+     "fileId": "69c4f285cc41e66917f3dd39",
+     "url": "https://cdn.prod.website-files.com/6605b8aa45d40660f8a7b349/69c4f285cc41e66917f3dd39_661c373c7b1411f2686ee2db_LSI_02.avif",
+     "alt": null
+    },
+    "image-bg-full": null,
+    "image-05": {
+     "fileId": "69c4f28acb1b0cfe5aae48a0",
+     "url": "https://cdn.prod.website-files.com/6605b8aa45d40660f8a7b349/69c4f28acb1b0cfe5aae48a0_661c373ce38b63eeaaadb75e_LSI_01.avif",
+     "alt": null
+    },
+    "image-left-02": null,
+    "image-right-02": null,
+    "image-left-03": null,
+    "image-right-03": null,
+    "webm": "https://assets-global.website-files.com/65f09a13418ba26057ac98e7/661067c673fcccc50fa3f84e_LSI-transcode.mp4",
+    "video-url-02": null,
+    "video-url-03": null,
+    "video-url-04": null,
+    "video-url-05": null,
+    "04-video-1-1": null,
+    "video-mobile-01": null,
+    "video-mobile-02": "https://cdn.prod.website-files.com/65f09a13418ba26057ac98e7%2F69f62d1b0bee385b9f924c68_lets_loop_mobile_mp4.mp4",
+    "video-mobile-03": null,
+    "video-square-01": null,
+    "video-square-02": null,
+    "video-square-03": null,
+    "ordre-2": 70,
+    "type-3": [
+     "6ab8269afc48dd534c270e3d"
+    ],
+    "name": "Letsignit",
+    "slug": "letsignit"
+   }
+  },
+  {
+   "id": "69beb04db6303bf72daab4ab",
+   "cmsLocaleId": "6605b8aa45d40660f8a7b348",
+   "lastPublished": "2026-09-28T11:49:53.302Z",
+   "lastUpdated": "2026-09-28T11:47:30.708Z",
+   "createdOn": "2026-03-21T14:50:53.481Z",
+   "isArchived": false,
+   "isDraft": false,
+   "fieldData": {
+    "second-name": "Supply",
+    "main-image": {
+     "fileId": "69beb03f29b481be3c683d6e",
+     "url": "https://cdn.prod.website-files.com/6605b8aa45d40660f8a7b349/69beb03f29b481be3c683d6e_davril.avif",
+     "alt": null
+    },
+    "bg-color": "#1d1d1d",
+    "categorie-3": "<p>DA,</p><p>Design</p><p>&amp; Blender 3D</p>",
+    "lien-du-projet": null,
+    "explication-2": "<p>Davril Supply is releasing a collection inspired by medieval knights, accompanied by a short film. I conceived from scratch a concept e-commerce website with a 3D showroom, reinterpreting their universe.</p>",
+    "image-01": {
+     "fileId": "69c51763436023c32b553b81",
+     "url": "https://cdn.prod.website-files.com/6605b8aa45d40660f8a7b349/69c51763436023c32b553b81_0001.avif",
+     "alt": null
+    },
+    "image-left-01": {
+     "fileId": "69c517c46123ae50160384fb",
+     "url": "https://cdn.prod.website-files.com/6605b8aa45d40660f8a7b349/69c517c46123ae50160384fb_davril02.avif",
+     "alt": null
+    },
+    "image-right-01": {
+     "fileId": "69c518273d0cfa2b2d89862c",
+     "url": "https://cdn.prod.website-files.com/6605b8aa45d40660f8a7b349/69c518273d0cfa2b2d89862c_davril01.avif",
+     "alt": null
+    },
+    "second-explication": "<p>Self-initiated personal project, designed as a real client brief to challenge myself. Davril Thibault is a French designer I admire, who accompanied his latest collection with a short film set in a chivalric universe. I took the opportunity to imagine a digital extension of this artistic direction: an e-commerce website with an interactive 3D showroom presenting the pieces from the collection. I deliberately reinterpreted the knight aesthetic by introducing contemporary typography and bold colors, to create a contrast with the dark, textured quality of the 3D.</p>",
+    "image-02": {
+     "fileId": "69c517884ad5c6fe8c0a6fb4",
+     "url": "https://cdn.prod.website-files.com/6605b8aa45d40660f8a7b349/69c517884ad5c6fe8c0a6fb4_Product-N.avif",
+     "alt": null
+    },
+    "image-mobile-01": null,
+    "image-mobile-02": null,
+    "image-bg-mobile": null,
+    "third-explication": "<p>I reconstructed the clothing and accessories in 3D in Blender, drawing on a few existing assets (knights, rock, tree). The mockups were built in Figma, then animated: the 2D parts in After Effects, the 3D sequences directly in Blender. The loader was created in Cavalry. The entire project — brief, art direction, 3D, motion, UI — was conceived and produced solo.</p>",
+    "image-03": {
+     "fileId": "69c517816a1dce6579048ec5",
+     "url": "https://cdn.prod.website-files.com/6605b8aa45d40660f8a7b349/69c517816a1dce6579048ec5_Product-T.avif",
+     "alt": null
+    },
+    "image-04": {
+     "fileId": "69c5177ab98a5743c20002b3",
+     "url": "https://cdn.prod.website-files.com/6605b8aa45d40660f8a7b349/69c5177ab98a5743c20002b3_Hover-N.avif",
+     "alt": null
+    },
+    "image-bg-full": null,
+    "image-05": null,
+    "image-left-02": null,
+    "image-right-02": null,
+    "image-left-03": null,
+    "image-right-03": null,
+    "webm": "https://s3.amazonaws.com/webflow-prod-assets/65f09a13418ba26057ac98e7/6a50e0c6673a4a522a98184c_marilleau-thomas-e-commerce_davril.mp4",
+    "video-url-02": null,
+    "video-url-03": null,
+    "video-url-04": null,
+    "video-url-05": null,
+    "04-video-1-1": null,
+    "video-mobile-01": null,
+    "video-mobile-02": null,
+    "video-mobile-03": null,
+    "video-square-01": null,
+    "video-square-02": null,
+    "video-square-03": null,
+    "ordre-2": 80,
+    "type-3": [
+     "6ab8268e8e5eb4e325eae9b9"
+    ],
+    "name": "Davril",
+    "slug": "davril"
+   }
+  },
+  {
+   "id": "6605c6a61c867f0696e79de4",
+   "cmsLocaleId": "6605b8aa45d40660f8a7b348",
+   "lastPublished": "2026-11-09T18:59:39.329Z",
+   "lastUpdated": "2026-11-09T18:58:35.800Z",
+   "createdOn": "2024-03-28T19:36:06.617Z",
+   "isArchived": false,
+   "isDraft": false,
+   "fieldData": {
+    "second-name": "Brand",
+    "main-image": {
+     "fileId": "69beaf0fbc39f33d74e36ed7",
+     "url": "https://cdn.prod.website-files.com/6605b8aa45d40660f8a7b349/69beaf0fbc39f33d74e36ed7_svr.avif",
+     "alt": null
+    },
+    "bg-color": "#7d00ae",
+    "categorie-3": "<p>3D Blender</p><p>&amp; Animation</p>",
+    "lien-du-projet": null,
+    "explication-2": "<p>During my apprenticeship at Studio 9P, I produced the 3D and motion design for an beauty brand pitch built around a simple idea: a set of mini-games to fight endocrine disruptors, turning a serious health subject into something playful and easy to grasp.</p>",
+    "image-01": {
+     "fileId": "69c4f914a158d241541699f2",
+     "url": "https://cdn.prod.website-files.com/6605b8aa45d40660f8a7b349/69c4f914a158d241541699f2_66114a6a8101b845ca50580f_SVR.avif",
+     "alt": null
+    },
+    "image-left-01": null,
+    "image-right-01": null,
+    "second-explication": "<p>Project done during my apprenticeship at Studio 9P, as part of a competitive pitch for a beauty brand. The brief was about raising awareness on endocrine disruptors, and the concept answered it with games: three arcade style mini-games, each built on a familiar mechanic (Space Invaders, Doodle Jump, and whack-a-mole), all pointed at the same goal, taking on the disruptors. The intention was to make a dry, technical topic approachable, even fun, without losing the message.</p>",
+    "image-02": null,
+    "image-mobile-01": null,
+    "image-mobile-02": null,
+    "image-bg-mobile": null,
+    "third-explication": "<p>My role was the 3D and the motion design. I modeled and animated the assets that bring the three games to life, from the characters and objects to the short motion pieces used to sell each idea. Since it was a pitch, the work had to land fast: show how each game would look and feel, and keep the message (fighting endocrine disruptors) readable across the three formats while holding a light tone.</p>",
+    "image-03": null,
+    "image-04": null,
+    "image-bg-full": null,
+    "image-05": null,
+    "image-left-02": null,
+    "image-right-02": null,
+    "image-left-03": null,
+    "image-right-03": null,
+    "webm": "https://assets-global.website-files.com/65f09a13418ba26057ac98e7/661c3c1c38f7f5e18132c96a_SVR_3-transcode.mp4",
+    "video-url-02": null,
+    "video-url-03": null,
+    "video-url-04": null,
+    "video-url-05": null,
+    "04-video-1-1": null,
+    "video-mobile-01": "https://assets-global.website-files.com/65f09a13418ba26057ac98e7/661c38caef7e22942754db9a_Space Invader-transcode.mp4",
+    "video-mobile-02": "https://assets-global.website-files.com/65f09a13418ba26057ac98e7/661c38c5e82e221ac70875c8_mama-transcode.mp4",
+    "video-mobile-03": "https://assets-global.website-files.com/65f09a13418ba26057ac98e7/661c381ec3a82b8be812f420_Doodle-transcode.mp4",
+    "video-square-01": null,
+    "video-square-02": null,
+    "video-square-03": null,
+    "ordre-2": 90,
+    "type-3": [
+     "6ab8268e8e5eb4e325eae9b9"
+    ],
+    "name": "Beauty",
+    "slug": "svr"
+   }
+  },
+  {
+   "id": "69beb00080489f6342651d87",
+   "cmsLocaleId": "6605b8aa45d40660f8a7b348",
+   "lastPublished": "2026-09-28T11:49:53.302Z",
+   "lastUpdated": "2026-09-28T11:47:30.392Z",
+   "createdOn": "2026-03-21T14:49:36.947Z",
+   "isArchived": false,
+   "isDraft": false,
+   "fieldData": {
+    "second-name": "Bois",
+    "main-image": {
+     "fileId": "6ab84cddfc48dd534c2bdb2c",
+     "url": "https://cdn.prod.website-files.com/6605b8aa45d40660f8a7b349/6ab84cddfc48dd534c2bdb2c_caracte%CC%80re-thumb.jpg",
+     "alt": null
+    },
+    "bg-color": "#5c0000",
+    "categorie-3": "<p>Webflow</p><p>&amp; Shopify</p>",
+    "lien-du-projet": "https://www.caractere-bois.fr/",
+    "explication-2": "<p>Caractère Bois is a French furniture and wood objects brand. On this <a href=\"https://studio9p.com\">Studio 9P</a> project, I handled the e-commerce integration, connecting Shopify to Webflow via Smootify to give the client the best of both tools.</p>",
+    "image-01": {
+     "fileId": "69c50b2b4f8769700851c019",
+     "url": "https://cdn.prod.website-files.com/6605b8aa45d40660f8a7b349/69c50b2b4f8769700851c019_www.caractere-bois.fr_(MacBook%20Pro%2014_).avif",
+     "alt": null
+    },
+    "image-left-01": null,
+    "image-right-01": null,
+    "second-explication": "<p>My work focused on the e-commerce side: product pages, cart and checkout. The challenge was combining Webflow's design flexibility with Shopify's back-office robustness, without forcing the client to navigate two complex interfaces.</p>",
+    "image-02": {
+     "fileId": "69c50b38ca87db4e2fb65ef3",
+     "url": "https://cdn.prod.website-files.com/6605b8aa45d40660f8a7b349/69c50b38ca87db4e2fb65ef3_www.caractere-bois.fr_produit_caractere-bois-meuble(MacBook%20Pro%2014_).avif",
+     "alt": null
+    },
+    "image-mobile-01": {
+     "fileId": "69c50be8bd5edbac5742dacc",
+     "url": "https://cdn.prod.website-files.com/6605b8aa45d40660f8a7b349/69c50be8bd5edbac5742dacc_www.caractere-bois.fr_(iPhone%2014%20Pro%20Max).avif",
+     "alt": null
+    },
+    "image-mobile-02": {
+     "fileId": "69c50bebb39ec147cb71e9de",
+     "url": "https://cdn.prod.website-files.com/6605b8aa45d40660f8a7b349/69c50bebb39ec147cb71e9de_www.caractere-bois.fr_produit_table-bleue-et-chene(iPhone%2014%20Pro%20Max).avif",
+     "alt": null
+    },
+    "image-bg-mobile": {
+     "fileId": "6aba4a9462d46775e07cb539",
+     "url": "https://cdn.prod.website-files.com/6605b8aa45d40660f8a7b349/6aba4a9462d46775e07cb539_photo-1617873229215-11589e502703.avif",
+     "alt": null
+    },
+    "third-explication": "<p>I connected Shopify to the Webflow CMS using Smootify. The principle: whenever a product is updated in Shopify, the change automatically reflects on the live site through the Webflow CMS. The client manages their catalog and inventory in Shopify, while the design remains fully controlled in Webflow. A clean architecture that avoids the usual trade-offs between user experience and operational management.</p>",
+    "image-03": {
+     "fileId": "69c50b53daf9bd5c27c1eff0",
+     "url": "https://cdn.prod.website-files.com/6605b8aa45d40660f8a7b349/69c50b53daf9bd5c27c1eff0_www.caractere-bois.fr_produit_le-mini-billot-copie(MacBook%20Pro%2014_).avif",
+     "alt": null
+    },
+    "image-04": {
+     "fileId": "69c50b3c319fb2c56616a453",
+     "url": "https://cdn.prod.website-files.com/6605b8aa45d40660f8a7b349/69c50b3c319fb2c56616a453_Manifeste.avif",
+     "alt": null
+    },
+    "image-bg-full": null,
+    "image-05": {
+     "fileId": "69c50b466560360e4d497449",
+     "url": "https://cdn.prod.website-files.com/6605b8aa45d40660f8a7b349/69c50b466560360e4d497449_www.caractere-bois.fr_produit_caractere-bois-meuble(MacBook%20Pro%2014_)%20(1).avif",
+     "alt": null
+    },
+    "image-left-02": null,
+    "image-right-02": null,
+    "image-left-03": null,
+    "image-right-03": null,
+    "webm": null,
+    "video-url-02": null,
+    "video-url-03": null,
+    "video-url-04": null,
+    "video-url-05": null,
+    "04-video-1-1": null,
+    "video-mobile-01": null,
+    "video-mobile-02": null,
+    "video-mobile-03": null,
+    "video-square-01": null,
+    "video-square-02": null,
+    "video-square-03": null,
+    "ordre-2": 100,
+    "type-3": [
+     "6ab8269afc48dd534c270e3d"
+    ],
+    "name": "Caractère",
+    "slug": "caractere-bois"
+   }
+  },
+  {
+   "id": "6605c9f39d15414e884e0fc5",
+   "cmsLocaleId": "6605b8aa45d40660f8a7b348",
+   "lastPublished": "2026-09-28T11:49:53.302Z",
+   "lastUpdated": "2026-09-28T11:47:30.418Z",
+   "createdOn": "2024-03-28T19:50:11.240Z",
+   "isArchived": false,
+   "isDraft": false,
+   "fieldData": {
+    "second-name": "Hub",
+    "main-image": {
+     "fileId": "69beaf05122bdaf436c3d785",
+     "url": "https://cdn.prod.website-files.com/6605b8aa45d40660f8a7b349/69beaf05122bdaf436c3d785_musba.avif",
+     "alt": null
+    },
+    "bg-color": "#d62919",
+    "categorie-3": "<p>DA</p><p>&amp; 3D Blender</p>",
+    "lien-du-projet": null,
+    "explication-2": "<p>For Musba Hub, I handled all the 3D. Working in Blender, I modeled every element of the project, the full set of scenes and objects, within a one-week production window. My scope was purely 3D. The real challenge was the pace: producing a complete, coherent set of scenes in a single week.</p>",
+    "image-01": {
+     "fileId": "69c4f2f1aa6ecb4b5789c487",
+     "url": "https://cdn.prod.website-files.com/6605b8aa45d40660f8a7b349/69c4f2f1aa6ecb4b5789c487_66114a62353fd48ae2d925dd_Musba.avif",
+     "alt": null
+    },
+    "image-left-01": {
+     "fileId": "69c4ef5b32365e9451eb0013",
+     "url": "https://cdn.prod.website-files.com/6605b8aa45d40660f8a7b349/69c4ef5b32365e9451eb0013_660e7628fbfb3bbdfca6dce8_02_atelier%201.avif",
+     "alt": null
+    },
+    "image-right-01": {
+     "fileId": "69c4ef606f94ca8631c5c6fa",
+     "url": "https://cdn.prod.website-files.com/6605b8aa45d40660f8a7b349/69c4ef606f94ca8631c5c6fa_660e76286e30f70d8ff29dbf_01_atelier%201.avif",
+     "alt": null
+    },
+    "second-explication": null,
+    "image-02": {
+     "fileId": "69c4ef8d9cf79614d1f119cd",
+     "url": "https://cdn.prod.website-files.com/6605b8aa45d40660f8a7b349/69c4ef8d9cf79614d1f119cd_660e7628e9233cc1c6266a36_02_Vanite%201.avif",
+     "alt": null
+    },
+    "image-mobile-01": null,
+    "image-mobile-02": null,
+    "image-bg-mobile": null,
+    "third-explication": null,
+    "image-03": {
+     "fileId": "69c4ef958934888a3779c388",
+     "url": "https://cdn.prod.website-files.com/6605b8aa45d40660f8a7b349/69c4ef958934888a3779c388_660e76283209178c11afa7a1_01_Vanite%201.avif",
+     "alt": null
+    },
+    "image-04": {
+     "fileId": "69c4ef2018767c32d4117ef1",
+     "url": "https://cdn.prod.website-files.com/6605b8aa45d40660f8a7b349/69c4ef2018767c32d4117ef1_660e762887a9d578d8f0de5b_01_Lumiere%201.avif",
+     "alt": null
+    },
+    "image-bg-full": null,
+    "image-05": null,
+    "image-left-02": {
+     "fileId": "69c4ef71d27769d32c3595a7",
+     "url": "https://cdn.prod.website-files.com/6605b8aa45d40660f8a7b349/69c4ef71d27769d32c3595a7_660e76282c78605d2b71f8c2_02Sculpture%201.avif",
+     "alt": null
+    },
+    "image-right-02": {
+     "fileId": "69c4ef76f45c2b58862f3e87",
+     "url": "https://cdn.prod.website-files.com/6605b8aa45d40660f8a7b349/69c4ef76f45c2b58862f3e87_660e7628bb941f0ec59fabf7_01Sculpture%201.avif",
+     "alt": null
+    },
+    "image-left-03": null,
+    "image-right-03": null,
+    "webm": "https://assets-global.website-files.com/65f09a13418ba26057ac98e7/66100c2990e732496ed6c362_Musba-transcode.mp4",
+    "video-url-02": "https://cdn.prod.website-files.com/65f09a13418ba26057ac98e7/66100c2990e732496ed6c362_Musba-transcode.mp4",
+    "video-url-03": null,
+    "video-url-04": null,
+    "video-url-05": null,
+    "04-video-1-1": null,
+    "video-mobile-01": null,
+    "video-mobile-02": null,
+    "video-mobile-03": null,
+    "video-square-01": null,
+    "video-square-02": null,
+    "video-square-03": null,
+    "ordre-2": 110,
+    "type-3": [
+     "6ab8268e8e5eb4e325eae9b9"
+    ],
+    "name": "Musba",
+    "slug": "musba"
+   }
+  }
+ ],
+ "playgrounds": [
+  {
+   "id": "6a50e255afaf187f73b97874",
+   "cmsLocaleId": "6605b8aa45d40660f8a7b348",
+   "lastPublished": "2026-07-10T12:16:38.096Z",
+   "lastUpdated": "2026-07-10T12:16:38.096Z",
+   "createdOn": "2026-07-10T12:15:17.334Z",
+   "isArchived": false,
+   "isDraft": false,
+   "fieldData": {
+    "thumbnail": null,
+    "video-link": {
+     "url": "https://cdn.prod.website-files.com/65f09a13418ba26057ac98e7%2F6a50e1a70488636f6f26d728_icon_poste_mp4.mp4",
+     "metadata": {
+      "type": "link",
+      "width": 0,
+      "height": 0,
+      "aspectRatio": 0,
+      "provider_name": "Website-files"
+     }
+    },
+    "ordre": null,
+    "video-linkl": null,
+    "name": "Poste",
+    "slug": "poste-2"
+   }
+  },
+  {
+   "id": "6a50e23be6a83463d843ecd9",
+   "cmsLocaleId": "6605b8aa45d40660f8a7b348",
+   "lastPublished": "2026-07-10T12:16:35.202Z",
+   "lastUpdated": "2026-07-10T12:16:35.202Z",
+   "createdOn": "2026-07-10T12:14:51.617Z",
+   "isArchived": false,
+   "isDraft": false,
+   "fieldData": {
+    "thumbnail": null,
+    "video-link": {
+     "url": "https://s3.amazonaws.com/webflow-prod-assets/65f09a13418ba26057ac98e7/6a50e1b9f63e0801f808e1f1_Speed%20Demon.mp4",
+     "metadata": {
+      "type": "link",
+      "width": 0,
+      "height": 0,
+      "aspectRatio": 0
+     }
+    },
+    "ordre": null,
+    "video-linkl": null,
+    "name": "Justin",
+    "slug": "justin"
+   }
+  },
+  {
+   "id": "69f632a9f9803881d88d295b",
+   "cmsLocaleId": "6605b8aa45d40660f8a7b348",
+   "lastPublished": "2026-05-02T17:35:04.986Z",
+   "lastUpdated": "2026-05-02T17:34:57.876Z",
+   "createdOn": "2026-05-02T17:21:45.373Z",
+   "isArchived": false,
+   "isDraft": false,
+   "fieldData": {
+    "thumbnail": null,
+    "video-link": {
+     "url": "https://cdn.prod.website-files.com/65f09a13418ba26057ac98e7%2F69f6320300c7a02e654cb354_studio_9p_1767460702_3801314712902963272_23092027_mp4.mp4",
+     "metadata": {
+      "type": "link",
+      "width": 0,
+      "height": 0,
+      "aspectRatio": 0,
+      "provider_name": "Website-files"
+     }
+    },
+    "ordre": null,
+    "video-linkl": "https://cdn.prod.website-files.com/65f09a13418ba26057ac98e7%2F69f6320300c7a02e654cb354_studio_9p_1767460702_3801314712902963272_23092027_mp4.mp4",
+    "name": "9Panniversary",
+    "slug": "9panniversary"
+   }
+  },
+  {
+   "id": "69c56025c5540b77362707b9",
+   "cmsLocaleId": "6605b8aa45d40660f8a7b348",
+   "lastPublished": "2026-03-26T16:45:29.848Z",
+   "lastUpdated": "2026-03-26T16:44:29.257Z",
+   "createdOn": "2026-03-26T16:34:45.488Z",
+   "isArchived": false,
+   "isDraft": false,
+   "fieldData": {
+    "thumbnail": null,
+    "video-link": {
+     "url": "https://assets-global.website-files.com/65f09a13418ba26057ac98e7/661065f4c843e1e1ac6589f2_Nathan%20Lacombe-transcode.mp4",
+     "metadata": {
+      "type": "link",
+      "width": 0,
+      "height": 0,
+      "aspectRatio": 0,
+      "provider_name": "Website-files"
+     }
+    },
+    "ordre": null,
+    "video-linkl": "https://assets-global.website-files.com/65f09a13418ba26057ac98e7/661065f4c843e1e1ac6589f2_Nathan%20Lacombe-transcode.mp4",
+    "name": "nathan horizontal",
+    "slug": "nathan-horizontal"
+   }
+  },
+  {
+   "id": "69c55fffead605d80605b1b5",
+   "cmsLocaleId": "6605b8aa45d40660f8a7b348",
+   "lastPublished": "2026-03-26T16:45:29.848Z",
+   "lastUpdated": "2026-03-26T16:41:29.729Z",
+   "createdOn": "2026-03-26T16:34:07.552Z",
+   "isArchived": false,
+   "isDraft": false,
+   "fieldData": {
+    "thumbnail": null,
+    "video-link": {
+     "url": "https://assets-global.website-files.com/65f09a13418ba26057ac98e7/661066b2b93f07ca0ad15faf_Majordom%20Connect-transcode.mp4",
+     "metadata": {
+      "type": "link",
+      "width": 0,
+      "height": 0,
+      "aspectRatio": 0,
+      "provider_name": "Website-files"
+     }
+    },
+    "ordre": null,
+    "video-linkl": "https://assets-global.website-files.com/65f09a13418ba26057ac98e7/661066b2b93f07ca0ad15faf_Majordom%20Connect-transcode.mp4",
+    "name": "majordom connect",
+    "slug": "majordom-connect"
+   }
+  },
+  {
+   "id": "69c55ff1507bba334aa92433",
+   "cmsLocaleId": "6605b8aa45d40660f8a7b348",
+   "lastPublished": "2026-03-26T16:45:29.848Z",
+   "lastUpdated": "2026-03-26T16:44:20.388Z",
+   "createdOn": "2026-03-26T16:33:53.892Z",
+   "isArchived": false,
+   "isDraft": false,
+   "fieldData": {
+    "thumbnail": null,
+    "video-link": {
+     "url": "https://assets-global.website-files.com/65f09a13418ba26057ac98e7/661068749b2644a4dbb21936_StiD_02-transcode.mp4",
+     "metadata": {
+      "type": "link",
+      "width": 0,
+      "height": 0,
+      "aspectRatio": 0,
+      "provider_name": "Website-files"
+     }
+    },
+    "ordre": null,
+    "video-linkl": "https://assets-global.website-files.com/65f09a13418ba26057ac98e7/661068749b2644a4dbb21936_StiD_02-transcode.mp4",
+    "name": "stid-03",
+    "slug": "stid-03"
+   }
+  },
+  {
+   "id": "69c55fe2f04bfe6f63111da7",
+   "cmsLocaleId": "6605b8aa45d40660f8a7b348",
+   "lastPublished": "2026-03-26T16:45:29.848Z",
+   "lastUpdated": "2026-03-26T16:44:12.558Z",
+   "createdOn": "2026-03-26T16:33:38.164Z",
+   "isArchived": false,
+   "isDraft": false,
+   "fieldData": {
+    "thumbnail": null,
+    "video-link": {
+     "url": "https://assets-global.website-files.com/65f09a13418ba26057ac98e7/661068c2df3383f9299120a3_StiD_03-transcode.mp4",
+     "metadata": {
+      "type": "link",
+      "width": 0,
+      "height": 0,
+      "aspectRatio": 0,
+      "provider_name": "Website-files"
+     }
+    },
+    "ordre": null,
+    "video-linkl": "https://assets-global.website-files.com/65f09a13418ba26057ac98e7/661068c2df3383f9299120a3_StiD_03-transcode.mp4",
+    "name": "stid-02",
+    "slug": "stid-02"
+   }
+  },
+  {
+   "id": "69c55fc6866cdf650e3c623b",
+   "cmsLocaleId": "6605b8aa45d40660f8a7b348",
+   "lastPublished": "2026-03-26T16:45:29.848Z",
+   "lastUpdated": "2026-03-26T16:44:07.471Z",
+   "createdOn": "2026-03-26T16:33:10.649Z",
+   "isArchived": false,
+   "isDraft": false,
+   "fieldData": {
+    "thumbnail": null,
+    "video-link": {
+     "url": "https://assets-global.website-files.com/65f09a13418ba26057ac98e7/661068749b2644a4dbb21936_StiD_02-transcode.mp4",
+     "metadata": {
+      "type": "link",
+      "width": 0,
+      "height": 0,
+      "aspectRatio": 0,
+      "provider_name": "Website-files"
+     }
+    },
+    "ordre": null,
+    "video-linkl": "https://assets-global.website-files.com/65f09a13418ba26057ac98e7/661068749b2644a4dbb21936_StiD_02-transcode.mp4",
+    "name": "stid-01",
+    "slug": "stid-01"
+   }
+  },
+  {
+   "id": "69c55f6b144b3c68e03c3623",
+   "cmsLocaleId": "6605b8aa45d40660f8a7b348",
+   "lastPublished": "2026-03-26T16:45:29.848Z",
+   "lastUpdated": "2026-03-26T16:44:01.667Z",
+   "createdOn": "2026-03-26T16:31:39.523Z",
+   "isArchived": false,
+   "isDraft": false,
+   "fieldData": {
+    "thumbnail": null,
+    "video-link": {
+     "url": "https://assets-global.website-files.com/65f09a13418ba26057ac98e7/661c3cd117f8abd5b1fdaec8_Dt-transcode.mp4",
+     "metadata": {
+      "type": "link",
+      "width": 0,
+      "height": 0,
+      "aspectRatio": 0,
+      "provider_name": "Website-files"
+     }
+    },
+    "ordre": null,
+    "video-linkl": "https://assets-global.website-files.com/65f09a13418ba26057ac98e7/661c3cd117f8abd5b1fdaec8_Dt-transcode.mp4",
+    "name": "musba-d-eteys",
+    "slug": "musba-d-eteys"
+   }
+  },
+  {
+   "id": "69c55ed30033e4762a1ecf33",
+   "cmsLocaleId": "6605b8aa45d40660f8a7b348",
+   "lastPublished": "2026-03-26T16:45:29.848Z",
+   "lastUpdated": "2026-03-26T16:43:51.831Z",
+   "createdOn": "2026-03-26T16:29:07.835Z",
+   "isArchived": false,
+   "isDraft": false,
+   "fieldData": {
+    "thumbnail": null,
+    "video-link": {
+     "url": "https://assets-global.website-files.com/65f09a13418ba26057ac98e7/66100bf1aca98fbf472c74bd_Samira-transcode.mp4",
+     "metadata": {
+      "type": "link",
+      "width": 0,
+      "height": 0,
+      "aspectRatio": 0,
+      "provider_name": "Website-files"
+     }
+    },
+    "ordre": null,
+    "video-linkl": "https://assets-global.website-files.com/65f09a13418ba26057ac98e7/66100bf1aca98fbf472c74bd_Samira-transcode.mp4",
+    "name": "samira",
+    "slug": "samira-3"
+   }
+  },
+  {
+   "id": "69c55eadc495aa79cb703285",
+   "cmsLocaleId": "6605b8aa45d40660f8a7b348",
+   "lastPublished": null,
+   "lastUpdated": "2026-03-26T16:43:34.348Z",
+   "createdOn": "2026-03-26T16:28:29.927Z",
+   "isArchived": false,
+   "isDraft": true,
+   "fieldData": {
+    "thumbnail": null,
+    "video-link": {
+     "url": "https://assets-global.website-files.com/65f09a13418ba26057ac98e7/660e826913f98593164e4cbc_VFX-transcode.mp4",
+     "metadata": {
+      "type": "link",
+      "width": 0,
+      "height": 0,
+      "aspectRatio": 0,
+      "provider_name": "Website-files"
+     }
+    },
+    "ordre": null,
+    "video-linkl": "https://assets-global.website-files.com/65f09a13418ba26057ac98e7/660e826913f98593164e4cbc_VFX-transcode.mp4",
+    "name": "artizant",
+    "slug": "artizant"
+   }
+  },
+  {
+   "id": "69c55e4b93a6398e9c1f896e",
+   "cmsLocaleId": "6605b8aa45d40660f8a7b348",
+   "lastPublished": null,
+   "lastUpdated": "2026-03-26T16:27:23.606Z",
+   "createdOn": "2026-03-26T16:26:51.651Z",
+   "isArchived": false,
+   "isDraft": true,
+   "fieldData": {
+    "thumbnail": null,
+    "video-link": null,
+    "ordre": null,
+    "video-linkl": null,
+    "name": "nathan https://assets-global.website-files.com/65f09a13418ba26057ac98e7/661065f4c843e1e1ac6589f2_Nathan Lacombe-transcode.mp4",
+    "slug": "nathan"
+   }
+  },
+  {
+   "id": "69c55d641ccaff055cef2678",
+   "cmsLocaleId": "6605b8aa45d40660f8a7b348",
+   "lastPublished": "2026-03-26T16:45:29.848Z",
+   "lastUpdated": "2026-03-26T16:43:03.029Z",
+   "createdOn": "2026-03-26T16:23:00.838Z",
+   "isArchived": false,
+   "isDraft": false,
+   "fieldData": {
+    "thumbnail": null,
+    "video-link": {
+     "url": "https://assets-global.website-files.com/65f09a13418ba26057ac98e7/6610673c229616a08f6b9d16_01_TV-transcode.mp4",
+     "metadata": {
+      "type": "link",
+      "width": 0,
+      "height": 0,
+      "aspectRatio": 0,
+      "provider_name": "Website-files"
+     }
+    },
+    "ordre": null,
+    "video-linkl": "https://assets-global.website-files.com/65f09a13418ba26057ac98e7/6610673c229616a08f6b9d16_01_TV-transcode.mp4",
+    "name": "pc-9P",
+    "slug": "pc-9p"
+   }
+  },
+  {
+   "id": "69c55d52cde1dec104605361",
+   "cmsLocaleId": "6605b8aa45d40660f8a7b348",
+   "lastPublished": "2026-03-26T16:45:29.848Z",
+   "lastUpdated": "2026-03-26T16:42:57.568Z",
+   "createdOn": "2026-03-26T16:22:42.054Z",
+   "isArchived": false,
+   "isDraft": false,
+   "fieldData": {
+    "thumbnail": null,
+    "video-link": {
+     "url": "https://assets-global.website-files.com/65f09a13418ba26057ac98e7/6610678807ef0231601debb4_9P_Gravity-transcode.mp4",
+     "metadata": {
+      "type": "link",
+      "width": 0,
+      "height": 0,
+      "aspectRatio": 0,
+      "provider_name": "Website-files"
+     }
+    },
+    "ordre": null,
+    "video-linkl": "https://assets-global.website-files.com/65f09a13418ba26057ac98e7/6610678807ef0231601debb4_9P_Gravity-transcode.mp4",
+    "name": "ball-9p",
+    "slug": "ball-9p"
+   }
+  },
+  {
+   "id": "69c55d18e0ca868113fc8371",
+   "cmsLocaleId": "6605b8aa45d40660f8a7b348",
+   "lastPublished": "2026-03-26T16:45:29.848Z",
+   "lastUpdated": "2026-03-26T16:42:47.868Z",
+   "createdOn": "2026-03-26T16:21:44.968Z",
+   "isArchived": false,
+   "isDraft": false,
+   "fieldData": {
+    "thumbnail": null,
+    "video-link": {
+     "url": "https://assets-global.website-files.com/65f09a13418ba26057ac98e7/6610675f003ba02ba9cf5b2e_0001-0400-transcode.mp4",
+     "metadata": {
+      "type": "link",
+      "width": 0,
+      "height": 0,
+      "aspectRatio": 0,
+      "provider_name": "Website-files"
+     }
+    },
+    "ordre": null,
+    "video-linkl": "https://assets-global.website-files.com/65f09a13418ba26057ac98e7/6610675f003ba02ba9cf5b2e_0001-0400-transcode.mp4",
+    "name": "water",
+    "slug": "water"
+   }
+  },
+  {
+   "id": "69c55d02a5dc19e1f684650b",
+   "cmsLocaleId": "6605b8aa45d40660f8a7b348",
+   "lastPublished": "2026-03-26T16:45:29.848Z",
+   "lastUpdated": "2026-03-26T16:42:42.524Z",
+   "createdOn": "2026-03-26T16:21:22.243Z",
+   "isArchived": false,
+   "isDraft": false,
+   "fieldData": {
+    "thumbnail": null,
+    "video-link": {
+     "url": "https://assets-global.website-files.com/65f09a13418ba26057ac98e7/66100c39e3afe1b27f44c870_Chess-transcode.mp4",
+     "metadata": {
+      "type": "link",
+      "width": 0,
+      "height": 0,
+      "aspectRatio": 0,
+      "provider_name": "Website-files"
+     }
+    },
+    "ordre": null,
+    "video-linkl": "https://assets-global.website-files.com/65f09a13418ba26057ac98e7/66100c39e3afe1b27f44c870_Chess-transcode.mp4",
+    "name": "chess",
+    "slug": "chess"
+   }
+  },
+  {
+   "id": "69c1c09ad7cc3b8d8c10d900",
+   "cmsLocaleId": "6605b8aa45d40660f8a7b348",
+   "lastPublished": "2026-03-26T13:35:41.166Z",
+   "lastUpdated": "2026-03-26T13:35:41.166Z",
+   "createdOn": "2026-03-23T22:37:14.723Z",
+   "isArchived": false,
+   "isDraft": false,
+   "fieldData": {
+    "thumbnail": {
+     "fileId": "69c1c0996e32dbf6ba21f712",
+     "url": "https://cdn.prod.website-files.com/6605b8aa45d40660f8a7b349/69c1c0996e32dbf6ba21f712_660ac3f343bf1e4a0265cefb_Capture%20d%E2%80%99e%CC%81cran%202023-05-31%20a%CC%80%2013.53%202.avif",
+     "alt": null
+    },
+    "video-link": null,
+    "ordre": null,
+    "video-linkl": null,
+    "name": "musba-02",
+    "slug": "musba-02"
+   }
+  },
+  {
+   "id": "69c1c08c98a6e9c40298f483",
+   "cmsLocaleId": "6605b8aa45d40660f8a7b348",
+   "lastPublished": "2026-03-26T13:35:41.164Z",
+   "lastUpdated": "2026-03-26T13:35:41.164Z",
+   "createdOn": "2026-03-23T22:37:00.863Z",
+   "isArchived": false,
+   "isDraft": false,
+   "fieldData": {
+    "thumbnail": {
+     "fileId": "69c1c0892986b0270a52ce3a",
+     "url": "https://cdn.prod.website-files.com/6605b8aa45d40660f8a7b349/69c1c0892986b0270a52ce3a_660ac3f3cf4f3438e386c84d_Affiche%20Secondaire.avif",
+     "alt": null
+    },
+    "video-link": null,
+    "ordre": null,
+    "video-linkl": null,
+    "name": "musba-01",
+    "slug": "musba-01"
+   }
+  },
+  {
+   "id": "69c1c07c8033733c58efb0a9",
+   "cmsLocaleId": "6605b8aa45d40660f8a7b348",
+   "lastPublished": "2026-03-26T13:35:41.162Z",
+   "lastUpdated": "2026-03-26T13:35:41.162Z",
+   "createdOn": "2026-03-23T22:36:44.229Z",
+   "isArchived": false,
+   "isDraft": false,
+   "fieldData": {
+    "thumbnail": {
+     "fileId": "69c1c07aedd3d37bee963ad9",
+     "url": "https://cdn.prod.website-files.com/6605b8aa45d40660f8a7b349/69c1c07aedd3d37bee963ad9_66114a73a65d6864af255d75_VFX.avif",
+     "alt": null
+    },
+    "video-link": null,
+    "ordre": null,
+    "video-linkl": null,
+    "name": "vfx",
+    "slug": "vfx"
+   }
+  },
+  {
+   "id": "69c1c06e8b7c362d294d985c",
+   "cmsLocaleId": "6605b8aa45d40660f8a7b348",
+   "lastPublished": "2026-03-26T13:35:41.159Z",
+   "lastUpdated": "2026-03-26T13:35:41.159Z",
+   "createdOn": "2026-03-23T22:36:30.200Z",
+   "isArchived": false,
+   "isDraft": false,
+   "fieldData": {
+    "thumbnail": {
+     "fileId": "69c1c06c2ba3ef515fe699d6",
+     "url": "https://cdn.prod.website-files.com/6605b8aa45d40660f8a7b349/69c1c06c2ba3ef515fe699d6_660ac69702fb18e205c1fcda_Capture%20d%E2%80%99e%CC%81cran%202024-02-22%20a%CC%80%2021.18%203.avif",
+     "alt": null
+    },
+    "video-link": null,
+    "ordre": null,
+    "video-linkl": null,
+    "name": "samira-02",
+    "slug": "samira-02"
+   }
+  },
+  {
+   "id": "69c1bfc51293fd3116aec5eb",
+   "cmsLocaleId": "6605b8aa45d40660f8a7b348",
+   "lastPublished": "2026-03-26T13:35:41.157Z",
+   "lastUpdated": "2026-03-26T13:35:41.157Z",
+   "createdOn": "2026-03-23T22:33:41.111Z",
+   "isArchived": false,
+   "isDraft": false,
+   "fieldData": {
+    "thumbnail": {
+     "fileId": "69c1bfc10e4dd7c76abdfa7a",
+     "url": "https://cdn.prod.website-files.com/6605b8aa45d40660f8a7b349/69c1bfc10e4dd7c76abdfa7a_661d0b4e859b70eb49ffb8f8_02%20(1).avif",
+     "alt": null
+    },
+    "video-link": null,
+    "ordre": null,
+    "video-linkl": null,
+    "name": "hdri",
+    "slug": "hdri"
+   }
+  },
+  {
+   "id": "69c1bfb4fac421b8bae96b29",
+   "cmsLocaleId": "6605b8aa45d40660f8a7b348",
+   "lastPublished": "2026-03-26T13:35:41.155Z",
+   "lastUpdated": "2026-03-26T13:35:41.155Z",
+   "createdOn": "2026-03-23T22:33:24.045Z",
+   "isArchived": false,
+   "isDraft": false,
+   "fieldData": {
+    "thumbnail": {
+     "fileId": "69c1bf9aaec37e61314c86d8",
+     "url": "https://cdn.prod.website-files.com/6605b8aa45d40660f8a7b349/69c1bf9aaec37e61314c86d8_661d0af3b8eeb78689180a9f_RenduAccent02.avif",
+     "alt": null
+    },
+    "video-link": null,
+    "ordre": null,
+    "video-linkl": null,
+    "name": "Accent",
+    "slug": "accent"
+   }
+  },
+  {
+   "id": "69c1bf9488fca4d1f38ff846",
+   "cmsLocaleId": "6605b8aa45d40660f8a7b348",
+   "lastPublished": "2026-03-26T13:35:41.152Z",
+   "lastUpdated": "2026-03-26T13:35:41.152Z",
+   "createdOn": "2026-03-23T22:32:52.935Z",
+   "isArchived": false,
+   "isDraft": false,
+   "fieldData": {
+    "thumbnail": {
+     "fileId": "69c1bf91517f30777e85e232",
+     "url": "https://cdn.prod.website-files.com/6605b8aa45d40660f8a7b349/69c1bf91517f30777e85e232_661d0ae620f2c10d7cedef6c_01%20Mirroir.avif",
+     "alt": null
+    },
+    "video-link": null,
+    "ordre": null,
+    "video-linkl": null,
+    "name": "Mirroir",
+    "slug": "mirroir"
+   }
+  },
+  {
+   "id": "69c1bf8aadbf6fe56a43be93",
+   "cmsLocaleId": "6605b8aa45d40660f8a7b348",
+   "lastPublished": "2026-03-26T13:35:41.150Z",
+   "lastUpdated": "2026-03-26T13:35:41.150Z",
+   "createdOn": "2026-03-23T22:32:42.711Z",
+   "isArchived": false,
+   "isDraft": false,
+   "fieldData": {
+    "thumbnail": {
+     "fileId": "69c1bf893f3a572b2a839ca4",
+     "url": "https://cdn.prod.website-files.com/6605b8aa45d40660f8a7b349/69c1bf893f3a572b2a839ca4_661d0ae6e65a5e79846be443_Maison.avif",
+     "alt": null
+    },
+    "video-link": null,
+    "ordre": null,
+    "video-linkl": null,
+    "name": "maison",
+    "slug": "maison"
+   }
+  },
+  {
+   "id": "69c1bf8170878ecd9a54951c",
+   "cmsLocaleId": "6605b8aa45d40660f8a7b348",
+   "lastPublished": "2026-03-26T13:35:41.142Z",
+   "lastUpdated": "2026-03-26T13:35:41.142Z",
+   "createdOn": "2026-03-23T22:32:33.975Z",
+   "isArchived": false,
+   "isDraft": false,
+   "fieldData": {
+    "thumbnail": {
+     "fileId": "69c1bf80992ef743b793fc6f",
+     "url": "https://cdn.prod.website-files.com/6605b8aa45d40660f8a7b349/69c1bf80992ef743b793fc6f_661d0ae775b45b3193a60bfe_V4.avif",
+     "alt": null
+    },
+    "video-link": null,
+    "ordre": null,
+    "video-linkl": null,
+    "name": "Samira",
+    "slug": "samira"
+   }
+  },
+  {
+   "id": "69c1bf78b8039061ad819a35",
+   "cmsLocaleId": "6605b8aa45d40660f8a7b348",
+   "lastPublished": "2026-03-26T13:35:41.135Z",
+   "lastUpdated": "2026-03-26T13:35:41.135Z",
+   "createdOn": "2026-03-23T22:32:24.556Z",
+   "isArchived": false,
+   "isDraft": false,
+   "fieldData": {
+    "thumbnail": {
+     "fileId": "69c1bf768fe18b451b74fddb",
+     "url": "https://cdn.prod.website-files.com/6605b8aa45d40660f8a7b349/69c1bf768fe18b451b74fddb_661d0b4e6ae6cecc8bc273fa_Solal%20(1).avif",
+     "alt": null
+    },
+    "video-link": null,
+    "ordre": null,
+    "video-linkl": null,
+    "name": "Vase",
+    "slug": "vase"
+   }
+  },
+  {
+   "id": "69c18a4a4ce19886c778073d",
+   "cmsLocaleId": "6605b8aa45d40660f8a7b348",
+   "lastPublished": "2026-03-26T13:35:41.140Z",
+   "lastUpdated": "2026-03-26T13:35:41.140Z",
+   "createdOn": "2026-03-23T18:45:30.056Z",
+   "isArchived": false,
+   "isDraft": false,
+   "fieldData": {
+    "thumbnail": {
+     "fileId": "69c18a485153b5637770c8e6",
+     "url": "https://cdn.prod.website-files.com/6605b8aa45d40660f8a7b349/69c18a485153b5637770c8e6_661002f72d049a4894f280be_419%20(1).avif",
+     "alt": null
+    },
+    "video-link": null,
+    "ordre": null,
+    "video-linkl": null,
+    "name": "Nathan Lacombe 02",
+    "slug": "nathan-lacombe-02"
+   }
+  },
+  {
+   "id": "69c18a3c951a7d835f8fe60e",
+   "cmsLocaleId": "6605b8aa45d40660f8a7b348",
+   "lastPublished": "2026-03-26T13:35:41.138Z",
+   "lastUpdated": "2026-03-26T13:35:41.138Z",
+   "createdOn": "2026-03-23T18:45:16.204Z",
+   "isArchived": false,
+   "isDraft": false,
+   "fieldData": {
+    "thumbnail": {
+     "fileId": "69c18a384ce19886c7780483",
+     "url": "https://cdn.prod.website-files.com/6605b8aa45d40660f8a7b349/69c18a384ce19886c7780483_661002f7a73bf7359d3cea2c_Nath%20(1).avif",
+     "alt": null
+    },
+    "video-link": null,
+    "ordre": null,
+    "video-linkl": null,
+    "name": "Nathan Lacombe 01",
+    "slug": "nathan-lacombe-01"
+   }
+  },
+  {
+   "id": "69c05ea62030d0870cba0fc3",
+   "cmsLocaleId": "6605b8aa45d40660f8a7b348",
+   "lastPublished": "2026-03-26T13:35:41.133Z",
+   "lastUpdated": "2026-03-26T13:35:41.133Z",
+   "createdOn": "2026-03-22T21:27:02.849Z",
+   "isArchived": false,
+   "isDraft": false,
+   "fieldData": {
+    "thumbnail": {
+     "fileId": "69c05e9f60b1382abc5e9611",
+     "url": "https://cdn.prod.website-files.com/6605b8aa45d40660f8a7b349/69c05e9f60b1382abc5e9611_faf.png",
+     "alt": null
+    },
+    "video-link": null,
+    "ordre": null,
+    "video-linkl": null,
+    "name": "ping-pong",
+    "slug": "ping-pong"
+   }
+  },
+  {
+   "id": "69c05e5b361fc642b25f538e",
+   "cmsLocaleId": "6605b8aa45d40660f8a7b348",
+   "lastPublished": "2026-03-26T13:35:41.127Z",
+   "lastUpdated": "2026-03-26T13:35:41.127Z",
+   "createdOn": "2026-03-22T21:25:47.896Z",
+   "isArchived": false,
+   "isDraft": false,
+   "fieldData": {
+    "thumbnail": {
+     "fileId": "69c05e553adef1023cd5fbbc",
+     "url": "https://cdn.prod.website-files.com/6605b8aa45d40660f8a7b349/69c05e553adef1023cd5fbbc_mist.png",
+     "alt": null
+    },
+    "video-link": null,
+    "ordre": null,
+    "video-linkl": null,
+    "name": "Osmin",
+    "slug": "osmin"
+   }
+  },
+  {
+   "id": "69c05b0c57a69405e896dca5",
+   "cmsLocaleId": "6605b8aa45d40660f8a7b348",
+   "lastPublished": "2026-03-26T13:35:41.130Z",
+   "lastUpdated": "2026-03-26T13:35:41.130Z",
+   "createdOn": "2026-03-22T21:11:40.332Z",
+   "isArchived": false,
+   "isDraft": false,
+   "fieldData": {
+    "thumbnail": {
+     "fileId": "69c05b06f8a2d17684e3322b",
+     "url": "https://cdn.prod.website-files.com/6605b8aa45d40660f8a7b349/69c05b06f8a2d17684e3322b_Olive%20%26%20thym.jpg",
+     "alt": null
+    },
+    "video-link": null,
+    "ordre": null,
+    "video-linkl": null,
+    "name": "ramdam",
+    "slug": "ramdam"
+   }
+  },
+  {
+   "id": "69c05a11a496c14778598dfe",
+   "cmsLocaleId": "6605b8aa45d40660f8a7b348",
+   "lastPublished": "2026-03-26T13:35:41.124Z",
+   "lastUpdated": "2026-03-26T13:35:41.124Z",
+   "createdOn": "2026-03-22T21:07:29.666Z",
+   "isArchived": false,
+   "isDraft": false,
+   "fieldData": {
+    "thumbnail": {
+     "fileId": "69c05a0c7bffa9d566ca5e88",
+     "url": "https://cdn.prod.website-files.com/6605b8aa45d40660f8a7b349/69c05a0c7bffa9d566ca5e88_A4%20-%208.png",
+     "alt": null
+    },
+    "video-link": null,
+    "ordre": null,
+    "video-linkl": null,
+    "name": "poste",
+    "slug": "poste"
+   }
+  },
+  {
+   "id": "69c059de58819121d152fe31",
+   "cmsLocaleId": "6605b8aa45d40660f8a7b348",
+   "lastPublished": "2026-03-26T13:35:41.121Z",
+   "lastUpdated": "2026-03-26T13:35:41.121Z",
+   "createdOn": "2026-03-22T21:06:38.063Z",
+   "isArchived": false,
+   "isDraft": false,
+   "fieldData": {
+    "thumbnail": {
+     "fileId": "69c059d53adef1023cd56b3d",
+     "url": "https://cdn.prod.website-files.com/6605b8aa45d40660f8a7b349/69c059d53adef1023cd56b3d_Frame%2010.png",
+     "alt": null
+    },
+    "video-link": null,
+    "ordre": null,
+    "video-linkl": null,
+    "name": "the gardening 3D",
+    "slug": "the-gardening-3d"
+   }
+  },
+  {
+   "id": "69c0596eefe56b7db9c85ab3",
+   "cmsLocaleId": "6605b8aa45d40660f8a7b348",
+   "lastPublished": "2026-03-26T13:35:41.118Z",
+   "lastUpdated": "2026-03-26T13:35:41.118Z",
+   "createdOn": "2026-03-22T21:04:46.693Z",
+   "isArchived": false,
+   "isDraft": false,
+   "fieldData": {
+    "thumbnail": {
+     "fileId": "69c05959dad175912e7c83aa",
+     "url": "https://cdn.prod.website-files.com/6605b8aa45d40660f8a7b349/69c05959dad175912e7c83aa_Frame%2031.png",
+     "alt": null
+    },
+    "video-link": null,
+    "ordre": null,
+    "video-linkl": null,
+    "name": "the gardening cover 1",
+    "slug": "the-gardening-cover-1"
+   }
+  }
+ ],
+ "categories": [
+  {
+   "id": "6ab8269afc48dd534c270e3d",
+   "cmsLocaleId": "6605b8aa45d40660f8a7b348",
+   "lastPublished": "2026-09-28T11:04:34.436Z",
+   "lastUpdated": "2026-09-28T11:04:34.436Z",
+   "createdOn": "2026-09-26T20:10:02.680Z",
+   "isArchived": false,
+   "isDraft": false,
+   "fieldData": {
+    "name": "UX/UI & Webflow",
+    "slug": "ux-ui-webflow"
+   }
+  },
+  {
+   "id": "6ab8268e8e5eb4e325eae9b9",
+   "cmsLocaleId": "6605b8aa45d40660f8a7b348",
+   "lastPublished": "2026-09-28T11:04:34.433Z",
+   "lastUpdated": "2026-09-28T11:04:34.433Z",
+   "createdOn": "2026-09-26T20:09:50.113Z",
+   "isArchived": false,
+   "isDraft": false,
+   "fieldData": {
+    "name": "3D & Immersif",
+    "slug": "3d-immersif"
+   }
+  }
+ ]
+}

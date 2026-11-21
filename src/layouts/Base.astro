@@ -1,0 +1,106 @@
+---
+import '../styles/global.css';
+import Nav from '../components/Nav.astro';
+import Legals from '../components/Legals.astro';
+import { SITE } from '../lib/site';
+import { htmlLang, ogLocale, ui, type Locale, type RouteKey } from '../lib/i18n';
+
+interface Props {
+  locale: Locale;
+  title: string;
+  description: string;
+  /** Chemin de la page (ex. /about), sans domaine */
+  path: string;
+  /** Chemins équivalents par langue ; absent = pas de hreflang */
+  alternates?: Partial<Record<Locale, string>>;
+  current?: RouteKey | null;
+  noindex?: boolean;
+  /** Chemin canonique si différent de `path` (ex. page FR non traduite) */
+  canonicalPath?: string;
+  ogImage?: string;
+  ogType?: 'website' | 'article';
+  jsonld?: Record<string, unknown>[];
+  showLegals?: boolean;
+  bodyClass?: string;
+  /** Précharger la police du titre */
+  preloadFonts?: boolean;
+}
+const {
+  locale, title, description, path, alternates, current = null, noindex = false, canonicalPath,
+  ogImage = SITE.ogImage, ogType = 'website', jsonld = [], showLegals = true, bodyClass, preloadFonts = true,
+} = Astro.props;
+
+const abs = (p: string) => new URL(p, SITE.url).href;
+const canonical = abs(canonicalPath ?? path);
+const og = ogImage.startsWith('http') ? ogImage : abs(ogImage);
+const altOther = alternates?.[locale === 'en' ? 'fr' : 'en'] ?? (locale === 'en' ? '/fr' : '/');
+const graph = jsonld.length ? { '@context': 'https://schema.org', '@graph': jsonld } : null;
+---
+
+<!doctype html>
+<html lang={htmlLang[locale]}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta name="author" content={SITE.name} />
+    <meta name="theme-color" content="#0f0f0f" />
+    <meta name="color-scheme" content="dark" />
+    <meta name="robots" content={noindex ? 'noindex, follow' : 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1'} />
+    <link rel="canonical" href={canonical} />
+    {
+      alternates && !noindex && (
+        <>
+          {alternates.en && <link rel="alternate" hreflang="en" href={abs(alternates.en)} />}
+          {alternates.fr && <link rel="alternate" hreflang="fr" href={abs(alternates.fr)} />}
+          {alternates.en && <link rel="alternate" hreflang="x-default" href={abs(alternates.en)} />}
+        </>
+      )
+    }
+    <link rel="icon" href="/favicon.png" type="image/png" />
+    <link rel="apple-touch-icon" href="/webclip.png" />
+    <link rel="sitemap" type="application/xml" href="/sitemap-index.xml" />
+    <link rel="alternate" type="text/plain" href="/llms.txt" title="llms.txt" />
+    {preloadFonts && <link rel="preload" href="/fonts/PeridiaDisplay-Regular.woff2" as="font" type="font/woff2" crossorigin />}
+
+    <meta property="og:site_name" content={SITE.name} />
+    <meta property="og:type" content={ogType} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={og} />
+    <meta property="og:locale" content={ogLocale[locale]} />
+    <meta property="og:locale:alternate" content={ogLocale[locale === 'en' ? 'fr' : 'en']} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={og} />
+
+    {graph && <script is:inline type="application/ld+json" set:html={JSON.stringify(graph)} />}
+    {SITE.gtmId && <script is:inline define:vars={{ id: SITE.gtmId }}>{`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s);j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer',id);`}</script>}
+    <slot name="head" />
+  </head>
+  <body class={bodyClass} data-locale={locale} data-blur-title={ui[locale].blurTitle}>
+    <a href="#main" class="visually-hidden">{ui[locale].skip}</a>
+    <Nav locale={locale} current={current} />
+    <main id="main">
+      <slot />
+    </main>
+    {showLegals && <Legals locale={locale} altHref={altOther} />}
+    {
+      SITE.simpleAnalytics && (
+        <>
+          <script is:inline data-collect-dnt="true" async src="https://scripts.simpleanalyticscdn.com/latest.js" />
+          <noscript>
+            <img src="https://queue.simpleanalyticscdn.com/noscript.gif?collect-dnt=true" alt="" referrerpolicy="no-referrer-when-downgrade" width="1" height="1" />
+          </noscript>
+        </>
+      )
+    }
+    <script>
+      import '../scripts/site';
+    </script>
+    <slot name="scripts" />
+  </body>
+</html>

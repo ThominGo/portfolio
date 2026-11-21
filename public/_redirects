@@ -1,0 +1,5 @@
+# Anciennes URLs Webflow (/projets/...) vers les nouvelles (/work/...)
+/projets/*        /work/:splat        301
+/fr/projets/*     /fr/work/:splat     301
+/projets          /                   301
+/contact          /                   301

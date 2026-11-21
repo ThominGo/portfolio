@@ -1,0 +1,20 @@
+---
+import { route, ui, type Locale, type RouteKey } from '../lib/i18n';
+import { SITE } from '../lib/site';
+
+interface Props {
+  locale: Locale;
+  current?: RouteKey | null;
+}
+const { locale, current = null } = Astro.props;
+const t = ui[locale].nav;
+const cur = (k: RouteKey) => (current === k ? 'page' : undefined);
+---
+
+<nav class="wrapper-nav" aria-label={locale === 'fr' ? 'Navigation principale' : 'Main navigation'}>
+  <a href={route('home', locale)} aria-current={cur('home')} class="nav-link">{t.projects}</a>
+  <a href={route('about', locale)} aria-current={cur('about')} class="nav-link">{t.about}</a>
+  <div class="separator" aria-hidden="true"></div>
+  <a href={route('playground', locale)} aria-current={cur('playground')} class="nav-link text-rigth-align">{t.playground}</a>
+  <a href={`mailto:${SITE.email}`} class="nav-link text-rigth-align">{t.contact}</a>
+</nav>

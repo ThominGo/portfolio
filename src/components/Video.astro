@@ -1,0 +1,44 @@
+---
+import { videoSrc, type Media } from '../lib/content';
+
+interface Props {
+  media: Media | null | undefined;
+  /** player : lecteur avec contrôles (video-minimal) ; loop : boucle muette en autoplay */
+  variant: 'player' | 'loop';
+  class?: string;
+  label?: string;
+}
+const { media, variant, class: className = '', label } = Astro.props;
+const src = videoSrc(media);
+---
+
+{
+  src && variant === 'player' && (
+    <div class="video-embed w-embed" data-player>
+      <video-player>
+        <video-minimal-skin>
+          <video src={src} playsinline preload="metadata" aria-label={label} />
+        </video-minimal-skin>
+      </video-player>
+    </div>
+  )
+}
+{
+  src && variant === 'loop' && (
+    <div class={`video-embed ${className} w-embed`.replace(/\s+/g, ' ')}>
+      <div style="width: 100%;">
+        <video
+          autoplay
+          loop
+          muted
+          playsinline
+          preload="metadata"
+          aria-label={label}
+          style="width: 100%; height: auto; display: block;"
+        >
+          <source src={src} type="video/mp4" />
+        </video>
+      </div>
+    </div>
+  )
+}

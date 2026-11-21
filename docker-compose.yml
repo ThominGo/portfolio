@@ -1,0 +1,18 @@
+# Directus en local (SQLite). Données persistées dans ./directus.
+services:
+  directus:
+    image: directus/directus:11
+    ports:
+      - '8055:8055'
+    volumes:
+      - ./directus/database:/directus/database
+      - ./directus/uploads:/directus/uploads
+    environment:
+      SECRET: ${DIRECTUS_SECRET:-change-me-to-a-long-random-string}
+      ADMIN_EMAIL: ${DIRECTUS_ADMIN_EMAIL:-admin@example.com}
+      ADMIN_PASSWORD: ${DIRECTUS_ADMIN_PASSWORD:-change-me}
+      ADMIN_TOKEN: ${DIRECTUS_TOKEN:-dev-static-token}
+      DB_CLIENT: sqlite3
+      DB_FILENAME: /directus/database/data.db
+      WEBSOCKETS_ENABLED: 'true'
+      PUBLIC_URL: http://localhost:8055

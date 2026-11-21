@@ -1,0 +1,19 @@
+---
+import { route, ui, type Locale } from '../lib/i18n';
+import { SITE } from '../lib/site';
+
+interface Props {
+  locale: Locale;
+  /** URL équivalente dans l'autre langue */
+  altHref: string;
+}
+const { locale, altHref } = Astro.props;
+const t = ui[locale];
+const other = locale === 'en' ? 'fr' : 'en';
+---
+
+<div class="wrapper-legals">
+  <a href={route('legal', locale)} class="nav-link">{t.legals}</a>
+  <a href={altHref} class="nav-link" hreflang={other} lang={other}>{t.switchTo}</a>
+  <a href={SITE.cvUrl} target="_blank" rel="noopener" class="nav-link">{t.cv}</a>
+</div>

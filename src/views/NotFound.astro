@@ -1,0 +1,26 @@
+---
+import Base from '../layouts/Base.astro';
+import Pic from '../components/Pic.astro';
+import { meta, route, ui, type Locale } from '../lib/i18n';
+import { SITE } from '../lib/site';
+
+interface Props { locale: Locale }
+const { locale } = Astro.props;
+const m = meta[locale].notFound;
+const t = ui[locale];
+---
+
+<Base locale={locale} title={`${m.title} | ${SITE.name}`} description={m.description} path={locale === 'fr' ? '/fr/404' : '/404'} noindex showLegals={false} bodyClass="notfound">
+  <div class="main_wrapper_about about">
+    <div class="wrapper-about-page">
+      <div class="container-m">
+        <h1 class="visually-hidden">404, {m.title}</h1>
+        <a href={route('home', locale)} class="card-project _404" aria-label={t.nav.projects}>
+          <span class="title-case top-name" aria-hidden="true">{t.notFound.top}</span>
+          <Pic media={SITE.notFoundImage} alt="" class="main-image about" loading="eager" sizes="(max-width: 479px) 100vw, 480px" />
+          <span class="title-case bot-name" aria-hidden="true">{t.notFound.bot}</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</Base>

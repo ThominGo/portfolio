@@ -1,0 +1,23 @@
+---
+import Base from '../layouts/Base.astro';
+import { legal, meta, route, type Locale } from '../lib/i18n';
+
+interface Props { locale: Locale }
+const { locale } = Astro.props;
+const m = meta[locale].legal;
+const path = route('legal', locale);
+---
+
+<Base locale={locale} title={m.title} description={m.description} path={path} alternates={{ en: route('legal', 'en'), fr: route('legal', 'fr') }} bodyClass="legal">
+  <div class="main_wrapper_about about mention">
+    <div class="grid mentions">
+      <h1 class="visually-hidden">{m.title}</h1>
+      {legal[locale].map((b) => (
+        <div class="wrapper-about-type">
+          <h2 class="typo-heavy-10px full-caps">{b.title}</h2>
+          <div class="body_mention" set:html={b.html} />
+        </div>
+      ))}
+    </div>
+  </div>
+</Base>

@@ -1,0 +1,39 @@
+---
+// Image responsive : utilise le fichier local optimisé (src/assets/media) s'il existe,
+// sinon retombe sur l'URL distante (utile avant le rapatriement des médias).
+import { Image } from 'astro:assets';
+import { localImages, type Media } from '../lib/content';
+
+interface Props {
+  media: Media | null | undefined;
+  alt?: string;
+  class?: string;
+  loading?: 'lazy' | 'eager';
+  fetchpriority?: 'high' | 'low' | 'auto';
+  sizes?: string;
+}
+const { media, alt = '', class: className, loading = 'lazy', fetchpriority, sizes = '100vw' } = Astro.props;
+const meta = media ? localImages[media.file] : undefined;
+const WIDTHS = [500, 800, 1080, 1600, 2000];
+const widths = meta ? [...WIDTHS.filter((w) => w < meta.width), meta.width] : [];
+---
+
+{
+  media && meta && (
+    <Image
+      src={meta}
+      alt={alt}
+      class={className}
+      loading={loading}
+      fetchpriority={fetchpriority}
+      sizes={sizes}
+      widths={widths}
+      format={meta.format === 'avif' ? 'avif' : 'webp'}
+    />
+  )
+}
+{
+  media && !meta && media.url && (
+    <img src={media.url} alt={alt} class={className} loading={loading} decoding="async" fetchpriority={fetchpriority} />
+  )
+}
