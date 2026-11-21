@@ -153,7 +153,6 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--white-refonte);
 }
 .link-3 { flex: 1 1 0%; text-decoration: underline; font-size: 16px; text-align: left; }
 
-.wrapper-legals .nav-link { font-size: 13px; min-width: auto; }
 .wrapper-legals { display: flex; justify-content: space-between; align-items: center; padding: 80px 24px; }
 
 /* À propos */
