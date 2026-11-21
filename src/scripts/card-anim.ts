@@ -11,7 +11,7 @@ gsap.registerPlugin(ScrollTrigger, SplitText);
 const lenis = (window as any).__lenis;
 lenis?.on('scroll', ScrollTrigger.update);
 
-function build(card: HTMLElement, amp: number, start: string, end: string) {
+function build(card: HTMLElement, amp: number, start: string, end: string, rest = false) {
   const top = card.querySelector<HTMLElement>('.top-name');
   const bot = card.querySelector<HTMLElement>('.bot-name');
   const splits: SplitText[] = [];
@@ -32,6 +32,8 @@ function build(card: HTMLElement, amp: number, start: string, end: string) {
   };
   letters(top, -amp);
   letters(bot, amp);
+  // rest : la carte est déjà en place au chargement, l'animation ne joue qu'en la quittant puis en la retrouvant
+  if (rest) tl.progress(1);
   const st = ScrollTrigger.create({
     trigger: card,
     start,
@@ -49,7 +51,7 @@ function build(card: HTMLElement, amp: number, start: string, end: string) {
   };
 }
 
-export function initCards() {
+export function initCards(opts: { rest?: boolean } = {}) {
   const cards = [...document.querySelectorAll<HTMLElement>('.card-project:not(.cms):not(._404)')];
   if (!cards.length) return;
   const mm = gsap.matchMedia();
@@ -59,7 +61,11 @@ export function initCards() {
       const c = ctx.conditions as { desktop: boolean; mobile: boolean; reduce: boolean };
       if (c.reduce) return;
       const cleanups = cards.map((card) =>
-        c.mobile ? build(card, 20, 'top 70%', 'bottom 40%') : build(card, 10, 'bottom bottom', 'top top'),
+        opts.rest
+          ? build(card, c.mobile ? 20 : 10, 'top bottom', c.mobile ? 'bottom 40%' : 'top top', true)
+          : c.mobile
+            ? build(card, 20, 'top 70%', 'bottom 40%')
+            : build(card, 10, 'bottom bottom', 'top top'),
       );
       return () => cleanups.forEach((f) => f());
     },

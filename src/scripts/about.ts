@@ -1,2 +1,2 @@
 import { initCards } from './card-anim';
-initCards();
+initCards({ rest: true });
