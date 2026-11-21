@@ -82,12 +82,15 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--white-refonte);
   color: var(--white-refonte);
   font-family: Peridiadisplay, 'Times New Roman', sans-serif;
   font-size: 20px; line-height: 120%; text-decoration: none;
-  transition: color 0.2s, background-color 0.2s;
+  /* fond qui se remplit de gauche à droite, texte en fondu */
+  background-image: linear-gradient(var(--white-refonte), var(--white-refonte));
+  background-repeat: no-repeat; background-position: left center; background-size: 0% 100%;
+  transition: background-size 0.45s cubic-bezier(0.76, 0, 0.24, 1), color 0.45s ease;
 }
 .nav-link:hover,
 .nav-link.is-current,
 .nav-link[aria-current='page'] {
-  background-color: var(--white-refonte);
+  background-size: 100% 100%;
   color: var(--black-refonte);
 }
 .nav-link.text-rigth-align { cursor: pointer; }
