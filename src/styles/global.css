@@ -339,3 +339,22 @@ video-player { display: block; width: 100%; }
   .wrapper-nav.nav-aligned .nav-link:nth-of-type(2) { position: absolute; left: calc(var(--card-left) - 24px); }
   .wrapper-nav.nav-aligned .nav-link:nth-of-type(3) { position: absolute; right: calc(var(--card-left) - 24px); }
 }
+
+/* Liens soulignés : au survol, le trait se retire vers la droite puis se redessine de gauche à droite */
+.link, .link-3, .w-richtext a {
+  text-decoration: none;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-repeat: no-repeat;
+  background-size: 100% 1px;
+  background-position: 0 calc(100% - 0.04em);
+}
+@keyframes underline-redraw {
+  0% { background-size: 100% 1px; background-position: 100% calc(100% - 0.04em); }
+  45% { background-size: 0% 1px; background-position: 100% calc(100% - 0.04em); }
+  46% { background-size: 0% 1px; background-position: 0 calc(100% - 0.04em); }
+  100% { background-size: 100% 1px; background-position: 0 calc(100% - 0.04em); }
+}
+.link:hover, .link-3:hover, .w-richtext a:hover { animation: underline-redraw 0.7s cubic-bezier(0.76, 0, 0.24, 1); }
+@media (prefers-reduced-motion: reduce) {
+  .link:hover, .link-3:hover, .w-richtext a:hover { animation: none; }
+}
