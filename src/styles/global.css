@@ -302,3 +302,11 @@ video-player { display: block; width: 100%; }
 .masonry-grid img, .masonry-grid video { width: 100%; height: auto; display: block; }
 .card-project .title-case, .horizontal-space .cms-title-case { white-space: nowrap; }
 .wrapper-card-project > [role='listitem'] { width: 100%; }
+
+/* Coins arrondis sur les médias des pages projet */
+.wrapper-cms-page .image-full-cms,
+.wrapper-cms-page .container-double-image,
+.wrapper-cms-page .max-width-xs,
+.wrapper-cms-page .video-embed { border-radius: 8px; overflow: hidden; isolation: isolate; }
+.wrapper-cms-page img,
+.wrapper-cms-page video { border-radius: 8px; }
