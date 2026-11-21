@@ -11,15 +11,12 @@ const t = ui[locale];
 ---
 
 <Base locale={locale} title={`${m.title} | ${SITE.name}`} description={m.description} path={locale === 'fr' ? '/fr/404' : '/404'} noindex showLegals={false} bodyClass="notfound">
-  <div class="main_wrapper_about about">
-    <div class="wrapper-about-page">
-      <div class="container-m">
-        <h1 class="visually-hidden">404, {m.title}</h1>
-        <a href={route('home', locale)} class="card-project _404" aria-label={t.nav.projects}>
-          <span class="title-case top-name" aria-hidden="true">{t.notFound.top}</span>
-          <Pic media={SITE.notFoundImage} alt="" class="main-image about" loading="eager" sizes="(max-width: 479px) 100vw, 480px" />
-          <span class="title-case bot-name" aria-hidden="true">{t.notFound.bot}</span>
-        </a>
+  <div class="wrapper-about-page">
+    <div class="wrapper-card-project no-absolute">
+      <div class="card-project _404">
+        <Pic media={SITE.notFoundImage} alt={locale === 'fr' ? 'Homme debout en t-shirt gris, pantalon sombre et chaussures beiges.' : 'Man standing wearing gray t-shirt, dark pants, and beige shoes with orange accents.'} class="main-image about" loading="eager" sizes="(max-width: 479px) 100vw, 750px" />
+        <h1 class="title-case top-name">{t.notFound.top}</h1>
+        <div class="title-case bot-name">{t.notFound.bot}</div>
       </div>
     </div>
   </div>

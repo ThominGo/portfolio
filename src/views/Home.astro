@@ -1,7 +1,7 @@
 ---
 import Base from '../layouts/Base.astro';
 import Pic from '../components/Pic.astro';
-import { projectsByCategory, localized, plain } from '../lib/content';
+import { projectsByCategory } from '../lib/content';
 import { meta, route, ui, workPath, type Locale } from '../lib/i18n';
 import { SITE } from '../lib/site';
 
@@ -47,41 +47,42 @@ const jsonld = [
   <section class="wrapper-hero">
     <h1 class="title-case text-center">{t.heroTitle}<span class="visually-hidden"> – {m.title}</span></h1>
     <div class="wrapper-hero-cate max-width-s" role="group" aria-label={locale === 'fr' ? 'Filtres' : 'Filters'}>
-      <a href="#3d" class="txt-fill filter-3d is-active" data-filter="3d">{t.filters.threeD}</a>
+      <a href="#3d" class="txt-fill right filter-3d is-active" data-filter="3d">{t.filters.threeD}</a>
       <div class="separator type-hero" aria-hidden="true"></div>
-      <a href="#ux" class="txt-fill filter-ux right" data-filter="ux">{t.filters.ux}</a>
+      <a href="#ux" class="txt-fill filter-ux" data-filter="ux">{t.filters.ux}</a>
     </div>
   </section>
 
   <section id="3d" class="collection-immersive-3d" aria-label={t.filters.threeD} data-section="3d">
-    <div class="wrapper-card-project no-absolute" role="list">
+    <div class="wrapper-card-project" role="list">
       {threeD.map((p) => (
-        <a href={workPath(p.slug, locale)} role="listitem" class="card-project" style={`background-color:${p.bgColor}`} aria-label={`${p.name} ${p.secondName}`.trim()}>
-          <span class="title-case top-name" data-parallax="-1">{p.name}</span>
-          <Pic media={p.images.main} alt={`${p.name} ${p.secondName}`.trim()} class="main-image" sizes="(max-width: 479px) 80vw, 25vw" />
-          <span class="title-case bot-name" data-parallax="1">{p.secondName}</span>
-        </a>
+        <div role="listitem">
+          <a href={workPath(p.slug, locale)} class="card-project" style={`background-color:${p.bgColor}`}>
+            <Pic media={p.images.main} alt={`${p.name} ${p.secondName}`.trim()} class="main-image" sizes="(max-width: 479px) 40vw, 25vw" />
+            <h2 class="title-case top-name">{p.name}</h2>
+            <h2 class="title-case bot-name">{p.secondName}</h2>
+          </a>
+        </div>
       ))}
     </div>
   </section>
 
   <section id="ux" class="collection-ux-ui-webflow is-hidden" aria-label={t.filters.ux} data-section="ux">
     <div class="collection-list" role="list">
-      {ux.map((p) => {
-        const cat = localized(p, 'categoryHtml', locale).html;
-        return (
-          <div role="listitem" class="collection-item-3">
-            <a href={workPath(p.slug, locale)} class="wrapper-image-ux" aria-label={`${p.name} ${p.secondName}`.trim()}>
-              <Pic media={p.images.main} alt={`${p.name} ${p.secondName}`.trim()} class="image-case-ux" sizes="(max-width: 479px) 100vw, 50vw" />
+      {ux.map((p) => (
+        <div role="listitem" class="collection-item-3">
+          <a href={workPath(p.slug, locale)} class="wrapper-image-ux" aria-label={`${p.name} ${p.secondName}`.trim()}>
+            <Pic media={p.images.main} alt="" class="image-case-ux" sizes="(max-width: 479px) 100vw, 50vw" />
+          </a>
+          <div class="sub-case">
+            <a href={workPath(p.slug, locale)} class="link-block">
+              <h2 class="project-name">{p.name}</h2>
+              <h2 class="project-name">{p.secondName}</h2>
             </a>
-            <div class="sub-case">
-              <div class="link-block" set:html={cat ?? ''} />
-              <h2 class="project-name">{`${p.name} ${p.secondName}`.trim()}</h2>
-              <a href={workPath(p.slug, locale)} class="link-3">{t.viewProject}</a>
-            </div>
+            {p.link && <a href={p.link} target="_blank" rel="noopener" class="link-3">{t.viewProject}</a>}
           </div>
-        );
-      })}
+        </div>
+      ))}
     </div>
   </section>
 

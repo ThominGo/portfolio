@@ -25,7 +25,7 @@ const src = videoSrc(media);
 }
 {
   src && variant === 'loop' && (
-    <div class={`video-embed ${className} w-embed`.replace(/\s+/g, ' ')}>
+    <div class={`video-embed ${className} w-embed`.trim()}>
       <div style="width: 100%;">
         <video
           autoplay

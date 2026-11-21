@@ -26,22 +26,26 @@ const jsonld = [
 ---
 
 <Base locale={locale} title={m.title} description={m.description} path={path} alternates={{ en: route('about', 'en'), fr: route('about', 'fr') }} current="about" jsonld={jsonld} bodyClass="about">
-  <div class="main_wrapper_about about">
-    <div class="wrapper-about-page">
-      <div class="container-m">
-        <div class="card-project about">
-          <Pic media={SITE.aboutImage} alt={a.image_alt} class="main-image about" loading="eager" fetchpriority="high" sizes="(max-width: 479px) 100vw, 480px" />
-        </div>
-        <h1 class="visually-hidden">{SITE.name}, {m.title.split('|')[1]?.trim()}</h1>
-        <div class="vertical-gap-40px" style="margin-top:40px">
-          {a.blocks.map((b) => (
-            <div class="wrapper-about-type">
-              <h2 class="typo-heavy-10px full-caps">{b.title}</h2>
-              <div class="body_mention" set:html={b.html} />
-            </div>
-          ))}
-        </div>
+  <div class="wrapper-about-page">
+    <div class="wrapper-card-project no-absolute">
+      <div class="card-project about">
+        <Pic media={SITE.aboutImage} alt={a.image_alt} class="main-image about" loading="eager" fetchpriority="high" sizes="(max-width: 479px) 100vw, 750px" />
+        <h1 class="title-case top-name">Thomas</h1>
+        <div class="title-case bot-name" aria-hidden="true">Marilleau</div>
+      </div>
+    </div>
+    <div class="container-m">
+      <div class="vertical-gap-40px">
+        {a.blocks.map((b) => (
+          <div class="wrapper-about-type">
+            <h2 class="typo-heavy-10px full-caps">{b.title}</h2>
+            <div set:html={b.html} />
+          </div>
+        ))}
       </div>
     </div>
   </div>
+  <script>
+    import '../scripts/about';
+  </script>
 </Base>

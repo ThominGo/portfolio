@@ -42,11 +42,6 @@ const jsonld = [
   },
 ];
 
-const blocks = [
-  { label: t.labels.project, html: intro },
-  { label: t.labels.context, html: context },
-  { label: t.labels.process, html: process },
-].filter((b) => b.html);
 ---
 
 <Base
@@ -64,66 +59,96 @@ const blocks = [
 >
   {untranslated && <meta slot="head" name="robots" content="noindex, follow" />}
 
-  <section class="horizontal-space" style={`--project-bg:${p.bgColor}`}>
-    <div class="cms-title-case top-name cms" aria-hidden="true">{p.name}</div>
-    <h1 class="visually-hidden">{name}</h1>
-    <Pic media={img.main} alt={name} class={`case-image ${three ? '_3d' : 'ux'}`} loading="eager" fetchpriority="high" sizes="(max-width: 479px) 80vw, 60vw" />
-    <div class="cms-title-case bot-name" aria-hidden="true">{p.secondName}</div>
-  </section>
+  <div class="horizontal-space" style={`background-color:${p.bgColor}`}>
+    <h1 class="cms-title-case top-name cms">{p.name}</h1>
+    <div class="cms-title-case bot-name">{p.secondName}</div>
+  </div>
+  <div class="wrapper-card-project absolute">
+    <div class="card-project cms">
+      <Pic media={img.main} alt={name} class={`case-image ${three ? '_3d' : 'ux'}`} loading="eager" fetchpriority="high" sizes="(max-width: 479px) 80vw, 60vw" />
+    </div>
+  </div>
 
-  <article class="main cms">
-    <div class="wrapper-cms-page">
-      <div class="container-l gap-120px">
-        <div class="wrapper-text-case">
-          <div class="max-width-s cate">
-            <div class="rich-text-block w-richtext" set:html={cats ?? ''} />
-            {p.link && <a href={p.link} class="project-link" target="_blank" rel="noopener">{t.projectLink}</a>}
-          </div>
-          <div class="max-width-s">
-            {blocks.map((b) => (
-              <section>
-                <h2 class="typo-heavy-10px full-caps" style="margin-bottom:8px">{b.label}</h2>
-                <div class="w-richtext" set:html={b.html} style="margin-bottom:24px" />
-              </section>
-            ))}
-          </div>
+  <div class="wrapper-cms-page">
+    <div class="container-l gap-120px">
+      <div class="wrapper-text-case">
+        <div class="max-width-s cate">
+          <div class="typo-heavy-10px full-caps">{t.labels.project}</div>
+          {cats && <div class="wrapper-categorie"><div class="rich-text-block w-richtext" set:html={cats} /></div>}
         </div>
+        <div class="vertical-gap-40px max-width-s">
+          <div class="w-richtext" set:html={intro ?? ''} />
+          {p.link && <a href={p.link} target="_blank" rel="noopener" class="link">{t.projectLink}</a>}
+        </div>
+      </div>
+      {p.videos.landscape01 && <div class="image-full-cms"><Video media={p.videos.landscape01} variant="player" label={name} /></div>}
+      {img.i01 && <div class="image-full-cms"><Pic media={img.i01} alt={alt(1)} class="para" sizes="(min-width: 1200px) 1152px, 100vw" /></div>}
+    </div>
 
-        {img.i01 && <div class="image-full-cms"><Pic media={img.i01} alt={alt(1)} sizes="(min-width: 1200px) 1152px, 100vw" /></div>}
+    {p.videos.mobile.length > 0 && (
+      <div class="bg-image" style={`background-color:${p.bgColor}`}>
+        <div class="double-image-mobile video-mobile">
+          {p.videos.mobile.map((v, i) => (
+            <div class={i === 0 ? 'image-mobile-01 max-width-xs' : 'max-width-xs'}><Video media={v} variant="loop" class="para" label={name} /></div>
+          ))}
+        </div>
+      </div>
+    )}
+
+    {(img.left01 || img.right01 || context || p.videos.square.length > 0 || p.videos.landscape02 || img.i02) && (
+      <div class="container-l gap-120px">
         {(img.left01 || img.right01) && (
           <div class="double-image-cms">
-            <div class="container-double-image"><Pic media={img.left01} alt={alt(2)} class="image-grid-cms" sizes="(max-width: 479px) 100vw, 576px" /></div>
-            <div class="container-double-image"><Pic media={img.right01} alt={alt(3)} class="image-grid-cms" sizes="(max-width: 479px) 100vw, 576px" /></div>
+            <div class="container-double-image"><Pic media={img.left01} alt={alt(2)} class="image-grid-cms para" sizes="(max-width: 479px) 100vw, 576px" /></div>
+            <div class="container-double-image"><Pic media={img.right01} alt={alt(3)} class="image-grid-cms para" sizes="(max-width: 479px) 100vw, 576px" /></div>
           </div>
         )}
-        {p.videos.landscape01 && <Video media={p.videos.landscape01} variant="player" label={name} />}
-        {img.i02 && <div class="image-full-cms"><Pic media={img.i02} alt={alt(4)} sizes="(min-width: 1200px) 1152px, 100vw" /></div>}
-      </div>
-
-      {(img.mobile01 || img.mobile02) && (
-        <div class="bg-image" style={img.bgMobile ? `background-color:${p.bgColor}` : undefined}>
-          <div class="double-image-mobile">
-            <div class="max-width-xs"><Pic media={img.mobile01} alt={alt(5)} sizes="260px" /></div>
-            <div class="max-width-xs image-mobile-01"><Pic media={img.mobile02} alt={alt(6)} sizes="260px" /></div>
+        {context && (
+          <div class="wrapper-text-case">
+            <div class="max-width-s"><div class="typo-heavy-10px full-caps">{t.labels.context}</div></div>
+            <div class="vertical-gap-40px max-width-s"><div class="w-richtext" set:html={context} /></div>
           </div>
-        </div>
-      )}
-
-      <div class="container-l gap-120px">
-        {img.i03 && <div class="image-full-cms"><Pic media={img.i03} alt={alt(7)} sizes="(min-width: 1200px) 1152px, 100vw" /></div>}
-        {img.i04 && <div class="image-full-cms"><Pic media={img.i04} alt={alt(8)} sizes="(min-width: 1200px) 1152px, 100vw" /></div>}
-        {p.videos.landscape02 && <Video media={p.videos.landscape02} variant="player" label={name} />}
+        )}
         {p.videos.square.length > 0 && (
           <div class="double-image-cms">
-            {p.videos.square.map((v) => <div class="container-double-image"><Video media={v} variant="loop" label={name} /></div>)}
+            {p.videos.square.map((v) => <Video media={v} variant="loop" class="para" label={name} />)}
           </div>
         )}
+        {p.videos.landscape02 && <div class="image-full-cms"><Video media={p.videos.landscape02} variant="loop" class="para" label={name} /></div>}
+        {img.i02 && <div class="image-full-cms"><Pic media={img.i02} alt={alt(4)} class="para" sizes="(min-width: 1200px) 1152px, 100vw" /></div>}
       </div>
+    )}
 
-      {img.bgFull && <div class="image-full-cms"><Pic media={img.bgFull} alt={alt(9)} sizes="100vw" /></div>}
+    {(img.mobile01 || img.mobile02) && (
+      <div class="bg-image" style={`background-color:${p.bgColor};${img.bgMobile?.url ? `background-image:url(${img.bgMobile.url});` : ''}background-size:cover;background-position:50% 50%`}>
+        <div class="double-image-mobile">
+          <div class="image-mobile-01 max-width-xs"><Pic media={img.mobile01} alt={alt(5)} class="para" sizes="260px" /></div>
+          <div class="max-width-xs"><Pic media={img.mobile02} alt={alt(6)} class="para" sizes="260px" /></div>
+        </div>
+      </div>
+    )}
 
+    {(process || img.i03) && (
       <div class="container-l gap-120px">
-        {img.i05 && <div class="image-full-cms"><Pic media={img.i05} alt={alt(10)} sizes="(min-width: 1200px) 1152px, 100vw" /></div>}
+        {process && (
+          <div class="wrapper-text-case">
+            <div class="max-width-s"><div class="typo-heavy-10px full-caps">{t.labels.process}</div></div>
+            <div class="vertical-gap-40px max-width-s"><div class="w-richtext" set:html={process} /></div>
+          </div>
+        )}
+        {img.i03 && <div class="image-full-cms"><Pic media={img.i03} alt={alt(7)} class="para" sizes="(min-width: 1200px) 1152px, 100vw" /></div>}
+      </div>
+    )}
+
+    {img.i04 && (
+      <div class="bg-image" style={`background-color:${p.bgColor};${img.bgFull?.url ? `background-image:url(${img.bgFull.url});` : ''}background-size:cover;background-position:50% 50%`}>
+        <div class="image-full-cms container-l"><Pic media={img.i04} alt={alt(8)} class="para" sizes="(min-width: 1200px) 1152px, 100vw" /></div>
+      </div>
+    )}
+
+    {(img.i05 || img.left02 || img.right02 || img.left03 || img.right03 || p.videos.squareExtra.length > 0) && (
+      <div class="container-l gap-120px">
+        {img.i05 && <div class="image-full-cms"><Pic media={img.i05} alt={alt(10)} class="para" sizes="(min-width: 1200px) 1152px, 100vw" /></div>}
         {(img.left02 || img.right02) && (
           <div class="double-image-cms">
             <div class="container-double-image"><Pic media={img.left02} alt={alt(11)} class="image-grid-cms para" sizes="(max-width: 479px) 100vw, 576px" /></div>
@@ -132,23 +157,18 @@ const blocks = [
         )}
         {(img.left03 || img.right03) && (
           <div class="double-image-cms">
-            <div class="container-double-image"><Pic media={img.left03} alt={alt(13)} class="image-grid-cms" sizes="(max-width: 479px) 100vw, 576px" /></div>
-            <div class="container-double-image"><Pic media={img.right03} alt={alt(14)} class="image-grid-cms" sizes="(max-width: 479px) 100vw, 576px" /></div>
+            <div class="container-double-image"><Pic media={img.left03} alt={alt(13)} class="image-grid-cms para" sizes="(max-width: 479px) 100vw, 576px" /></div>
+            <div class="container-double-image"><Pic media={img.right03} alt={alt(14)} class="image-grid-cms para" sizes="(max-width: 479px) 100vw, 576px" /></div>
           </div>
         )}
         {p.videos.squareExtra.length > 0 && (
           <div class="double-image-cms">
-            {p.videos.squareExtra.map((v) => <div class="container-double-image"><Video media={v} variant="loop" label={name} /></div>)}
-          </div>
-        )}
-        {p.videos.mobile.length > 0 && (
-          <div class="double-image-mobile video-mobile">
-            {p.videos.mobile.map((v) => <div class="max-width-xs"><Video media={v} variant="loop" label={name} /></div>)}
+            {p.videos.squareExtra.map((v) => <Video media={v} variant="loop" class="para" label={name} />)}
           </div>
         )}
       </div>
-    </div>
-  </article>
+    )}
+  </div>
 
   <script is:inline type="module" src="https://cdn.jsdelivr.net/npm/@videojs/html@10.6.0/cdn/video-minimal.js"></script>
 </Base>
