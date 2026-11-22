@@ -1,8 +1,10 @@
 // Pages projet : léger parallaxe sur les images et vidéos du contenu (.para).
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { initTitleIntro } from './card-anim';
 
 gsap.registerPlugin(ScrollTrigger);
+initTitleIntro();
 (window as any).__lenis?.on('scroll', ScrollTrigger.update);
 
 if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {

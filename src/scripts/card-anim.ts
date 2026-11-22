@@ -72,3 +72,29 @@ export function initCards(opts: { rest?: boolean } = {}) {
   );
   return mm;
 }
+
+// Titres des pages projet et playground : même animation de lettres que les cartes de la home,
+// jouée à l'arrivée sur la page (lettres du haut descendent, celles du bas montent, masque par lettre).
+export function initTitleIntro() {
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  const amp = window.matchMedia('(max-width: 479px)').matches ? 20 : 10;
+  const tops = document.querySelectorAll<HTMLElement>('.horizontal-space .top-name, body.playground .wrapper-hero .title-case');
+  const bots = document.querySelectorAll<HTMLElement>('.horizontal-space .bot-name');
+  const play = () => {
+    const tl = gsap.timeline({ delay: 0.15 });
+    const letters = (el: HTMLElement, from: number) => {
+      const sp = SplitText.create(el, { type: 'chars', mask: 'chars', charsClass: 'gsap_split_letter' });
+      ((sp as any).masks as HTMLElement[] | undefined)?.forEach((m) => {
+        m.style.paddingTop = '0.15em';
+        m.style.paddingBottom = '0.25em';
+        m.style.marginTop = '-0.15em';
+        m.style.marginBottom = '-0.25em';
+      });
+      tl.fromTo(sp.chars, { y: `${from}svw` }, { y: '0svw', duration: 1, ease: 'power4.out', stagger: { amount: 0.1 } }, 0);
+    };
+    tops.forEach((el) => letters(el, -amp));
+    bots.forEach((el) => letters(el, amp));
+  };
+  // on attend la police pour que le découpage en lettres soit juste
+  (document.fonts?.ready ?? Promise.resolve()).then(play);
+}

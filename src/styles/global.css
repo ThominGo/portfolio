@@ -369,3 +369,15 @@ video-player { display: block; width: 100%; }
 .masonry-grid video,
 .cms-lightbox,
 .main-image.about { border-radius: 8px; }
+
+/* Transitions entre les pages (View Transitions, navigateurs compatibles) */
+@view-transition { navigation: auto; }
+.wrapper-nav { view-transition-name: site-nav; }
+@keyframes page-out { to { opacity: 0; } }
+@keyframes page-in { from { opacity: 0; } }
+::view-transition-old(root) { animation: page-out 0.35s cubic-bezier(0.76, 0, 0.24, 1) both; }
+::view-transition-new(root) { animation: page-in 0.5s cubic-bezier(0.76, 0, 0.24, 1) 0.15s both; }
+::view-transition-group(site-nav) { animation-duration: 0.6s; animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1); }
+@media (prefers-reduced-motion: reduce) {
+  @view-transition { navigation: none; }
+}

@@ -1,3 +1,6 @@
+import { initTitleIntro } from './card-anim';
+initTitleIntro();
+
 // Lightbox : clic sur une image ou une vidéo => plein écran, clic ou Échap pour fermer.
 const open = (build: () => HTMLElement) => {
   const box = document.createElement('div');
