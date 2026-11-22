@@ -43,7 +43,8 @@ export function splitLetters(el: HTMLElement): Split {
     const mask = document.createElement('span');
     mask.className = 'gsap_split_letter-mask';
     mask.setAttribute('aria-hidden', 'true');
-    mask.style.cssText = 'display:inline-block;overflow:clip;vertical-align:top;';
+    // marge latérale (compensée) : les empattements qui dépassent de la lettre ne sont pas rognés pendant l'animation
+    mask.style.cssText = 'display:inline-block;overflow:clip;vertical-align:top;padding-left:0.2em;padding-right:0.2em;margin-left:-0.2em;margin-right:-0.2em;';
     const ch = document.createElement('span');
     ch.className = 'gsap_split_letter';
     ch.style.display = 'inline-block';
