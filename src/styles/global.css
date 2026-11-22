@@ -240,10 +240,10 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--white-refonte);
 .max-width-xs { width: 100%; max-width: 260px; overflow: hidden; }
 
 /* Playground */
-.masonry-grid { column-count: 4; gap: 16px 8px; width: 100%; padding-bottom: 80px; list-style: none; margin: 0; }
+.masonry-grid { column-count: 4; column-gap: 8px; width: 100%; padding-bottom: 80px; list-style: none; margin: 0; }
 .collection-item-2 { display: block; break-inside: avoid; }
 .cms-lightbox { display: block; width: 100%; cursor: zoom-in; }
-.image-lightbox { padding-bottom: 8px; }
+.image-lightbox { padding-bottom: 0; }
 .collection-item-2 video { width: 100%; height: auto; display: block; }
 
 .lightbox {
@@ -321,7 +321,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--white-refonte);
 .rich-text-block p { line-height: 120%; }
 .double-image-mobile video, .video-embed video { width: 100%; height: auto; display: block; }
 video-player { display: block; width: 100%; }
-.masonry-grid .collection-item-2 { margin-bottom: 16px; }
+.masonry-grid .collection-item-2 { margin-bottom: 8px; }
 .masonry-grid img, .masonry-grid video { width: 100%; height: auto; display: block; }
 .card-project .title-case, .horizontal-space .cms-title-case { white-space: nowrap; }
 .wrapper-card-project > [role='listitem'] { width: 100%; }
