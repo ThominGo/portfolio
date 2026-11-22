@@ -103,11 +103,16 @@ export function initTitleIntro() {
     '.horizontal-space .bot-name, body.playground .wrapper-hero .title-case, body.home .wrapper-hero .split-target',
   );
   const play = () => {
-    const tl = gsap.timeline({ delay: 0.15 });
+    const splits: SplitText[] = [];
+    // une fois l'animation finie on retire le découpage : les jambages (y, g, p) redeviennent entiers
+    const tl = gsap.timeline({ delay: 0.15, onComplete: () => splits.forEach((sp) => sp.revert()) });
     const letters = (el: HTMLElement, dir: 1 | -1) => {
       const size = parseFloat(getComputedStyle(el).fontSize);
       const sp = SplitText.create(el, { type: 'chars', mask: 'chars', charsClass: 'gsap_split_letter' });
-      maskFix(sp);
+      // lettres qui montent : masque collé à la ligne (rien ne dépasse sous le titre, donc rien ne passe sur le texte voisin) ;
+      // lettres qui descendent : marge au-dessus de la ligne pour ne pas rogner les accents
+      if (dir === -1) maskFix(sp);
+      splits.push(sp);
       tl.fromTo(sp.chars, { y: dir * size * 1.45 }, { y: 0, duration: 1, ease: 'power4.out', stagger: { amount: 0.1 } }, 0);
       el.style.visibility = 'visible'; // état de départ posé : aucune lettre visible avant l'animation
     };
