@@ -30,8 +30,8 @@ function build(card: HTMLElement, amp: number, start: string, end: string, rest 
     splits.push(s);
     tl.fromTo(s.chars, { y: `${from}svw` }, { y: '0svw', duration: 1, ease: 'power4.out', stagger: { amount: 0.1 } }, 0);
   };
-  letters(top, -amp);
-  letters(bot, amp);
+  letters(top, -amp * 1.4);
+  letters(bot, amp * 1.4);
   // rest : la carte est déjà en place au chargement, l'animation ne joue qu'en la quittant puis en la retrouvant
   if (rest) tl.progress(1);
   const st = ScrollTrigger.create({
@@ -78,7 +78,7 @@ export function initCards(opts: { rest?: boolean } = {}) {
 export function initTitleIntro() {
   if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
   const amp = window.matchMedia('(max-width: 479px)').matches ? 20 : 10;
-  const tops = document.querySelectorAll<HTMLElement>('.horizontal-space .top-name, body.playground .wrapper-hero .title-case');
+  const tops = document.querySelectorAll<HTMLElement>('.horizontal-space .top-name, body.playground .wrapper-hero .title-case, body.home .wrapper-hero .split-target');
   const bots = document.querySelectorAll<HTMLElement>('.horizontal-space .bot-name');
   const play = () => {
     const tl = gsap.timeline({ delay: 0.15 });
@@ -90,7 +90,8 @@ export function initTitleIntro() {
         m.style.marginTop = '-0.15em';
         m.style.marginBottom = '-0.25em';
       });
-      tl.fromTo(sp.chars, { y: `${from}svw` }, { y: '0svw', duration: 1, ease: 'power4.out', stagger: { amount: 0.1 } }, 0);
+      tl.fromTo(sp.chars, { y: `${from * 1.4}svw` }, { y: '0svw', duration: 1, ease: 'power4.out', stagger: { amount: 0.1 } }, 0);
+      el.style.visibility = 'visible'; // l'état de départ est posé : aucune lettre visible avant l'animation
     };
     tops.forEach((el) => letters(el, -amp));
     bots.forEach((el) => letters(el, amp));

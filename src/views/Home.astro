@@ -45,7 +45,7 @@ const jsonld = [
 
 <Base locale={locale} title={m.title} description={m.description} path={path} alternates={{ en: '/', fr: '/fr' }} current="home" jsonld={jsonld} bodyClass="home">
   <section class="wrapper-hero">
-    <h1 class="title-case text-center">{t.heroTitle}<span class="visually-hidden"> – {m.title}</span></h1>
+    <h1 class="title-case text-center"><span class="split-target">{t.heroTitle}</span><span class="visually-hidden"> – {m.title}</span></h1>
     <div class="wrapper-hero-cate max-width-s" role="group" aria-label={locale === 'fr' ? 'Filtres' : 'Filters'}>
       <a href="#3d" class="txt-fill right filter-3d is-active" data-filter="3d">{t.filters.threeD}</a>
       <div class="separator type-hero" aria-hidden="true"></div>

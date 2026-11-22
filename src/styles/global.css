@@ -381,3 +381,11 @@ video-player { display: block; width: 100%; }
 @media (prefers-reduced-motion: reduce) {
   @view-transition { navigation: none; }
 }
+
+/* Titres animés : masqués jusqu'à ce que le découpage en lettres soit prêt (évite tout éclair de lettres) */
+@media (prefers-reduced-motion: no-preference) {
+  html.has-js .horizontal-space .top-name,
+  html.has-js .horizontal-space .bot-name,
+  html.has-js body.playground .wrapper-hero .title-case,
+  html.has-js body.home .wrapper-hero .split-target { visibility: hidden; }
+}

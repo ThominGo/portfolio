@@ -1,7 +1,7 @@
 // Accueil : filtres 3D / UX (hash) + animation des cartes.
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { initCards } from './card-anim';
+import { initCards, initTitleIntro } from './card-anim';
 
 const sections = document.querySelectorAll<HTMLElement>('[data-section]');
 const links = document.querySelectorAll<HTMLElement>('[data-filter]');
@@ -37,3 +37,5 @@ if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
   });
   ScrollTrigger.refresh();
 }
+
+initTitleIntro();
