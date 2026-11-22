@@ -17,6 +17,7 @@ function build(card: HTMLElement, amp: number, start: string, end: string, rest 
   const splits: SplitText[] = [];
   const tl = gsap.timeline({ paused: true });
   tl.fromTo(card, { scale: 0.6 }, { scale: 1, duration: 1, ease: 'power4.out' }, 0);
+  const intro: { chars: Element[]; dir: 1 | -1; el: HTMLElement }[] = [];
   const letters = (el: HTMLElement | null, from: number) => {
     if (!el) return;
     const s = SplitText.create(el, { type: 'chars', mask: 'chars', charsClass: 'gsap_split_letter' });
@@ -28,12 +29,22 @@ function build(card: HTMLElement, amp: number, start: string, end: string, rest 
       m.style.marginBottom = '-0.25em';
     });
     splits.push(s);
+    intro.push({ chars: s.chars, dir: from < 0 ? -1 : 1, el });
     tl.fromTo(s.chars, { y: `${from}svw` }, { y: '0svw', duration: 1, ease: 'power4.out', stagger: { amount: 0.1 } }, 0);
   };
   letters(top, -amp * 1.4);
   letters(bot, amp * 1.4);
   // rest : la carte est déjà en place au chargement, l'animation ne joue qu'en la quittant puis en la retrouvant
-  if (rest) tl.progress(1);
+  if (rest) {
+    tl.progress(1);
+    // à l'arrivée : seules les lettres jouent leur entrée (la carte est déjà en place)
+    const it = gsap.timeline({ delay: 0.15 });
+    intro.forEach(({ chars, dir, el }) => {
+      const size = parseFloat(getComputedStyle(el).fontSize);
+      it.fromTo(chars, { y: dir * size * 1.45 }, { y: 0, duration: 1, ease: 'power4.out', stagger: { amount: 0.1 } }, 0);
+      el.style.visibility = 'visible';
+    });
+  }
   const st = ScrollTrigger.create({
     trigger: card,
     start,
@@ -73,29 +84,35 @@ export function initCards(opts: { rest?: boolean } = {}) {
   return mm;
 }
 
-// Titres des pages projet et playground : même animation de lettres que les cartes de la home,
-// jouée à l'arrivée sur la page (lettres du haut descendent, celles du bas montent, masque par lettre).
+// Titres : même animation de lettres que les cartes de la home, jouée à l'arrivée sur la page
+// (masque par lettre, 1s, power4.out, stagger total 0.1s). Le décalage de départ vaut 1.45 fois la
+// taille de la police : toujours au-delà du masque, donc aucun bout de lettre visible avant le départ.
+const maskFix = (sp: SplitText) =>
+  ((sp as any).masks as HTMLElement[] | undefined)?.forEach((m) => {
+    m.style.paddingTop = '0.15em';
+    m.style.paddingBottom = '0.25em';
+    m.style.marginTop = '-0.15em';
+    m.style.marginBottom = '-0.25em';
+  });
+
 export function initTitleIntro() {
   if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-  const amp = window.matchMedia('(max-width: 479px)').matches ? 20 : 10;
-  const tops = document.querySelectorAll<HTMLElement>('.horizontal-space .top-name, body.playground .wrapper-hero .title-case, body.home .wrapper-hero .split-target');
-  const bots = document.querySelectorAll<HTMLElement>('.horizontal-space .bot-name');
+  // les lettres du haut descendent (-1), les autres montent (+1)
+  const down = document.querySelectorAll<HTMLElement>('.horizontal-space .top-name');
+  const up = document.querySelectorAll<HTMLElement>(
+    '.horizontal-space .bot-name, body.playground .wrapper-hero .title-case, body.home .wrapper-hero .split-target',
+  );
   const play = () => {
     const tl = gsap.timeline({ delay: 0.15 });
-    const letters = (el: HTMLElement, from: number) => {
+    const letters = (el: HTMLElement, dir: 1 | -1) => {
+      const size = parseFloat(getComputedStyle(el).fontSize);
       const sp = SplitText.create(el, { type: 'chars', mask: 'chars', charsClass: 'gsap_split_letter' });
-      ((sp as any).masks as HTMLElement[] | undefined)?.forEach((m) => {
-        m.style.paddingTop = '0.15em';
-        m.style.paddingBottom = '0.25em';
-        m.style.marginTop = '-0.15em';
-        m.style.marginBottom = '-0.25em';
-      });
-      tl.fromTo(sp.chars, { y: `${from * 1.4}svw` }, { y: '0svw', duration: 1, ease: 'power4.out', stagger: { amount: 0.1 } }, 0);
-      el.style.visibility = 'visible'; // l'état de départ est posé : aucune lettre visible avant l'animation
+      maskFix(sp);
+      tl.fromTo(sp.chars, { y: dir * size * 1.45 }, { y: 0, duration: 1, ease: 'power4.out', stagger: { amount: 0.1 } }, 0);
+      el.style.visibility = 'visible'; // état de départ posé : aucune lettre visible avant l'animation
     };
-    tops.forEach((el) => letters(el, -amp));
-    bots.forEach((el) => letters(el, amp));
+    down.forEach((el) => letters(el, -1));
+    up.forEach((el) => letters(el, 1));
   };
-  // on attend la police pour que le découpage en lettres soit juste
   (document.fonts?.ready ?? Promise.resolve()).then(play);
 }

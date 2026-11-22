@@ -387,5 +387,7 @@ video-player { display: block; width: 100%; }
   html.has-js .horizontal-space .top-name,
   html.has-js .horizontal-space .bot-name,
   html.has-js body.playground .wrapper-hero .title-case,
+  html.has-js body.about .card-project.about .top-name,
+  html.has-js body.about .card-project.about .bot-name,
   html.has-js body.home .wrapper-hero .split-target { visibility: hidden; }
 }
