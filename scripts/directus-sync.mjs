@@ -29,7 +29,7 @@ const list = (p, base, n) => Array.from({ length: n }, (_, i) => media(p[`vid_${
 
 const rows = await api('GET', '/items/projects?limit=-1&sort=sort&filter[status][_eq]=published');
 const projects = rows.map((p) => ({
-  slug: p.slug, name: p.name, secondName: p.secondName ?? '', sort: p.sort, bgColor: p.bgColor ?? '#0f0f0f',
+  id: p.id, slug: p.slug, name: p.name, secondName: p.secondName ?? '', sort: p.sort, bgColor: p.bgColor ?? '#0f0f0f',
   categories: p.categories ?? [], categoryHtml: p.categoryHtml, categoryHtml_fr: p.categoryHtml_fr, link: p.link,
   intro: p.intro, context: p.context, process: p.process, intro_fr: p.intro_fr, context_fr: p.context_fr, process_fr: p.process_fr,
   images: Object.fromEntries(IMG.map((k) => [k, media(p[`img_${k}`])])),
@@ -39,7 +39,7 @@ const projects = rows.map((p) => ({
   },
 }));
 const pg = await api('GET', '/items/playground?limit=-1&sort=sort&filter[status][_eq]=published');
-const playground = pg.map((i) => ({ slug: i.slug, name: i.name, sort: i.sort, kind: i.kind, media: media(i.media) }));
+const playground = pg.map((i) => ({ id: i.id, slug: i.slug, name: i.name, sort: i.sort, kind: i.kind, media: media(i.media) }));
 
 fs.writeFileSync(out, JSON.stringify({ ...previous, generatedAt: new Date().toISOString(), source: 'directus', projects, playground }, null, 2));
 console.log(`content.json : ${projects.length} projets, ${playground.length} éléments playground`);

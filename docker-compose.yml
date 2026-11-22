@@ -16,3 +16,6 @@ services:
       DB_FILENAME: /directus/database/data.db
       WEBSOCKETS_ENABLED: 'true'
       PUBLIC_URL: http://localhost:8055
+      # Visual Editor : autorise l'affichage du site (aperçu local) dans Directus
+      CONTENT_SECURITY_POLICY_DIRECTIVES__FRAME_SRC: http://localhost:4321,http://127.0.0.1:4321
+      CACHE_AUTO_PURGE: 'true'

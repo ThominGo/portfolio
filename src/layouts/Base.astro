@@ -103,5 +103,12 @@ const graph = jsonld.length ? { '@context': 'https://schema.org', '@graph': json
       import '../scripts/site';
     </script>
     <slot name="scripts" />
-  </body>
+    <script>
+    // Visual Editor Directus : uniquement en mode aperçu (npm run preview:cms)
+    if (import.meta.env.PUBLIC_VISUAL_EDITING === 'true') {
+      const { apply } = await import('@directus/visual-editing');
+      apply({ directusUrl: import.meta.env.PUBLIC_DIRECTUS_URL ?? 'http://localhost:8055' });
+    }
+  </script>
+</body>
 </html>

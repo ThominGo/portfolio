@@ -13,6 +13,8 @@ export interface Media {
 type M = Media | null;
 
 export interface Project {
+  /** id Directus (présent après npm run sync) */
+  id?: number;
   slug: string;
   name: string;
   secondName: string;
@@ -43,6 +45,7 @@ export interface Project {
 }
 
 export interface PlaygroundItem {
+  id?: number;
   slug: string;
   name: string;
   sort: number;

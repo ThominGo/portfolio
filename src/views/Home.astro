@@ -2,6 +2,7 @@
 import Base from '../layouts/Base.astro';
 import Pic from '../components/Pic.astro';
 import { projectsByCategory } from '../lib/content';
+import { attr } from '../lib/edit';
 import { meta, route, ui, workPath, type Locale } from '../lib/i18n';
 import { SITE } from '../lib/site';
 
@@ -58,9 +59,9 @@ const jsonld = [
       {threeD.map((p) => (
         <div role="listitem">
           <a href={workPath(p.slug, locale)} class="card-project" style={`background-color:${p.bgColor}`}>
-            <Pic media={p.images.main} alt={`${p.name} ${p.secondName}`.trim()} class="main-image" sizes="(max-width: 479px) 40vw, 25vw" />
-            <h2 class="title-case top-name">{p.name}</h2>
-            <h2 class="title-case bot-name">{p.secondName}</h2>
+            <Pic media={p.images.main} attrs={attr('projects', p.id, 'img_main', 'drawer')} alt={`${p.name} ${p.secondName}`.trim()} class="main-image" sizes="(max-width: 479px) 40vw, 25vw" />
+            <h2 class="title-case top-name" {...attr('projects', p.id, 'name')}>{p.name}</h2>
+            <h2 class="title-case bot-name" {...attr('projects', p.id, 'secondName')}>{p.secondName}</h2>
           </a>
         </div>
       ))}
@@ -72,12 +73,12 @@ const jsonld = [
       {ux.map((p) => (
         <div role="listitem" class="collection-item-3">
           <a href={workPath(p.slug, locale)} class="wrapper-image-ux" aria-label={`${p.name} ${p.secondName}`.trim()}>
-            <Pic media={p.images.main} alt="" class="image-case-ux" sizes="(max-width: 479px) 100vw, 50vw" />
+            <Pic media={p.images.main} attrs={attr('projects', p.id, 'img_main', 'drawer')} alt="" class="image-case-ux" sizes="(max-width: 479px) 100vw, 50vw" />
           </a>
           <div class="sub-case">
             <a href={workPath(p.slug, locale)} class="link-block">
-              <h2 class="project-name">{p.name}</h2>
-              <h2 class="project-name">{p.secondName}</h2>
+              <h2 class="project-name" {...attr('projects', p.id, 'name')}>{p.name}</h2>
+              <h2 class="project-name" {...attr('projects', p.id, 'secondName')}>{p.secondName}</h2>
             </a>
             {p.link && <a href={p.link} target="_blank" rel="noopener" class="link-3"><span class="ul">{t.viewProject}</span></a>}
           </div>

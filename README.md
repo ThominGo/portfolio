@@ -27,6 +27,23 @@ Le champ `status` permet de masquer un projet (Brouillon). Les champs `*_fr` con
 
 > `directus:setup` n'a pas pu être testé dans l'environnement de développement (pas de Docker). Si une étape échoue, le script est relançable : il saute ce qui existe déjà.
 
+
+### Éditeur visuel (Visual Editor)
+
+Pour modifier les contenus en cliquant directement sur le site, dans Directus :
+
+```bash
+docker compose up -d --force-recreate   # applique le réglage frame-src (une seule fois)
+npm run preview:cms                     # site en mode édition sur http://localhost:4321, synchronisé avec Directus
+```
+
+Puis dans Directus (http://localhost:8055/admin) :
+1. Settings > Modules : activer « Visual Editor ».
+2. Settings > Visual Editor : ajouter l'URL `http://localhost:4321/`.
+3. Ouvrir le module Visual Editor dans la barre de gauche, cliquer sur un titre, un texte, une image ou une vidéo, modifier, enregistrer.
+
+Le site se recharge tout seul quelques secondes après chaque enregistrement. Les attributs d'édition (`data-directus`) ne sont présents qu'avec `preview:cms` : le site public n'en contient aucun.
+
 ## Déploiement Cloudflare Pages
 
 1. Cloudflare > Workers & Pages > Create > Pages > connecter le dépôt GitHub `ThominGo/portfolio`.

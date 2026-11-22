@@ -2,6 +2,7 @@
 import Base from '../layouts/Base.astro';
 import Pic from '../components/Pic.astro';
 import Video from '../components/Video.astro';
+import { attr } from '../lib/edit';
 import { playground } from '../lib/content';
 import { meta, route, ui, type Locale } from '../lib/i18n';
 import { SITE } from '../lib/site';
@@ -26,7 +27,7 @@ const jsonld = [
   <div class="container-l">
     <div class="masonry-grid" role="list">
       {playground.map((it) => (
-        <div class="collection-item-2" role="listitem">
+        <div class="collection-item-2" role="listitem" {...attr('playground', it.id, 'media', 'drawer')}>
           {it.kind === 'video' ? (
             <div class="cms-lightbox" data-lightbox-video>
               <Video media={it.media} variant="loop" label={it.name} />

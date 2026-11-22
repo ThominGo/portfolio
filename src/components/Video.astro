@@ -7,14 +7,16 @@ interface Props {
   variant: 'player' | 'loop';
   class?: string;
   label?: string;
+  /** attributs supplémentaires (Visual Editor) */
+  attrs?: Record<string, string>;
 }
-const { media, variant, class: className = '', label } = Astro.props;
+const { media, variant, class: className = '', label, attrs = {} } = Astro.props;
 const src = videoSrc(media);
 ---
 
 {
   src && variant === 'player' && (
-    <div class="video-embed w-embed" data-player>
+    <div class="video-embed w-embed" data-player {...attrs}>
       <video-player>
         <video-minimal-skin>
           <video src={src} playsinline preload="metadata" aria-label={label} />
@@ -25,7 +27,7 @@ const src = videoSrc(media);
 }
 {
   src && variant === 'loop' && (
-    <div class={`video-embed ${className} w-embed`.trim()}>
+    <div class={`video-embed ${className} w-embed`.trim()} {...attrs}>
       <div style="width: 100%;">
         <video
           autoplay

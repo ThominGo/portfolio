@@ -11,8 +11,10 @@ interface Props {
   loading?: 'lazy' | 'eager';
   fetchpriority?: 'high' | 'low' | 'auto';
   sizes?: string;
+  /** attributs supplémentaires (Visual Editor) */
+  attrs?: Record<string, string>;
 }
-const { media, alt = '', class: className, loading = 'lazy', fetchpriority, sizes = '100vw' } = Astro.props;
+const { media, alt = '', class: className, loading = 'lazy', fetchpriority, sizes = '100vw', attrs = {} } = Astro.props;
 const meta = media ? localImages[media.file] : undefined;
 const WIDTHS = [500, 800, 1080, 1600, 2000];
 const widths = meta ? [...WIDTHS.filter((w) => w < meta.width), meta.width] : [];
@@ -28,12 +30,13 @@ const widths = meta ? [...WIDTHS.filter((w) => w < meta.width), meta.width] : []
       fetchpriority={fetchpriority}
       sizes={sizes}
       widths={widths}
+      {...attrs}
       format={meta.format === 'avif' ? 'avif' : 'webp'}
     />
   )
 }
 {
   media && !meta && media.url && (
-    <img src={media.url} alt={alt} class={className} loading={loading} decoding="async" fetchpriority={fetchpriority} />
+    <img src={media.url} alt={alt} class={className} {...attrs} loading={loading} decoding="async" fetchpriority={fetchpriority} />
   )
 }
