@@ -4,9 +4,9 @@
 // lecture à l'entrée, retour arrière à la sortie. Mobile (<480px) : start "top 70%", end "bottom 40%", amplitude 20svw.
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { SplitText } from 'gsap/SplitText';
+import { fontReady, splitLetters, type Split } from './split';
 
-gsap.registerPlugin(ScrollTrigger, SplitText);
+gsap.registerPlugin(ScrollTrigger);
 
 const lenis = (window as any).__lenis;
 lenis?.on('scroll', ScrollTrigger.update);
@@ -14,15 +14,15 @@ lenis?.on('scroll', ScrollTrigger.update);
 function build(card: HTMLElement, amp: number, start: string, end: string, rest = false) {
   const top = card.querySelector<HTMLElement>('.top-name');
   const bot = card.querySelector<HTMLElement>('.bot-name');
-  const splits: SplitText[] = [];
+  const splits: Split[] = [];
   const tl = gsap.timeline({ paused: true });
   tl.fromTo(card, { scale: 0.6 }, { scale: 1, duration: 1, ease: 'power4.out' }, 0);
-  const intro: { chars: Element[]; dir: 1 | -1; el: HTMLElement }[] = [];
+  const intro: { chars: HTMLElement[]; dir: 1 | -1; el: HTMLElement }[] = [];
   const letters = (el: HTMLElement | null, from: number) => {
     if (!el) return;
-    const s = SplitText.create(el, { type: 'chars', mask: 'chars', charsClass: 'gsap_split_letter' });
+    const s = splitLetters(el);
     // le masque coupe sinon les jambages (y, g, p) à cause du line-height: 1
-    ((s as any).masks as HTMLElement[] | undefined)?.forEach((m) => {
+    s.masks.forEach((m) => {
       m.style.paddingTop = '0.15em';
       m.style.paddingBottom = '0.25em';
       m.style.marginTop = '-0.15em';
@@ -64,6 +64,11 @@ function build(card: HTMLElement, amp: number, start: string, end: string, rest 
 }
 
 export function initCards(opts: { rest?: boolean } = {}) {
+  // on découpe les titres une fois la police chargée (mesure des ligatures)
+  fontReady().then(() => startCards(opts));
+}
+
+function startCards(opts: { rest?: boolean }) {
   const cards = [...document.querySelectorAll<HTMLElement>('.card-project:not(.cms):not(._404)')];
   if (!cards.length) return;
   const mm = gsap.matchMedia();
@@ -88,8 +93,8 @@ export function initCards(opts: { rest?: boolean } = {}) {
 // Titres : même animation de lettres que les cartes de la home, jouée à l'arrivée sur la page
 // (masque par lettre, 1s, power4.out, stagger total 0.1s). Le décalage de départ vaut 1.45 fois la
 // taille de la police : toujours au-delà du masque, donc aucun bout de lettre visible avant le départ.
-const maskFix = (sp: SplitText) =>
-  ((sp as any).masks as HTMLElement[] | undefined)?.forEach((m) => {
+const maskFix = (sp: Split) =>
+  sp.masks.forEach((m) => {
     m.style.paddingTop = '0.15em';
     m.style.paddingBottom = '0.25em';
     m.style.marginTop = '-0.15em';
@@ -104,15 +109,15 @@ export function initTitleIntro() {
     '.horizontal-space .bot-name, body.playground .wrapper-hero .title-case, body.home .wrapper-hero .split-target',
   );
   const play = () => {
-    const splits: SplitText[] = [];
+    const splits: Split[] = [];
     // une fois l'animation finie on retire seulement le masque (les jambages y, g, p redeviennent entiers) ; le découpage reste, donc rien ne change de forme
     const tl = gsap.timeline({
       delay: 0.15,
-      onComplete: () => splits.forEach((sp) => ((sp as any).masks as HTMLElement[] | undefined)?.forEach((m) => (m.style.overflow = 'visible'))),
+      onComplete: () => splits.forEach((sp) => sp.masks.forEach((m) => (m.style.overflow = 'visible'))),
     });
     const letters = (el: HTMLElement, dir: 1 | -1) => {
       const size = parseFloat(getComputedStyle(el).fontSize);
-      const sp = SplitText.create(el, { type: 'chars', mask: 'chars', charsClass: 'gsap_split_letter' });
+      const sp = splitLetters(el);
       // lettres qui montent : masque collé à la ligne (rien ne dépasse sous le titre, donc rien ne passe sur le texte voisin) ;
       // lettres qui descendent : marge au-dessus de la ligne pour ne pas rogner les accents
       if (dir === -1) maskFix(sp);
@@ -123,5 +128,5 @@ export function initTitleIntro() {
     down.forEach((el) => letters(el, -1));
     up.forEach((el) => letters(el, 1));
   };
-  (document.fonts?.ready ?? Promise.resolve()).then(play);
+  fontReady().then(play);
 }
