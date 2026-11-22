@@ -387,7 +387,11 @@ video-player { display: block; width: 100%; }
   html.has-js .horizontal-space .top-name,
   html.has-js .horizontal-space .bot-name,
   html.has-js body.playground .wrapper-hero .title-case,
+  html.has-js .collection-immersive-3d .top-name,
+  html.has-js .collection-immersive-3d .bot-name,
   html.has-js body.about .card-project.about .top-name,
   html.has-js body.about .card-project.about .bot-name,
   html.has-js body.home .wrapper-hero .split-target { visibility: hidden; }
+  /* cartes de la home : déjà à l'échelle de départ avant que GSAP ne démarre (évite le saut de taille) */
+  html.has-js .collection-immersive-3d .card-project { transform: scale(0.6); }
 }

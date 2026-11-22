@@ -28,6 +28,7 @@ function build(card: HTMLElement, amp: number, start: string, end: string, rest 
       m.style.marginTop = '-0.15em';
       m.style.marginBottom = '-0.25em';
     });
+    el.style.visibility = 'visible';
     splits.push(s);
     intro.push({ chars: s.chars, dir: from < 0 ? -1 : 1, el });
     tl.fromTo(s.chars, { y: `${from}svw` }, { y: '0svw', duration: 1, ease: 'power4.out', stagger: { amount: 0.1 } }, 0);
@@ -104,8 +105,11 @@ export function initTitleIntro() {
   );
   const play = () => {
     const splits: SplitText[] = [];
-    // une fois l'animation finie on retire le découpage : les jambages (y, g, p) redeviennent entiers
-    const tl = gsap.timeline({ delay: 0.15, onComplete: () => splits.forEach((sp) => sp.revert()) });
+    // une fois l'animation finie on retire seulement le masque (les jambages y, g, p redeviennent entiers) ; le découpage reste, donc rien ne change de forme
+    const tl = gsap.timeline({
+      delay: 0.15,
+      onComplete: () => splits.forEach((sp) => ((sp as any).masks as HTMLElement[] | undefined)?.forEach((m) => (m.style.overflow = 'visible'))),
+    });
     const letters = (el: HTMLElement, dir: 1 | -1) => {
       const size = parseFloat(getComputedStyle(el).fontSize);
       const sp = SplitText.create(el, { type: 'chars', mask: 'chars', charsClass: 'gsap_split_letter' });
