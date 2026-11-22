@@ -1,4 +1,4 @@
-// Découpage d'un titre en lettres (une par masque) en gardant les ligatures de la police :
+// Découpage d'un titre en lettres en gardant les ligatures de la police :
 // les lettres qui forment une ligature restent ensemble dans un même bloc (elles s'animent d'un seul tenant).
 export interface Split {
   chars: HTMLElement[];
@@ -43,8 +43,8 @@ export function splitLetters(el: HTMLElement): Split {
     const mask = document.createElement('span');
     mask.className = 'gsap_split_letter-mask';
     mask.setAttribute('aria-hidden', 'true');
-    // marge latérale (compensée) : les empattements qui dépassent de la lettre ne sont pas rognés pendant l'animation
-    mask.style.cssText = 'display:inline-block;overflow:clip;vertical-align:top;padding-left:0.2em;padding-right:0.2em;margin-left:-0.2em;margin-right:-0.2em;';
+    // plus de masque par lettre : le seul masque est celui du titre entier (voir maskTitle)
+    mask.style.cssText = 'display:inline-block;vertical-align:top;';
     const ch = document.createElement('span');
     ch.className = 'gsap_split_letter';
     ch.style.display = 'inline-block';
@@ -61,5 +61,19 @@ export function splitLetters(el: HTMLElement): Split {
       el.innerHTML = original;
       el.removeAttribute('aria-label');
     },
+  };
+}
+
+/**
+ * Masque unique pour tout le titre (et non une lettre par masque) : les lettres sont coupées seulement
+ * au-dessus et au-dessous de la ligne, jamais sur les côtés, donc plus de bords de lettres rognés par leurs voisines.
+ * tight : masque collé à la ligne (lettres qui montent) ; sinon marge pour les accents et les jambages.
+ * Renvoie une fonction qui retire le masque.
+ */
+export function maskTitle(el: HTMLElement, tight: boolean): () => void {
+  if (getComputedStyle(el).display === 'inline') el.style.display = 'inline-block';
+  el.style.clipPath = tight ? 'inset(0 -100vw 0 -100vw)' : 'inset(-0.15em -100vw -0.25em -100vw)';
+  return () => {
+    el.style.clipPath = '';
   };
 }

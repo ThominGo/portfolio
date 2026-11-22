@@ -24,15 +24,16 @@ window.addEventListener('hashchange', apply);
 apply();
 initCards();
 
-// Léger parallaxe sur les images de la section UX/UI.
+// Léger parallaxe sur la section UX/UI : chaque case se décale un peu (sens alterné d'une colonne à l'autre).
+// On déplace la case entière et non l'image dans la case : la capture garde son ratio, rien n'est recadré.
 if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-  document.querySelectorAll<HTMLElement>('.wrapper-image-ux').forEach((wrap) => {
-    const img = wrap.querySelector('img');
-    if (!img) return;
+  const amp = window.innerWidth < 480 ? 8 : 16;
+  document.querySelectorAll<HTMLElement>('.collection-ux-ui-webflow .collection-item-3').forEach((item, i) => {
+    const dir = i % 2 ? -1 : 1;
     gsap.fromTo(
-      img,
-      { yPercent: -8 },
-      { yPercent: 8, ease: 'none', scrollTrigger: { trigger: wrap, start: 'top bottom', end: 'bottom top', scrub: true } },
+      item,
+      { y: dir * amp },
+      { y: -dir * amp, ease: 'none', scrollTrigger: { trigger: item, start: 'top bottom', end: 'bottom top', scrub: true, invalidateOnRefresh: true } },
     );
   });
   ScrollTrigger.refresh();

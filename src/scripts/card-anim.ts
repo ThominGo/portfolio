@@ -4,7 +4,7 @@
 // lecture à l'entrée, retour arrière à la sortie. Mobile (<480px) : start "top 70%", end "bottom 40%", amplitude 20svw.
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { fontReady, splitLetters, type Split } from './split';
+import { fontReady, maskTitle, splitLetters, type Split } from './split';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -21,13 +21,8 @@ function build(card: HTMLElement, amp: number, start: string, end: string, rest 
   const letters = (el: HTMLElement | null, from: number) => {
     if (!el) return;
     const s = splitLetters(el);
-    // le masque coupe sinon les jambages (y, g, p) à cause du line-height: 1
-    s.masks.forEach((m) => {
-      m.style.paddingTop = '0.15em';
-      m.style.paddingBottom = '0.25em';
-      m.style.marginTop = '-0.15em';
-      m.style.marginBottom = '-0.25em';
-    });
+    // masque unique du titre, avec marge pour les jambages (y, g, p) à cause du line-height: 1
+    maskTitle(el, false);
     el.style.visibility = 'visible';
     splits.push(s);
     intro.push({ chars: s.chars, dir: from < 0 ? -1 : 1, el });
@@ -91,16 +86,8 @@ function startCards(opts: { rest?: boolean }) {
 }
 
 // Titres : même animation de lettres que les cartes de la home, jouée à l'arrivée sur la page
-// (masque par lettre, 1s, power4.out, stagger total 0.1s). Le décalage de départ vaut 1.45 fois la
+// (un masque pour tout le titre, 1s, power4.out, stagger total 0.1s). Le décalage de départ vaut 1.45 fois la
 // taille de la police : toujours au-delà du masque, donc aucun bout de lettre visible avant le départ.
-const maskFix = (sp: Split) =>
-  sp.masks.forEach((m) => {
-    m.style.paddingTop = '0.15em';
-    m.style.paddingBottom = '0.25em';
-    m.style.marginTop = '-0.15em';
-    m.style.marginBottom = '-0.25em';
-  });
-
 export function initTitleIntro() {
   if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
   // les lettres du haut descendent (-1), les autres montent (+1)
@@ -109,19 +96,15 @@ export function initTitleIntro() {
     '.horizontal-space .bot-name, body.playground .wrapper-hero .title-case, body.home .wrapper-hero .split-target',
   );
   const play = () => {
-    const splits: Split[] = [];
+    const unmask: (() => void)[] = [];
     // une fois l'animation finie on retire seulement le masque (les jambages y, g, p redeviennent entiers) ; le découpage reste, donc rien ne change de forme
-    const tl = gsap.timeline({
-      delay: 0.15,
-      onComplete: () => splits.forEach((sp) => sp.masks.forEach((m) => (m.style.overflow = 'visible'))),
-    });
+    const tl = gsap.timeline({ delay: 0.15, onComplete: () => unmask.forEach((f) => f()) });
     const letters = (el: HTMLElement, dir: 1 | -1) => {
       const size = parseFloat(getComputedStyle(el).fontSize);
       const sp = splitLetters(el);
       // lettres qui montent : masque collé à la ligne (rien ne dépasse sous le titre, donc rien ne passe sur le texte voisin) ;
       // lettres qui descendent : marge au-dessus de la ligne pour ne pas rogner les accents
-      if (dir === -1) maskFix(sp);
-      splits.push(sp);
+      unmask.push(maskTitle(el, dir === 1));
       tl.fromTo(sp.chars, { y: dir * size * 1.45 }, { y: 0, duration: 1, ease: 'power4.out', stagger: { amount: 0.1 } }, 0);
       el.style.visibility = 'visible'; // état de départ posé : aucune lettre visible avant l'animation
     };

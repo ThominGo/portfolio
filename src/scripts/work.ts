@@ -1,4 +1,6 @@
-// Pages projet : léger parallaxe sur les images et vidéos du contenu (.para).
+// Pages projet : léger parallaxe sur les médias du contenu (.para) et sur l'image du hero des projets UX/UI.
+// Le parallaxe déplace le bloc entier (translation seule) : pas de zoom ni de recadrage, donc les captures
+// de sites gardent leur ratio et ne sont jamais coupées.
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { initTitleIntro } from './card-anim';
@@ -7,19 +9,35 @@ gsap.registerPlugin(ScrollTrigger);
 initTitleIntro();
 (window as any).__lenis?.on('scroll', ScrollTrigger.update);
 
-if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+const mm = gsap.matchMedia();
+mm.add({ reduce: '(prefers-reduced-motion: reduce)', mobile: '(max-width: 479px)' }, (ctx) => {
+  const { reduce, mobile } = ctx.conditions as { reduce: boolean; mobile: boolean };
+  if (reduce) return;
+  const amp = mobile ? 10 : 24; // px de décalage de part et d'autre de la position normale
+
+  // médias du contenu : le bloc qui contient l'image ou la vidéo se décale un peu plus vite que le défilement
+  const boxes = new Set<HTMLElement>();
   document.querySelectorAll<HTMLElement>('.wrapper-cms-page .para').forEach((el) => {
-    // image : on déplace l'image dans son conteneur ; vidéo : on déplace la <video> dans son .video-embed
-    const isVideoBox = el.classList.contains('video-embed');
-    const target = isVideoBox ? el.querySelector<HTMLElement>('video') : el;
-    const clip = isVideoBox ? el : el.parentElement;
-    if (!target || !clip) return;
-    clip.style.overflow = 'hidden';
-    gsap.fromTo(
-      target,
-      { yPercent: -5, scale: 1.12 },
-      { yPercent: 5, scale: 1.12, ease: 'none', scrollTrigger: { trigger: clip, start: 'top bottom', end: 'bottom top', scrub: true } },
-    );
+    const box = el.classList.contains('video-embed') ? el : el.parentElement;
+    if (box) boxes.add(box);
   });
-  ScrollTrigger.refresh();
-}
+  boxes.forEach((box) =>
+    gsap.fromTo(
+      box,
+      { y: amp },
+      { y: -amp, ease: 'none', scrollTrigger: { trigger: box, start: 'top bottom', end: 'bottom top', scrub: true, invalidateOnRefresh: true } },
+    ),
+  );
+
+  // hero des projets UX/UI : l'image reste un peu en arrière quand on défile
+  const hero = document.querySelector<HTMLElement>('.card-project.cms .case-image.ux')?.closest<HTMLElement>('.card-project');
+  if (hero) {
+    gsap.fromTo(
+      hero,
+      { yPercent: 0 },
+      { yPercent: 14, ease: 'none', scrollTrigger: { trigger: '.horizontal-space', start: 'top top', end: 'bottom top', scrub: true } },
+    );
+  }
+});
+// les images qui finissent de charger changent la hauteur de la page : on recalcule les positions pour éviter les sauts
+window.addEventListener('load', () => ScrollTrigger.refresh());

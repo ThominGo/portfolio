@@ -169,8 +169,8 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--white-refonte);
 .collection-list { display: grid; grid-template-columns: 1fr 1fr; grid-auto-columns: 1fr; gap: 40px; list-style: none; margin: 0; padding: 0; }
 .collection-item-3 { display: flex; flex-flow: column; gap: 16px; width: 100%; }
 .wrapper-image-ux { position: relative; display: block; flex: none; width: 100%; aspect-ratio: 3 / 2; overflow: hidden; }
-/* image 20 % plus haute que la case : marge pour le parallaxe */
-.image-case-ux { position: absolute; left: 0; top: -10%; display: block; width: 100%; height: 120%; object-fit: cover; will-change: transform; }
+/* l'image remplit exactement la case (pas de recadrage) ; le parallaxe déplace la case entière */
+.image-case-ux { position: absolute; left: 0; top: 0; display: block; width: 100%; height: 100%; object-fit: cover; }
 .sub-case { display: flex; justify-content: center; align-items: center; gap: 16px; }
 .link-block { display: flex; flex-flow: column; flex: 1 1 0%; gap: 4px; }
 .project-name {
@@ -187,7 +187,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--white-refonte);
 /* À propos */
 .wrapper-about-page { padding-top: 15svh; padding-bottom: 80px; }
 .container-m { max-width: 480px; margin-left: auto; margin-right: auto; }
-.wrapper-about-type { display: grid; grid-template-columns: 0.25fr 1fr; grid-auto-columns: 1fr; gap: 16px; }
+.wrapper-about-type { display: grid; grid-template-columns: 112px minmax(0, 1fr); gap: 16px; }
 .typo-heavy-10px { font-size: 12px; font-weight: 900; }
 .typo-heavy-10px.full-caps { line-height: 120%; }
 .full-caps { text-transform: uppercase; }
@@ -411,4 +411,17 @@ video-player { display: block; width: 100%; }
   .wrapper-cms-page .video-embed,
   .wrapper-cms-page img,
   .wrapper-cms-page video { border-radius: 4px; }
+}
+
+/* Mobile : alignements */
+@media screen and (max-width: 479px) {
+  /* pied de page : la langue est vraiment au centre, quelle que soit la largeur des deux autres liens */
+  .wrapper-legals { grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); }
+  .wrapper-legals .nav-link { font-size: 16px; white-space: nowrap; }
+  /* sélecteur 3D / UX : la ligne entière (texte, point, texte) est centrée */
+  .wrapper-hero-cate.max-width-s { width: auto; max-width: none; }
+  .txt-fill { flex: 0 0 auto; width: auto; }
+  .txt-fill.right { text-align: center; }
+  /* À propos : portrait plus petit dans la carte */
+  .main-image.about { max-width: 70%; max-height: 74%; }
 }
