@@ -22,3 +22,18 @@ const blurTitle = document.body.dataset.blurTitle || original;
 window.addEventListener('blur', () => (document.title = blurTitle));
 window.addEventListener('focus', () => (document.title = original));
 
+
+// Pages projet : « À propos » et « Playground » s'alignent sur les bords des images du contenu.
+const navEl = document.querySelector<HTMLElement>('.wrapper-nav');
+function alignNav() {
+  if (!navEl) return;
+  const col = document.querySelector<HTMLElement>('.wrapper-cms-page .image-full-cms, .wrapper-cms-page .double-image-cms');
+  if (!col) return;
+  const r = col.getBoundingClientRect();
+  const vw = document.documentElement.clientWidth;
+  navEl.style.setProperty('--nav-l', `${r.left}px`);
+  navEl.style.setProperty('--nav-r', `${vw - r.right}px`);
+}
+alignNav();
+window.addEventListener('resize', alignNav);
+window.addEventListener('load', alignNav);
