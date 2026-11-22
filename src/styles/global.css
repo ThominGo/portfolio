@@ -360,3 +360,12 @@ video-player { display: block; width: 100%; }
 }
 
 .link { width: fit-content; align-self: flex-start; }
+
+/* Coins arrondis 8px sur les assets (sauf plein écran : carte pleine largeur des pages projet) */
+.card-project:not(.cms),
+.card-project:not(.cms) img,
+.wrapper-image-ux,
+.masonry-grid img,
+.masonry-grid video,
+.cms-lightbox,
+.main-image.about { border-radius: 8px; }
