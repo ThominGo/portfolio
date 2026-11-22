@@ -19,6 +19,7 @@ cp .env.example .env            # change les mots de passe / secret
 docker compose up -d            # http://localhost:8055/admin
 npm run directus:setup          # crée les collections et importe tout le contenu + médias
 npm run sync                    # Directus -> src/data/content.json + médias locaux
+npm run translate               # envoie les traductions FR (data/translations-fr.json) dans Directus (champs vides uniquement)
 npm run build
 ```
 

@@ -28,10 +28,10 @@
       "intro": "<p>Un Beau Jour is France's first all-in-one wedding destination: editorial blog, vendor directory, guides, and a soon-to-launch e-shop. During my apprenticeship at <a href=\"https://studio9p.com/\">Studio 9P</a>, I co-designed the full site redesign with <a href=\"https://www.nicolasalain.com/\">Nicolas Alain</a>, covering UX, design, 33 pages and 26 modules, as well as the entire Shopify shop, before co-developing everything in Webflow.</p>",
       "context": "<p>The existing site was outdated, unclear and no longer reflected the brand's ambition. Working as an equal partner with Nicolas Alain, I handled the UX and design redesign end to end: page architecture, user flow design, and the construction of a shared 26-module design system built to hold timelines and maintain visual consistency. Content migration from WordPress to the Webflow CMS was handled by developer Ludo. Everything else in Webflow, meaning the entire site build, was developed by Nicolas and me.</p>",
       "process": "<p>The main challenge was twofold: making a dense flow of information, covering articles, inspirations, testimonials, guides and a vendor directory, both easy to manage on the client side and effortless to browse on the user side, without ever compromising the premium feel of the brand. Component work was central to achieving this: 26 reusable modules designed to cover all 33 pages while enabling fast updates.</p><p>In parallel, Nicolas and I designed the e-shop in Shopify within the same art direction: a large-scale structure with 9 main categories, dozens of sub-categories and hundreds of product references, from wedding dresses to sugared almonds, decorative arches and smoke cannons. The e-shop launches in 2027.</p>",
-      "intro_fr": null,
-      "context_fr": null,
-      "process_fr": null,
-      "categoryHtml_fr": null,
+      "intro_fr": "<p>Un Beau Jour est la première destination mariage tout-en-un en France : blog éditorial, annuaire de prestataires, guides et, bientôt, une e-boutique. Pendant mon alternance chez <a href=\"https://studio9p.com/\">Studio 9P</a>, j'ai co-conçu la refonte complète du site avec <a href=\"https://www.nicolasalain.com/\">Nicolas Alain</a> (UX, design, 33 pages et 26 modules), ainsi que toute la boutique Shopify, avant de tout co-développer sur Webflow.</p>",
+      "context_fr": "<p>Le site existant était daté, peu clair et ne reflétait plus l'ambition de la marque. En partenaire à égalité avec Nicolas Alain, j'ai pris en charge la refonte UX et design de bout en bout : architecture des pages, parcours utilisateur et construction d'un design system partagé de 26 modules, pensé pour tenir dans le temps et garder une cohérence visuelle. La migration des contenus de WordPress vers le CMS Webflow a été assurée par le développeur Ludo. Tout le reste sur Webflow, c'est-à-dire l'ensemble de la construction du site, a été développé par Nicolas et moi.</p>",
+      "process_fr": "<p>Le défi était double : rendre un flux d'informations dense (articles, inspirations, témoignages, guides et annuaire de prestataires) à la fois simple à gérer côté client et agréable à parcourir côté utilisateur, sans jamais abîmer le caractère premium de la marque. Le travail sur les composants a été central : 26 modules réutilisables conçus pour couvrir les 33 pages tout en permettant des mises à jour rapides.</p><p>En parallèle, Nicolas et moi avons conçu l'e-boutique sur Shopify dans la même direction artistique : une structure de grande ampleur avec 9 catégories principales, des dizaines de sous-catégories et des centaines de références, des robes de mariée aux dragées, en passant par les arches décoratives et les canons à fumée. L'e-boutique ouvrira en 2027.</p>",
+      "categoryHtml_fr": "<p>UX/UI</p><p>Webflow</p><p>Shopify</p>",
       "images": {
         "main": {
           "file": "6ab83f70b1b6eb96b40c859e_ubj.jpg",
@@ -102,10 +102,10 @@
       "intro": "<p>Yamê is a Cameroonian artist who built a complete universe around his album Ebêm: short film, lore, exclusive content. At Studio 9P, I modeled all the 3D environments for the experience website, coordinating my work with studio Mathematics to ensure our environments told the same story as the film.</p>",
       "context": "<p>Project completed at Studio 9P. Yamê wanted an experience website allowing users to freely explore the universe of his album Ebêm, following his avatar on a motorcycle through various landscapes — desert, forest, palace — in visual coherence with the short film produced by studio Mathematics. Under the art direction of Hugo Maury (senior AD), I handled the 3D modeling of all the sets and scene objects in Blender, as well as texturing in collaboration with Hugo. The motorcycle, the only asset I did not model, was provided.</p>",
       "process": "<p>I modeled all 3D elements, from the ground to the birds, across the four universes of the site: the desert, the forest, the king's temple, and the ocean. The process followed three stages: brainstorming on the elements to illustrate for each section, generating visual references on Midjourney by Hugo, then modeling in Blender with synchronization through Blender's Object Data Linking system. The complexity of the project also lay in its coordination: studio Mathematics was developing the short film in parallel, which meant many visual directions remained unclear until late in the process. We had to keep moving on the sets while staying aligned with a universe that was still evolving at the same time.</p>",
-      "intro_fr": null,
-      "context_fr": null,
-      "process_fr": null,
-      "categoryHtml_fr": null,
+      "intro_fr": "<p>Yamê est un artiste camerounais qui a bâti un univers complet autour de son album Ebêm : court-métrage, lore, contenus exclusifs. Chez Studio 9P, j'ai modélisé tous les environnements 3D du site expérience, en coordonnant mon travail avec le studio Mathematics pour que nos décors racontent la même histoire que le film.</p>",
+      "context_fr": "<p>Projet réalisé chez Studio 9P. Yamê voulait un site expérience permettant d'explorer librement l'univers de son album Ebêm, en suivant son avatar à moto à travers différents paysages (désert, forêt, palais), en cohérence visuelle avec le court-métrage produit par le studio Mathematics. Sous la direction artistique de Hugo Maury (DA senior), j'ai géré la modélisation 3D de tous les décors et objets de scène dans Blender, ainsi que le texturing en collaboration avec Hugo. La moto, seul élément que je n'ai pas modélisé, nous a été fournie.</p>",
+      "process_fr": "<p>J'ai modélisé tous les éléments 3D, du sol jusqu'aux oiseaux, à travers les quatre univers du site : le désert, la forêt, le temple du roi et l'océan. Le processus suivait trois étapes : un brainstorming sur les éléments à illustrer pour chaque section, la génération de références visuelles sur Midjourney par Hugo, puis la modélisation sous Blender avec une synchronisation grâce au système d'Object Data Linking de Blender. La complexité du projet tenait aussi à sa coordination : le studio Mathematics développait le court-métrage en parallèle, de sorte que beaucoup de directions visuelles sont restées floues jusqu'à tard dans le processus. Il fallait continuer d'avancer sur les décors tout en restant aligné avec un univers qui évoluait en même temps.</p>",
+      "categoryHtml_fr": "<p>3D Blender</p>",
       "images": {
         "main": {
           "file": "69beaebc61113fa6d807fa62_yame.avif",
@@ -206,10 +206,10 @@
       "intro": "<p>Ricky is an internal <a href=\"https://studio9p.com\">Studio 9P</a> project: a full-scale prank built around a fake AI product, presented as a real device. I designed the 3D object and directed the project trailer, while also creating the conversational AI interface integrated into the device.</p>",
       "context": "<p>Internal Studio 9P project. The concept: build an immersive site around a fake tech product : Ricky, an AI device designed to make its users funnier. My role covered three areas: 3D modeling of the device, design and animation of the conversational AI interface embedded in the object, and production of the Instagram reel trailer.</p>",
       "process": "<p>The device went through several iterations with very different visual directions before reaching the final result. The internal brief set the intention but left room to explore. Alongside the modeling, I designed and animated the AI interface inside the object — the element that brings the product to life and makes it believable. The trailer then packaged everything into a short format built for social media.</p>",
-      "intro_fr": null,
-      "context_fr": null,
-      "process_fr": null,
-      "categoryHtml_fr": null,
+      "intro_fr": "<p>Ricky est un projet interne de <a href=\"https://studio9p.com\">Studio 9P</a> : un canular grandeur nature autour d'un faux produit d'IA, présenté comme un vrai appareil. J'ai conçu l'objet 3D et réalisé la bande-annonce du projet, tout en créant l'interface d'IA conversationnelle intégrée à l'appareil.</p>",
+      "context_fr": "<p>Projet interne Studio 9P. Le concept : construire un site immersif autour d'un faux produit tech, Ricky, un appareil d'IA conçu pour rendre ses utilisateurs plus drôles. Mon rôle couvrait trois domaines : la modélisation 3D de l'appareil, le design et l'animation de l'interface d'IA conversationnelle embarquée dans l'objet, et la production de la bande-annonce pour Instagram.</p>",
+      "process_fr": "<p>L'appareil est passé par plusieurs itérations aux directions visuelles très différentes avant d'arriver au résultat final. Le brief interne fixait l'intention tout en laissant de la place à l'exploration. En parallèle de la modélisation, j'ai conçu et animé l'interface d'IA à l'intérieur de l'objet, l'élément qui donne vie au produit et le rend crédible. La bande-annonce a ensuite condensé le tout dans un format court pensé pour les réseaux sociaux.</p>",
+      "categoryHtml_fr": "<p>3D Blender</p><p>&amp; Animation</p>",
       "images": {
         "main": {
           "file": "69beaeca854042c09301e3bd_ricky.avif",
@@ -300,10 +300,10 @@
       "intro": "<p>Momentum Académie is a biblical school in Bordeaux offering 4 distinct programs to a wide range of profiles. As a freelancer, I redesigned their site from scratch : art direction, UX, design and Webflow integration, with one clear priority: staying accessible to all ages, while giving the client the tools to maintain the site independently.</p>",
       "context": "<p>Momentum Académie had an outdated site that no longer reflected the school's quality or ambition. I handled the entire project: full art direction redesign from scratch, UX, page design and Webflow integration. The only constraint given by the client: keep one identifying color per program. From there, I had full creative freedom to build a coherent and modern visual identity.</p>",
       "process": "<p>The art direction is built around a strong creative choice: Renaissance paintings as an iconographic foundation, paired with serif typography, contrasted by real photos of the academy to bring a human touch. The paintings illustrate biblical concepts, compensate for the lack of visuals, and create an instantly recognizable identity.</p><p>This choice is both generational, the old/new mix appeals to 18-30 year olds while inspiring trust in older generations and strategic: the identity clearly stands apart from the Église Momentum brand, scales across all communication channels, and since artworks can be AI-generated, the client has an almost unlimited content source.</p><p>I built a design system in Figma and developed the Webflow components so the client could be fully autonomous after handoff.</p>",
-      "intro_fr": null,
-      "context_fr": null,
-      "process_fr": null,
-      "categoryHtml_fr": null,
+      "intro_fr": "<p>Momentum Académie est une école biblique à Bordeaux qui propose 4 parcours distincts à des profils très variés. En freelance, j'ai repensé leur site de zéro : direction artistique, UX, design et intégration Webflow, avec une priorité claire : rester accessible à tous les âges, tout en donnant au client les outils pour maintenir le site de façon autonome.</p>",
+      "context_fr": "<p>Momentum Académie avait un site daté qui ne reflétait plus la qualité ni l'ambition de l'école. J'ai pris en charge tout le projet : refonte complète de la direction artistique de zéro, UX, design des pages et intégration Webflow. La seule contrainte du client : conserver une couleur d'identification par parcours. À partir de là, j'ai eu toute liberté créative pour construire une identité visuelle cohérente et moderne.</p>",
+      "process_fr": "<p>La direction artistique repose sur un choix créatif fort : des peintures de la Renaissance comme base iconographique, associées à une typographie à empattements, et contrastées par de vraies photos de l'académie pour apporter une touche humaine. Les peintures illustrent les concepts bibliques, compensent le manque de visuels et créent une identité immédiatement reconnaissable.</p><p>Ce choix est à la fois générationnel, le mélange ancien/nouveau séduit les 18-30 ans tout en inspirant confiance aux générations plus âgées, et stratégique : l'identité se démarque clairement de la marque Église Momentum, se décline sur tous les canaux de communication et, comme les œuvres peuvent être générées par IA, le client dispose d'une source de contenu presque illimitée.</p><p>J'ai construit un design system dans Figma et développé les composants Webflow pour que le client soit totalement autonome après la livraison.</p>",
+      "categoryHtml_fr": "<p>DA,</p><p>Design </p><p>&amp;&nbsp;Webflow</p>",
       "images": {
         "main": {
           "file": "6ab84a9f2b179a49d032b4ed_aca.jpg",
@@ -374,10 +374,10 @@
       "intro": "<p>Accent is a French beverage brand with a strong visual identity, blending immersive 3D and natural 2D elements. At Studio 9P, I handled the web design of the pages and the animation of 3D bottles and ingredients, drawing on the brand's existing art direction to create a dynamic and cohesive website.</p>",
       "context": "<p>Project completed at Studio 9P. Accent wanted to redesign their website based on their existing art direction, with the ambition of making it more dynamic through 3D, while preserving a natural feel carried by the 2D elements. I designed the pages based on the brand's visual universe, then animated all 3D elements in Blender with full creative freedom over movement and timing.</p>",
       "process": null,
-      "intro_fr": null,
-      "context_fr": null,
+      "intro_fr": "<p>Accent est une marque de boissons française à l'identité visuelle forte, mêlant 3D immersive et éléments 2D naturels. Chez Studio 9P, j'ai géré le web design des pages et l'animation des bouteilles et des ingrédients en 3D, en m'appuyant sur la direction artistique existante de la marque pour créer un site dynamique et cohérent.</p>",
+      "context_fr": "<p>Projet réalisé chez Studio 9P. Accent voulait refaire son site à partir de sa direction artistique existante, avec l'ambition de le rendre plus dynamique grâce à la 3D, tout en préservant une sensation naturelle portée par les éléments 2D. J'ai conçu les pages à partir de l'univers visuel de la marque, puis animé tous les éléments 3D dans Blender avec une entière liberté sur les mouvements et le timing.</p>",
       "process_fr": null,
-      "categoryHtml_fr": null,
+      "categoryHtml_fr": "<p>3D Blender</p><p>&amp; Animation</p>",
       "images": {
         "main": {
           "file": "6af600d0b3d9e23e567a5efc_accent.png",
@@ -453,10 +453,10 @@
       "intro": "<p>Caractère Bois is a French furniture and wood objects brand. On this <a href=\"https://studio9p.com\">Studio 9P</a> project, I handled the e-commerce integration, connecting Shopify to Webflow via Smootify to give the client the best of both tools.</p>",
       "context": "<p>My work focused on the e-commerce side: product pages, cart and checkout. The challenge was combining Webflow's design flexibility with Shopify's back-office robustness, without forcing the client to navigate two complex interfaces.</p>",
       "process": "<p>I connected Shopify to the Webflow CMS using Smootify. The principle: whenever a product is updated in Shopify, the change automatically reflects on the live site through the Webflow CMS. The client manages their catalog and inventory in Shopify, while the design remains fully controlled in Webflow. A clean architecture that avoids the usual trade-offs between user experience and operational management.</p>",
-      "intro_fr": null,
-      "context_fr": null,
-      "process_fr": null,
-      "categoryHtml_fr": null,
+      "intro_fr": "<p>Caractère Bois est une marque française de meubles et d'objets en bois. Sur ce projet <a href=\"https://studio9p.com\">Studio 9P</a>, j'ai géré l'intégration e-commerce, en connectant Shopify à Webflow via Smootify pour offrir au client le meilleur des deux outils.</p>",
+      "context_fr": "<p>Mon travail portait sur la partie e-commerce : pages produit, panier et paiement. Le défi était d'associer la flexibilité de design de Webflow à la robustesse du back-office de Shopify, sans obliger le client à naviguer dans deux interfaces complexes.</p>",
+      "process_fr": "<p>J'ai connecté Shopify au CMS Webflow grâce à Smootify. Le principe : dès qu'un produit est modifié dans Shopify, le changement se reflète automatiquement sur le site en ligne via le CMS Webflow. Le client gère son catalogue et ses stocks dans Shopify, tandis que le design reste entièrement piloté dans Webflow. Une architecture propre qui évite les compromis habituels entre expérience utilisateur et gestion opérationnelle.</p>",
+      "categoryHtml_fr": "<p>Webflow</p><p>&amp; Shopify</p>",
       "images": {
         "main": {
           "file": "6ab84cddfc48dd534c2bdb2c_caractere-thumb.jpg",
@@ -524,10 +524,10 @@
       "intro": "<p>Louis Thomson is a Swiss percussionist and composer. I designed an immersive website where visitors explore a concert stage made of points and play its instruments. I handled the art direction and all the 2D in Figma, and built the rest with Claude.</p>",
       "context": "<p>Louis's site listed his dates, biography and videos, but gave no sense of standing in front of a stage. Each instrument became a menu entry: the camera glides toward it and opens the matching section. I started from two Figma frames and already had ideas in mind, like a depth map and a point cloud look.</p>",
       "process": "<p>Art direction. Claude let me test my ideas quickly and choose the best rendering: a point cloud that reacts to the cursor and to each strike, plus a depth mode. Same for the animations. I designed everything 2D in Figma myself and kept the final say.</p><p>3D and code. Claude modeled the full percussion set directly in my Blender file, so I could rearrange the scene without back and forth. It then wrote the Three.js site: camera navigation, playable instruments with live Web Audio sounds, day and night lighting, FR/EN, a dedicated mobile scene, and a back office so Louis edits his content himself.</p><p>Templates and app. Louis only posts from his phone. Figma Make fit the job (variables, auto layout) but does not work on mobile, and Canva lacked the gradient effects and auto layout. So I designed 8 templates in Figma and built a custom app with Claude: <a href=\"https://thomingo.github.io/louis-template/\">Studio LT</a>. Louis fills in his text, frames a photo or video, applies the effects and exports a JPEG or MP4. The code is on <a href=\"https://github.com/ThominGo/louis-template\">GitHub</a>.</p>",
-      "intro_fr": null,
-      "context_fr": null,
-      "process_fr": null,
-      "categoryHtml_fr": null,
+      "intro_fr": "<p>Louis Thomson est un percussionniste et compositeur suisse. J'ai conçu un site immersif où les visiteurs explorent une scène de concert faite de points et jouent de ses instruments. J'ai géré la direction artistique et toute la partie 2D dans Figma, et construit le reste avec Claude.</p>",
+      "context_fr": "<p>Le site de Louis listait ses dates, sa biographie et ses vidéos, mais ne donnait aucune sensation d'être face à une scène. Chaque instrument est devenu une entrée de menu : la caméra glisse vers lui et ouvre la section correspondante. Je suis parti de deux frames Figma, avec déjà quelques idées en tête, comme une depth map et un rendu en nuage de points.</p>",
+      "process_fr": "<p>Direction artistique. Claude m'a permis de tester rapidement mes idées et de choisir le meilleur rendu : un nuage de points qui réagit au curseur et à chaque frappe, plus un mode profondeur. Même chose pour les animations. J'ai dessiné toute la 2D moi-même dans Figma et gardé le dernier mot.</p><p>3D et code. Claude a modélisé le set de percussions complet directement dans mon fichier Blender, ce qui m'a permis de réarranger la scène sans allers-retours. Il a ensuite écrit le site Three.js : navigation caméra, instruments jouables avec des sons Web Audio en direct, éclairage jour et nuit, FR/EN, une scène mobile dédiée et un back-office pour que Louis modifie lui-même son contenu.</p><p>Templates et application. Louis ne publie que depuis son téléphone. Figma Make convenait (variables, auto layout) mais ne fonctionne pas sur mobile, et Canva n'avait ni les effets de dégradé ni l'auto layout. J'ai donc dessiné 8 templates dans Figma et construit avec Claude une application sur mesure : <a href=\"https://thomingo.github.io/louis-template/\">Studio LT</a>. Louis y saisit son texte, cadre une photo ou une vidéo, applique les effets et exporte un JPEG ou un MP4. Le code est sur <a href=\"https://github.com/ThominGo/louis-template\">GitHub</a>.</p>",
+      "categoryHtml_fr": "<p>DA,</p><p>Claude &amp;</p><p>3D Blender</p>",
       "images": {
         "main": {
           "file": "6af6000f50a140e92bb94f3b_louis-3D-1.png",
@@ -610,10 +610,10 @@
       "intro": "<p>Climax is an independent media engaged on the climate, a free and enraged voice that takes apart depressing narratives and imagines more desirable futures. It runs on a newsletter, a quarterly fanzine, and an online shop. At Studio 9P, I contributed to the design and built the entire Webflow integration, including the Shopify connection through Smoothify.</p>",
       "context": "<p>Project completed at Studio 9P. Climax exists through its readers and its editorial line, so the site had to serve the writing before anything else. The goal was to put the content back at the center of the shop experience, highlighting the fanzine's key messages through a clean, readable layout where each visual element reinforces the editorial purpose of the project.</p>",
       "process": "<p>I built the full Webflow integration, laying out the pages and structuring the CMS so the articles and the fanzine stay easy to read and easy to browse. On the shop side, I connected Webflow to Shopify through Smoothify, so the team can sell the zine and handle orders while keeping the whole experience inside the site's editorial identity.</p>",
-      "intro_fr": null,
-      "context_fr": null,
-      "process_fr": null,
-      "categoryHtml_fr": null,
+      "intro_fr": "<p>Climax est un média indépendant engagé sur le climat, une voix libre et enragée qui démonte les récits déprimants et imagine des futurs plus désirables. Il vit grâce à une newsletter, un fanzine trimestriel et une boutique en ligne. Chez Studio 9P, j'ai contribué au design et construit toute l'intégration Webflow, y compris la connexion Shopify via Smootify.</p>",
+      "context_fr": "<p>Projet réalisé chez Studio 9P. Climax existe grâce à ses lecteurs et à sa ligne éditoriale, le site devait donc servir l'écriture avant tout. L'objectif était de remettre le contenu au centre de l'expérience boutique, en mettant en avant les messages clés du fanzine à travers une mise en page claire et lisible où chaque élément visuel renforce l'intention éditoriale du projet.</p>",
+      "process_fr": "<p>J'ai réalisé toute l'intégration Webflow, en mettant en page les pages et en structurant le CMS pour que les articles et le fanzine restent faciles à lire et à parcourir. Côté boutique, j'ai connecté Webflow à Shopify via Smootify, afin que l'équipe puisse vendre le zine et gérer les commandes tout en gardant toute l'expérience dans l'identité éditoriale du site.</p>",
+      "categoryHtml_fr": "<p>Webflow,</p><p>Shopify</p><p>&amp; Design</p>",
       "images": {
         "main": {
           "file": "6ab84ce3af1c61b16de5bd36_climax-thumb.jpg",
@@ -678,10 +678,10 @@
       "intro": "<p>André Bakala is a photographer. For his portfolio I chose a clean, immersive design that leaves all the space to the images, since they are the ones that tell the story first. My intention was a simple, fluid experience where each photo carries the emotion and the authenticity of André's work. I handled the whole project on my own, as a freelance, from the design to the full Webflow build.</p>",
       "context": "<p>A photographer's site lives or dies on its images, so the interface had to step back and let them lead. The intention was to let the work speak without noise: no heavy layout, no decoration competing with the photos, just a calm frame that puts the emotion and the authenticity of André's shots in front.</p>",
       "process": "<p>Working solo, I designed the site and built it entirely in Webflow, structuring the CMS by category (concert and others) so the galleries stay easy to browse and simple to update. The real work was curation: I selected and arranged the featured photos so the home page reads as a coherent whole from the first scroll, setting the tone before the visitor even enters a category. I also made sure the experience holds up cleanly on mobile.</p>",
-      "intro_fr": null,
-      "context_fr": null,
-      "process_fr": null,
-      "categoryHtml_fr": null,
+      "intro_fr": "<p>André Bakala est photographe. Pour son portfolio, j'ai choisi un design épuré et immersif qui laisse toute la place aux images, puisque ce sont elles qui racontent l'histoire en premier. Mon intention était une expérience simple et fluide où chaque photo porte l'émotion et l'authenticité du travail d'André. J'ai géré seul l'ensemble du projet, en freelance, du design jusqu'à la construction complète sur Webflow.</p>",
+      "context_fr": "<p>Le site d'un photographe vit ou meurt par ses images, l'interface devait donc s'effacer pour les laisser mener. L'intention était de laisser le travail parler sans bruit : pas de mise en page lourde, pas de décoration en concurrence avec les photos, juste un cadre calme qui met en avant l'émotion et l'authenticité des clichés d'André.</p>",
+      "process_fr": "<p>En solo, j'ai conçu le site et l'ai entièrement construit sur Webflow, en structurant le CMS par catégorie (concert et autres) pour que les galeries restent faciles à parcourir et simples à mettre à jour. Le vrai travail a été la curation : j'ai sélectionné et agencé les photos mises en avant pour que la page d'accueil se lise comme un ensemble cohérent dès le premier scroll, et donne le ton avant même que le visiteur n'entre dans une catégorie. Je me suis aussi assuré que l'expérience tienne parfaitement sur mobile.</p>",
+      "categoryHtml_fr": "<p>Design </p><p>&amp; Webflow</p>",
       "images": {
         "main": {
           "file": "6ab84d01f4abbf2c6f0845f9_andre-thumb.jpg",
@@ -746,10 +746,10 @@
       "intro": "<p>Letsignit is a bilingual (FR/EN) B2B platform for email signature management. With Studio 9P, I contributed to the Webflow development of the site, which runs on a large CMS, dozens of collections spread across the blog, success stories, and resources.</p>",
       "context": "<p>Letsignit is a big marketing site with a lot of content to maintain in multiple languages, so the priority was a solid, scalable Webflow structure the team could keep feeding without the experience breaking. Less about a single visual gesture, more about making a large, content-heavy platform hold together cleanly at scale.</p>",
       "process": "<p>I contributed part of the Webflow integration, building pages and wiring them to a CMS that spans dozens of collections, blog, success stories, resources and more. Each collection had to stay consistent across the French and English versions, so the work came down to clean, reusable structure: components and templates that hold up whatever content the team adds later, and that keep the bilingual site coherent from one section to the next.</p>",
-      "intro_fr": null,
-      "context_fr": null,
-      "process_fr": null,
-      "categoryHtml_fr": null,
+      "intro_fr": "<p>Letsignit est une plateforme B2B bilingue (FR/EN) de gestion de signatures d'e-mail. Avec Studio 9P, j'ai contribué au développement Webflow du site, qui repose sur un grand CMS : des dizaines de collections réparties entre le blog, les témoignages clients et les ressources.</p>",
+      "context_fr": "<p>Letsignit est un gros site marketing avec beaucoup de contenu à maintenir en plusieurs langues, la priorité était donc une structure Webflow solide et évolutive, que l'équipe puisse alimenter sans que l'expérience ne casse. Moins un geste visuel unique que la volonté de faire tenir proprement, à grande échelle, une plateforme riche en contenu.</p>",
+      "process_fr": "<p>J'ai pris en charge une partie de l'intégration Webflow, en construisant des pages et en les reliant à un CMS qui s'étend sur des dizaines de collections : blog, témoignages clients, ressources et plus encore. Chaque collection devait rester cohérente entre les versions française et anglaise, le travail s'est donc résumé à une structure propre et réutilisable : des composants et des templates qui tiennent quel que soit le contenu ajouté plus tard par l'équipe, et qui gardent le site bilingue cohérent d'une section à l'autre.</p>",
+      "categoryHtml_fr": "<p>Webflow</p>",
       "images": {
         "main": {
           "file": "6ab84e4b0d823bf32fb29865_9864f331-9c77-44f3-92dc-08ef2697a647.webp",
@@ -816,10 +816,10 @@
       "intro": "<p>Davril Supply is releasing a collection inspired by medieval knights, accompanied by a short film. I conceived from scratch a concept e-commerce website with a 3D showroom, reinterpreting their universe.</p>",
       "context": "<p>Self-initiated personal project, designed as a real client brief to challenge myself. Davril Thibault is a French designer I admire, who accompanied his latest collection with a short film set in a chivalric universe. I took the opportunity to imagine a digital extension of this artistic direction: an e-commerce website with an interactive 3D showroom presenting the pieces from the collection. I deliberately reinterpreted the knight aesthetic by introducing contemporary typography and bold colors, to create a contrast with the dark, textured quality of the 3D.</p>",
       "process": "<p>I reconstructed the clothing and accessories in 3D in Blender, drawing on a few existing assets (knights, rock, tree). The mockups were built in Figma, then animated: the 2D parts in After Effects, the 3D sequences directly in Blender. The loader was created in Cavalry. The entire project — brief, art direction, 3D, motion, UI — was conceived and produced solo.</p>",
-      "intro_fr": null,
-      "context_fr": null,
-      "process_fr": null,
-      "categoryHtml_fr": null,
+      "intro_fr": "<p>Davril Supply sort une collection inspirée des chevaliers médiévaux, accompagnée d'un court-métrage. J'ai conçu de zéro un site e-commerce conceptuel avec un showroom 3D, en réinterprétant leur univers.</p>",
+      "context_fr": "<p>Projet personnel auto-initié, traité comme un vrai brief client pour me challenger. Davril Thibault est un designer français que j'admire, qui a accompagné sa dernière collection d'un court-métrage situé dans un univers chevaleresque. J'en ai profité pour imaginer un prolongement digital de cette direction artistique : un site e-commerce avec un showroom 3D interactif présentant les pièces de la collection. J'ai volontairement réinterprété l'esthétique chevaleresque en introduisant une typographie contemporaine et des couleurs vives, pour créer un contraste avec le caractère sombre et texturé de la 3D.</p>",
+      "process_fr": "<p>J'ai reconstruit les vêtements et accessoires en 3D dans Blender, en m'appuyant sur quelques assets existants (chevaliers, rocher, arbre). Les maquettes ont été réalisées dans Figma, puis animées : les parties 2D dans After Effects, les séquences 3D directement dans Blender. Le loader a été créé dans Cavalry. L'ensemble du projet (brief, direction artistique, 3D, motion, UI) a été conçu et produit en solo.</p>",
+      "categoryHtml_fr": "<p>DA,</p><p>Design</p><p>&amp; Blender 3D</p>",
       "images": {
         "main": {
           "file": "69beb03f29b481be3c683d6e_davril.avif",
@@ -884,10 +884,10 @@
       "intro": "<p>During my apprenticeship at Studio 9P, I produced the 3D and motion design for an beauty brand pitch built around a simple idea: a set of mini-games to fight endocrine disruptors, turning a serious health subject into something playful and easy to grasp.</p>",
       "context": "<p>Project done during my apprenticeship at Studio 9P, as part of a competitive pitch for a beauty brand. The brief was about raising awareness on endocrine disruptors, and the concept answered it with games: three arcade style mini-games, each built on a familiar mechanic (Space Invaders, Doodle Jump, and whack-a-mole), all pointed at the same goal, taking on the disruptors. The intention was to make a dry, technical topic approachable, even fun, without losing the message.</p>",
       "process": "<p>My role was the 3D and the motion design. I modeled and animated the assets that bring the three games to life, from the characters and objects to the short motion pieces used to sell each idea. Since it was a pitch, the work had to land fast: show how each game would look and feel, and keep the message (fighting endocrine disruptors) readable across the three formats while holding a light tone.</p>",
-      "intro_fr": null,
-      "context_fr": null,
-      "process_fr": null,
-      "categoryHtml_fr": null,
+      "intro_fr": "<p>Pendant mon alternance chez Studio 9P, j'ai réalisé la 3D et le motion design d'un pitch pour une marque de beauté, construit autour d'une idée simple : un ensemble de mini-jeux pour lutter contre les perturbateurs endocriniens, qui transforme un sujet de santé sérieux en quelque chose de ludique et facile à comprendre.</p>",
+      "context_fr": "<p>Projet réalisé pendant mon alternance chez Studio 9P, dans le cadre d'un pitch concurrentiel pour une marque de beauté. Le brief portait sur la sensibilisation aux perturbateurs endocriniens, et le concept y répondait par le jeu : trois mini-jeux de style arcade, chacun basé sur une mécanique familière (Space Invaders, Doodle Jump et tape-taupe), tous tournés vers le même but, s'attaquer aux perturbateurs. L'intention était de rendre un sujet aride et technique accessible, voire amusant, sans perdre le message.</p>",
+      "process_fr": "<p>Mon rôle était la 3D et le motion design. J'ai modélisé et animé les assets qui donnent vie aux trois jeux, des personnages et objets aux courtes séquences de motion servant à vendre chaque idée. S'agissant d'un pitch, le travail devait faire mouche rapidement : montrer l'aspect et les sensations de chaque jeu, et garder le message (lutter contre les perturbateurs endocriniens) lisible à travers les trois formats, avec un ton léger.</p>",
+      "categoryHtml_fr": "<p>3D Blender</p><p>&amp; Animation</p>",
       "images": {
         "main": {
           "file": "69beaf0fbc39f33d74e36ed7_svr.avif",
@@ -950,10 +950,10 @@
       "intro": "<p>For Musba Hub, I handled all the 3D. Working in Blender, I modeled every element of the project, the full set of scenes and objects, within a one-week production window. My scope was purely 3D. The real challenge was the pace: producing a complete, coherent set of scenes in a single week.</p>",
       "context": null,
       "process": null,
-      "intro_fr": null,
+      "intro_fr": "<p>Pour Musba Hub, j'ai géré toute la 3D. Sous Blender, j'ai modélisé chaque élément du projet, l'ensemble des scènes et des objets, en une semaine de production. Mon périmètre était purement 3D. Le vrai défi était le rythme : produire un ensemble complet et cohérent de scènes en une seule semaine.</p>",
       "context_fr": null,
       "process_fr": null,
-      "categoryHtml_fr": null,
+      "categoryHtml_fr": "<p>DA</p><p>&amp; 3D Blender</p>",
       "images": {
         "main": {
           "file": "69beaf05122bdaf436c3d785_musba.avif",

@@ -16,6 +16,7 @@
     "assets": "node scripts/fetch-assets.mjs",
     "directus:setup": "node scripts/directus-setup.mjs",
     "sync": "node scripts/directus-sync.mjs",
+    "translate": "node scripts/directus-translate.mjs",
     "preview:cms": "node scripts/preview-cms.mjs",
     "publish:site": "npm run sync && npm run build"
   },

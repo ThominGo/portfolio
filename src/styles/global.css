@@ -260,7 +260,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--white-refonte);
 }
 
 @media screen and (max-width: 479px) {
-  .wrapper-card-project { gap: 16px; justify-content: flex-start; align-items: center; width: 100%; padding: 24px 4px 80px; }
+  .wrapper-card-project { gap: 16px; justify-content: flex-start; align-items: center; width: 100%; padding: 16px 16px 80px; }
   .wrapper-card-project.absolute { padding-top: 80px; }
   .main_wrapper_about.about { justify-content: flex-start; align-items: center; padding-top: 10%; }
   .main_wrapper_about.about.mention { padding-top: 0; padding-bottom: 0; }
@@ -394,4 +394,21 @@ video-player { display: block; width: 100%; }
   html.has-js body.home .wrapper-hero .split-target { visibility: hidden; }
   /* cartes de la home : déjà à l'échelle de départ avant que GSAP ne démarre (évite le saut de taille) */
   html.has-js .collection-immersive-3d .card-project { transform: scale(0.6); }
+}
+
+/* Mobile : coins arrondis à 4px (placé après les règles 8px pour les remplacer) */
+@media screen and (max-width: 479px) {
+  .card-project:not(.cms),
+  .card-project:not(.cms) img,
+  .wrapper-image-ux,
+  .masonry-grid img,
+  .masonry-grid video,
+  .cms-lightbox,
+  .main-image.about,
+  .wrapper-cms-page .image-full-cms,
+  .wrapper-cms-page .container-double-image,
+  .wrapper-cms-page .max-width-xs,
+  .wrapper-cms-page .video-embed,
+  .wrapper-cms-page img,
+  .wrapper-cms-page video { border-radius: 4px; }
 }
