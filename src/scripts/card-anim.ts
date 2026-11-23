@@ -15,13 +15,18 @@ function build(card: HTMLElement, amp: number, start: string, end: string, rest 
   const top = card.querySelector<HTMLElement>('.top-name');
   const bot = card.querySelector<HTMLElement>('.bot-name');
   const splits: Split[] = [];
-  const tl = gsap.timeline({ paused: true });
+  const titles: HTMLElement[] = [];
+  // le masque du titre n'existe que pendant l'animation : une fois la carte en place, plus rien n'est rogné
+  const clipOn = () => titles.forEach((t) => maskTitle(t, false));
+  const clipOff = () => titles.forEach((t) => (t.style.clipPath = ''));
+  const tl = gsap.timeline({ paused: true, onComplete: clipOff });
   tl.fromTo(card, { scale: 0.6 }, { scale: 1, duration: 1, ease: 'power4.out' }, 0);
   const intro: { chars: HTMLElement[]; dir: 1 | -1; el: HTMLElement }[] = [];
   const letters = (el: HTMLElement | null, from: number) => {
     if (!el) return;
     const s = splitLetters(el);
     // masque unique du titre, avec marge pour les jambages (y, g, p) à cause du line-height: 1
+    titles.push(el);
     maskTitle(el, false);
     el.style.visibility = 'visible';
     splits.push(s);
@@ -34,7 +39,8 @@ function build(card: HTMLElement, amp: number, start: string, end: string, rest 
   if (rest) {
     tl.progress(1);
     // à l'arrivée : seules les lettres jouent leur entrée (la carte est déjà en place)
-    const it = gsap.timeline({ delay: 0.15 });
+    clipOn();
+    const it = gsap.timeline({ delay: 0.15, onComplete: clipOff });
     intro.forEach(({ chars, dir, el }) => {
       const size = parseFloat(getComputedStyle(el).fontSize);
       it.fromTo(chars, { y: dir * size * 1.45 }, { y: 0, duration: 1, ease: 'power4.out', stagger: { amount: 0.1 } }, 0);
@@ -46,9 +52,15 @@ function build(card: HTMLElement, amp: number, start: string, end: string, rest 
     start,
     end,
     onEnter: () => tl.play(),
-    onLeave: () => tl.reverse(),
+    onLeave: () => {
+      clipOn();
+      tl.reverse();
+    },
     onEnterBack: () => tl.play(),
-    onLeaveBack: () => tl.reverse(),
+    onLeaveBack: () => {
+      clipOn();
+      tl.reverse();
+    },
   });
   return () => {
     st.kill();

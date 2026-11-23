@@ -9,10 +9,11 @@ gsap.registerPlugin(ScrollTrigger);
 initTitleIntro();
 (window as any).__lenis?.on('scroll', ScrollTrigger.update);
 
+// pas de parallaxe sur les projets UX/UI (captures de sites : rien ne doit bouger ni être recadré)
 const mm = gsap.matchMedia();
 mm.add({ reduce: '(prefers-reduced-motion: reduce)', mobile: '(max-width: 479px)' }, (ctx) => {
   const { reduce, mobile } = ctx.conditions as { reduce: boolean; mobile: boolean };
-  if (reduce) return;
+  if (reduce || document.body.classList.contains('work-ux')) return;
   const amp = mobile ? 10 : 24; // px de décalage de part et d'autre de la position normale
 
   // médias du contenu : le bloc qui contient l'image ou la vidéo se décale un peu plus vite que le défilement

@@ -187,7 +187,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--white-refonte);
 /* À propos */
 .wrapper-about-page { padding-top: 15svh; padding-bottom: 80px; }
 .container-m { max-width: 480px; margin-left: auto; margin-right: auto; }
-.wrapper-about-type { display: grid; grid-template-columns: 112px minmax(0, 1fr); gap: 16px; }
+.wrapper-about-type { display: grid; grid-template-columns: 96px minmax(0, 1fr); gap: 16px; }
 .typo-heavy-10px { font-size: 12px; font-weight: 900; }
 .typo-heavy-10px.full-caps { line-height: 120%; }
 .full-caps { text-transform: uppercase; }
@@ -422,6 +422,10 @@ video-player { display: block; width: 100%; }
   .wrapper-hero-cate.max-width-s { width: auto; max-width: none; }
   .txt-fill { flex: 0 0 auto; width: auto; }
   .txt-fill.right { text-align: center; }
+  /* titres des cartes : jamais coupés par le bord de la carte une fois en place */
+  .card-project:not(.cms) { overflow: visible; }
+  /* À propos et mentions : titres collés à gauche, plus de place pour les textes */
+  .container-m .vertical-gap-40px { padding-left: 0; }
   /* À propos : portrait plus petit dans la carte */
   .main-image.about { max-width: 70%; max-height: 74%; }
 }
