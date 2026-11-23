@@ -74,7 +74,7 @@ export function splitLetters(el: HTMLElement): Split {
  */
 export function maskTitle(el: HTMLElement, tight: boolean): () => void {
   if (getComputedStyle(el).display === 'inline') el.style.display = 'inline-block';
-  el.style.clipPath = tight ? 'inset(0 -100vw 0 -100vw)' : 'inset(-0.25em -100vw -0.3em -100vw)';
+  el.style.clipPath = tight ? 'inset(0 -100vw -0.3em -100vw)' : 'inset(-0.25em -100vw -0.3em -100vw)';
   return () => {
     el.style.clipPath = '';
   };
