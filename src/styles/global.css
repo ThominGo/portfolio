@@ -422,8 +422,10 @@ video-player { display: block; width: 100%; }
   .wrapper-hero-cate.max-width-s { width: auto; max-width: none; }
   .txt-fill { flex: 0 0 auto; width: auto; }
   .txt-fill.right { text-align: center; }
-  /* titres des cartes : jamais coupés par le bord de la carte une fois en place */
-  .card-project:not(.cms) { overflow: visible; }
+  /* titres des cartes de la home : tiennent entièrement dans la carte (haut et bas calés sur ses bords) */
+  .collection-immersive-3d .card-project .title-case.top-name { top: 0; }
+  .collection-immersive-3d .card-project .title-case.bot-name { bottom: 0; }
+  .collection-immersive-3d .card-project:not(.cms) { overflow: hidden; }
   /* À propos et mentions : titres collés à gauche, plus de place pour les textes */
   .container-m .vertical-gap-40px { padding-left: 0; }
   /* À propos : portrait plus petit dans la carte */
