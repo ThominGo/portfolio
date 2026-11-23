@@ -31,7 +31,7 @@ function build(card: HTMLElement, amp: number, start: string, end: string, rest 
     el.style.visibility = 'visible';
     splits.push(s);
     intro.push({ chars: s.chars, dir: from < 0 ? -1 : 1, el });
-    tl.fromTo(s.chars, { y: `${from}svw` }, { y: '0svw', duration: 1, ease: 'power4.out', stagger: { amount: 0.1 } }, 0);
+    tl.fromTo(s.chars, { y: `${from}svw` }, { y: '0svw', duration: 1, ease: 'power4.out', force3D: false, stagger: { amount: 0.1 } }, 0);
   };
   letters(top, -amp * 1.4);
   letters(bot, amp * 1.4);
@@ -43,7 +43,7 @@ function build(card: HTMLElement, amp: number, start: string, end: string, rest 
     const it = gsap.timeline({ delay: 0.15, onComplete: clipOff });
     intro.forEach(({ chars, dir, el }) => {
       const size = parseFloat(getComputedStyle(el).fontSize);
-      it.fromTo(chars, { y: dir * size * 1.45 }, { y: 0, duration: 1, ease: 'power4.out', stagger: { amount: 0.1 } }, 0);
+      it.fromTo(chars, { y: dir * size * 1.45 }, { y: 0, duration: 1, ease: 'power4.out', force3D: false, stagger: { amount: 0.1 } }, 0);
       el.style.visibility = 'visible';
     });
   }
@@ -117,7 +117,7 @@ export function initTitleIntro() {
       // lettres qui montent : masque collé à la ligne (rien ne dépasse sous le titre, donc rien ne passe sur le texte voisin) ;
       // lettres qui descendent : marge au-dessus de la ligne pour ne pas rogner les accents
       unmask.push(maskTitle(el, dir === 1));
-      tl.fromTo(sp.chars, { y: dir * size * 1.45 }, { y: 0, duration: 1, ease: 'power4.out', stagger: { amount: 0.1 } }, 0);
+      tl.fromTo(sp.chars, { y: dir * size * 1.45 }, { y: 0, duration: 1, ease: 'power4.out', force3D: false, stagger: { amount: 0.1 } }, 0);
       el.style.visibility = 'visible'; // état de départ posé : aucune lettre visible avant l'animation
     };
     down.forEach((el) => letters(el, -1));

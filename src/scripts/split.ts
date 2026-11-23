@@ -47,7 +47,9 @@ export function splitLetters(el: HTMLElement): Split {
     mask.style.cssText = 'display:inline-block;vertical-align:top;';
     const ch = document.createElement('span');
     ch.className = 'gsap_split_letter';
-    ch.style.display = 'inline-block';
+    // marge intérieure compensée : la zone de dessin de la lettre est un peu plus large que sa boîte,
+    // donc les empattements qui dépassent ne sont pas rognés pendant le déplacement (Safari)
+    ch.style.cssText = 'display:inline-block;padding:0.12em 0.25em;margin:-0.12em -0.25em;';
     ch.textContent = u;
     mask.appendChild(ch);
     el.appendChild(mask);
