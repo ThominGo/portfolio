@@ -10,7 +10,7 @@ const untranslated = new Set(
     .map((p) => `/fr/work/${p.slug}`),
 );
 
-const site = 'https://www.thomas-marilleau.com';
+const site = 'https://thomas-marilleau.com';
 
 export default defineConfig({
   site,

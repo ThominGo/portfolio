@@ -1,5 +1,5 @@
 export const SITE = {
-  url: 'https://www.thomas-marilleau.com',
+  url: 'https://thomas-marilleau.com',
   name: 'Thomas Marilleau',
   email: 'thomas.marilleau@gmail.com',
   city: 'Bordeaux',
