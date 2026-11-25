@@ -23,6 +23,9 @@ for (const m of collectMedia(content)) {
 add('public/fonts/PeridiaDisplay-Regular.woff2', CDN + '69bea77067dc0142529efe54_PeridiaDisplay-Regular.woff2');
 add('public/fonts/Gilroy-Regular.otf', CDN + '69beaa3840aa5535381b9c8c_Radomir%20Tinkov%20-%20Gilroy-Regular.otf');
 add('public/fonts/Gilroy-Black.otf', CDN + '69beaa38cca1c7c66bae1d85_Radomir%20Tinkov%20-%20Gilroy-Black.otf');
+// Images de la page À propos et de la page 404
+add('src/assets/media/69c818f16684ab14fa3dc108_mpi-2.png', CDN + '69c818f16684ab14fa3dc108_mpi-2.png');
+add('src/assets/media/69c818a28babb77c4266da8e_mpi-1.png', CDN + '69c818a28babb77c4266da8e_mpi-1.png');
 // Divers
 add('public/media/CV_Thomas_Marilleau.pdf', 'https://cdn.prod.website-files.com/65f09a13418ba26057ac98e7/6a106b5f5db729c22819f353_CV_Thomas_Marilleau.pdf');
 add('public/media/opengraph-thomas.jpg', 'https://cdn.prod.website-files.com/65f09a13418ba26057ac98e7/6aab973288c168d42d7849e5_opengraph-thomas.jpg');

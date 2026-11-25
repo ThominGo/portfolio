@@ -7,11 +7,7 @@ export const SITE = {
   github: 'https://github.com/ThominGo',
   employer: { name: 'Studio 9P', url: 'https://studio9p.com' },
   cvUrl: '/media/CV_Thomas_Marilleau.pdf',
-  cvRemote:
-    'https://cdn.prod.website-files.com/65f09a13418ba26057ac98e7/6a106b5f5db729c22819f353_CV_Thomas_Marilleau.pdf',
   ogImage: '/media/opengraph-thomas.jpg',
-  ogImageRemote:
-    'https://cdn.prod.website-files.com/65f09a13418ba26057ac98e7/6aab973288c168d42d7849e5_opengraph-thomas.jpg',
   aboutImage: {
     file: '69c818f16684ab14fa3dc108_mpi-2.png',
     url: 'https://cdn.prod.website-files.com/65f09a13418ba26057ac98e7/69c818f16684ab14fa3dc108_mpi-2.png',

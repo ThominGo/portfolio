@@ -50,8 +50,10 @@ Le site se recharge tout seul quelques secondes après chaque enregistrement. Le
 1. Cloudflare > Workers & Pages > Create > Pages > connecter le dépôt GitHub `ThominGo/portfolio`.
 2. Build command : `npm run build` ; output : `dist` ; variable `NODE_VERSION=22`.
    (Le dossier `src/assets/media` et `public/media` doivent être commités, ou utilise l'upload direct : `npx wrangler pages deploy dist`.)
-3. Domaines personnalisés : `www.thomas-marilleau.com`, puis redirection de l'apex vers `www`.
-4. Chez OVH, soit tu remplaces les serveurs DNS par ceux de Cloudflare (le registrar reste OVH), soit tu ajoutes un CNAME `www` vers `<projet>.pages.dev`.
+3. Domaines personnalisés : `thomas-marilleau.com` (adresse canonique, sans www) ; `www` redirige vers l'apex par une règle de redirection Cloudflare (301).
+4. Chez OVH, les serveurs DNS sont ceux de Cloudflare (le registrar reste OVH).
+
+Déploiement actuel : envoi direct depuis le Mac (`npm run publish:site`, puis `npx wrangler pages deploy dist --project-name portfolio --commit-dirty=true`). Les médias (`public/media`, `public/fonts`, `src/assets/media`) sont dans le dépôt ; `npm run assets` ne sert que si un fichier manque.
 
 Limite : 25 Mo par fichier. Les grosses vidéos peuvent aller sur Cloudflare R2 : mets l'URL publique dans `PUBLIC_VIDEO_BASE` (les fichiers doivent porter les mêmes noms que dans `public/media/videos`).
 
