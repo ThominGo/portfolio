@@ -32,6 +32,8 @@ export function splitLetters(el: HTMLElement): Split {
   }
 
   el.textContent = '';
+  // aria-label n'est permis que sur un élément qui a un rôle : on le déclare (le texte lu reste celui du titre)
+  el.setAttribute('role', 'img');
   el.setAttribute('aria-label', text);
   const chars: HTMLElement[] = [];
   const masks: HTMLElement[] = [];
@@ -62,6 +64,7 @@ export function splitLetters(el: HTMLElement): Split {
     revert: () => {
       el.innerHTML = original;
       el.removeAttribute('aria-label');
+      el.removeAttribute('role');
     },
   };
 }

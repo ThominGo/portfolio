@@ -56,10 +56,10 @@ const jsonld = [
 
   <section id="3d" class="collection-immersive-3d" aria-label={t.filters.threeD} data-section="3d">
     <div class="wrapper-card-project" role="list">
-      {threeD.map((p) => (
+      {threeD.map((p, i) => (
         <div role="listitem">
           <a href={workPath(p.slug, locale)} class="card-project" style={`background-color:${p.bgColor}`}>
-            <Pic media={p.images.main} attrs={attr('projects', p.id, 'img_main', 'drawer')} alt={`${p.name} ${p.secondName}`.trim()} class="main-image" sizes="(max-width: 479px) 40vw, 25vw" />
+            <Pic media={p.images.main} attrs={attr('projects', p.id, 'img_main', 'drawer')} alt={`${p.name} ${p.secondName}`.trim()} class="main-image" sizes="(max-width: 479px) 40vw, 25vw" loading={i === 0 ? 'eager' : 'lazy'} fetchpriority={i === 0 ? 'high' : undefined} />
             <h2 class="title-case top-name" {...attr('projects', p.id, 'name')}>{p.name}</h2>
             <h2 class="title-case bot-name" {...attr('projects', p.id, 'secondName')}>{p.secondName}</h2>
           </a>
