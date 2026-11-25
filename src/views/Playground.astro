@@ -3,7 +3,7 @@ import Base from '../layouts/Base.astro';
 import Pic from '../components/Pic.astro';
 import Video from '../components/Video.astro';
 import { attr } from '../lib/edit';
-import { playground } from '../lib/content';
+import { playground, mediaSrc } from '../lib/content';
 import { meta, route, ui, type Locale } from '../lib/i18n';
 import { SITE } from '../lib/site';
 
@@ -12,6 +12,7 @@ const { locale } = Astro.props;
 const m = meta[locale].playground;
 const path = route('playground', locale);
 const url = new URL(path, SITE.url).href;
+const big = await Promise.all(playground.map((it) => mediaSrc(it.media, { width: 2000 })));
 const jsonld = [
   {
     '@type': 'CollectionPage', '@id': `${url}#page`, url, name: m.title, description: m.description, inLanguage: locale,
@@ -26,14 +27,14 @@ const jsonld = [
   </div>
   <div class="container-l">
     <div class="masonry-grid" role="list">
-      {playground.map((it) => (
+      {playground.map((it, i) => (
         <div class="collection-item-2" role="listitem" {...attr('playground', it.id, 'media', 'drawer')}>
           {it.kind === 'video' ? (
             <div class="cms-lightbox" data-lightbox-video>
               <Video media={it.media} variant="loop" label={it.name} />
             </div>
           ) : (
-            <a href={it.media?.url ?? '#'} class="cms-lightbox" data-lightbox aria-label={it.name}>
+            <a href={big[i] ?? '#'} class="cms-lightbox" data-lightbox aria-label={it.name}>
               <Pic media={it.media} alt={it.alt ?? it.name} class="image-lightbox" sizes="(max-width: 479px) 50vw, 25vw" />
             </a>
           )}

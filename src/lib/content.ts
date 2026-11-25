@@ -3,6 +3,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import type { ImageMetadata } from 'astro';
+import { getImage } from 'astro:assets';
 import raw from '../data/content.json';
 import type { Locale } from './i18n';
 
@@ -112,4 +113,20 @@ export function videoSrc(m: M | undefined): string | null {
   if (VIDEO_BASE) return `${VIDEO_BASE}/${m.file}`;
   if (fs.existsSync(path.join(process.cwd(), 'public/media/videos', m.file))) return `/media/videos/${m.file}`;
   return m.url;
+}
+
+/**
+ * URL publique d'une image pour les cas où il faut une adresse et non un composant
+ * (fond CSS, lien vers la version agrandie, données structurées).
+ * Toujours le fichier local optimisé par Astro, jamais l'adresse d'origine (Webflow ou Directus local).
+ */
+export async function mediaSrc(
+  m: Media | null | undefined,
+  opts: { width?: number; format?: 'webp' | 'avif' | 'jpg' | 'png' } = {},
+): Promise<string | undefined> {
+  if (!m) return undefined;
+  const meta = localImages[m.file];
+  if (!meta) return undefined;
+  const g = await getImage({ src: meta, width: Math.min(opts.width ?? 1600, meta.width), format: opts.format ?? 'webp' });
+  return g.src;
 }

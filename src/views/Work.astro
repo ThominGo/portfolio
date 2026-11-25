@@ -5,7 +5,7 @@ import Video from '../components/Video.astro';
 import { hasFrench, isThreeD, localized, plain, type Project } from '../lib/content';
 import { meta, route, ui, workPath, type Locale } from '../lib/i18n';
 import { SITE } from '../lib/site';
-import { localImages } from '../lib/content';
+import { localImages, mediaSrc } from '../lib/content';
 import { attr } from '../lib/edit';
 
 interface Props { locale: Locale; project: Project }
@@ -27,15 +27,17 @@ const img = p.images;
 const alt = (n: number) => `${name} – ${locale === 'fr' ? 'visuel' : 'visual'} ${n}`;
 const three = isThreeD(p);
 const mainMeta = img.main ? localImages[img.main.file] : undefined;
-// LinkedIn, X et Facebook lisent mal l'AVIF : on ne partage que des formats sûrs, sinon l'image de partage par défaut
-const mainUrl = img.main?.url;
-const ogImage = mainUrl && /\.(jpe?g|png|webp)(\?|$)/i.test(mainUrl) ? mainUrl : SITE.ogImage;
+// image de partage : celle du projet (fichier local, JPEG pour LinkedIn / X / Facebook), sinon l'image par défaut
+const ogLocal = await mediaSrc(img.main, { width: 1200, format: 'jpg' });
+const ogImage = ogLocal ? new URL(ogLocal, SITE.url).href : SITE.ogImage;
+const bgMobileSrc = await mediaSrc(img.bgMobile, { width: 1000 });
+const bgFullSrc = await mediaSrc(img.bgFull, { width: 2000 });
 
 const jsonld = [
   {
     '@type': 'CreativeWork', '@id': `${url}#work`, url, name, description: plain(intro), inLanguage: locale,
     author: { '@id': `${SITE.url}/#person` }, creator: { '@id': `${SITE.url}/#person` },
-    image: img.main?.url ?? undefined, genre: plain(cats), isPartOf: { '@id': `${SITE.url}/#website` },
+    image: ogLocal ? new URL(ogLocal, SITE.url).href : undefined, genre: plain(cats), isPartOf: { '@id': `${SITE.url}/#website` },
     ...(p.link ? { sameAs: p.link } : {}),
   },
   {
@@ -125,7 +127,7 @@ const jsonld = [
     )}
 
     {(img.mobile01 || img.mobile02) && (
-      <div class="bg-image" style={`background-color:${p.bgColor};${img.bgMobile?.url ? `background-image:url(${img.bgMobile.url});` : ''}background-size:cover;background-position:50% 50%`}>
+      <div class="bg-image" style={`background-color:${p.bgColor};${bgMobileSrc ? `background-image:url(${bgMobileSrc});` : ''}background-size:cover;background-position:50% 50%`}>
         <div class="double-image-mobile">
           <div class="image-mobile-01 max-width-xs"><Pic media={img.mobile01} attrs={ed('img_mobile01', 'drawer')} alt={alt(5)} class="para" sizes="260px" /></div>
           <div class="max-width-xs"><Pic media={img.mobile02} attrs={ed('img_mobile02', 'drawer')} alt={alt(6)} class="para" sizes="260px" /></div>
@@ -146,7 +148,7 @@ const jsonld = [
     )}
 
     {img.i04 && (
-      <div class="bg-image" style={`background-color:${p.bgColor};${img.bgFull?.url ? `background-image:url(${img.bgFull.url});` : ''}background-size:cover;background-position:50% 50%`}>
+      <div class="bg-image" style={`background-color:${p.bgColor};${bgFullSrc ? `background-image:url(${bgFullSrc});` : ''}background-size:cover;background-position:50% 50%`}>
         <div class="image-full-cms container-l"><Pic media={img.i04} attrs={ed('img_i04', 'drawer')} alt={alt(8)} class="para" sizes="(min-width: 1200px) 1152px, 100vw" /></div>
       </div>
     )}
