@@ -22,5 +22,4 @@ export const SITE = {
   },
   // Identifiants optionnels (vides = scripts non chargés)
   gtmId: import.meta.env.PUBLIC_GTM_ID ?? '',
-  simpleAnalytics: (import.meta.env.PUBLIC_SIMPLE_ANALYTICS ?? 'true') !== 'false',
 } as const;

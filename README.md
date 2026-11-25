@@ -61,7 +61,7 @@ Limite : 25 Mo par fichier. Les grosses vidéos peuvent aller sur Cloudflare R2 
 - JSON-LD : Person, WebSite, CollectionPage, ProfilePage, CreativeWork, BreadcrumbList
 - `sitemap-index.xml`, `robots.txt` (crawlers d'IA autorisés), `llms.txt` et `llms-full.txt` (version texte complète des projets)
 - Redirections 301 `/projets/*` vers `/work/*` (`public/_redirects`)
-- Analytics : Simple Analytics sans cookie par défaut ; GTM optionnel via `PUBLIC_GTM_ID`
+- Analytics : Cloudflare Web Analytics (sans cookie, activé dans le tableau de bord Cloudflare, rien dans le code) ; GTM optionnel via `PUBLIC_GTM_ID`
 
 ## À vérifier
 

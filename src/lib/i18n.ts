@@ -111,7 +111,7 @@ export const legal = {
     },
     {
       title: 'Cookies',
-      html: 'This site does not set advertising or tracking cookies. Audience measurement is handled by Simple Analytics, a privacy-friendly tool that does not use cookies and does not collect personal data.',
+      html: 'This site does not set advertising or tracking cookies. Audience measurement is handled by Cloudflare Web Analytics, a privacy-friendly tool that does not use cookies and does not collect personal data.',
     },
     {
       title: 'Hosting Provider',
@@ -133,7 +133,7 @@ export const legal = {
     },
     {
       title: 'Cookies',
-      html: "Ce site ne dépose aucun cookie publicitaire ni de suivi. La mesure d'audience est réalisée avec Simple Analytics, un outil respectueux de la vie privée qui n'utilise pas de cookies et ne collecte aucune donnée personnelle.",
+      html: "Ce site ne dépose aucun cookie publicitaire ni de suivi. La mesure d'audience est réalisée avec Cloudflare Web Analytics, un outil respectueux de la vie privée qui n'utilise pas de cookies et ne collecte aucune donnée personnelle.",
     },
     {
       title: 'Hébergeur',

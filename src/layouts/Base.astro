@@ -89,16 +89,6 @@ const graph = jsonld.length ? { '@context': 'https://schema.org', '@graph': json
       <slot />
     </main>
     {showLegals && <Legals locale={locale} altHref={altOther} />}
-    {
-      SITE.simpleAnalytics && (
-        <>
-          <script is:inline data-collect-dnt="true" async src="https://scripts.simpleanalyticscdn.com/latest.js" />
-          <noscript>
-            <img src="https://queue.simpleanalyticscdn.com/noscript.gif?collect-dnt=true" alt="" referrerpolicy="no-referrer-when-downgrade" width="1" height="1" />
-          </noscript>
-        </>
-      )
-    }
     <script>
       import '../scripts/site';
     </script>
