@@ -17,3 +17,12 @@ const other = locale === 'en' ? 'fr' : 'en';
   <a href={altHref} class="nav-link" hreflang={other} lang={other} data-label={t.switchTo}>{t.switchTo}</a>
   <a href={SITE.cvUrl} target="_blank" rel="noopener" class="nav-link" data-label={t.cv}>{t.cv}</a>
 </div>
+
+<script>
+  // mémorise le choix explicite de langue : il prime ensuite sur la langue du navigateur
+  document.querySelectorAll<HTMLAnchorElement>('a[hreflang]').forEach((a) => {
+    a.addEventListener('click', () => {
+      try { localStorage.setItem('lang-pref', a.getAttribute('hreflang') ?? ''); } catch {}
+    });
+  });
+</script>
