@@ -169,12 +169,12 @@ export const meta = {
     home: {
       title: 'Thomas Marilleau | Web & 3D Designer freelance à Bordeaux',
       description:
-        "Web & 3D Designer freelance à Bordeaux. Je crée des expériences interactives qui mêlent design, 3D et motion, inspirées de la culture Internet et de l'art numérique.",
+        "Web & 3D Designer freelance à Bordeaux. Je crée des expériences interactives mêlant design, 3D et motion, inspirées de la culture Internet.",
     },
     about: {
       title: 'Thomas Marilleau | À propos',
       description:
-        "Web & 3D Designer freelance basé à Bordeaux. Je crée des expériences interactives qui mêlent design, 3D et motion, inspirées de la culture Internet et de l'art numérique.",
+        "Web & 3D Designer freelance basé à Bordeaux. Je crée des expériences interactives mêlant design, 3D et motion, inspirées de la culture Internet.",
     },
     playground: {
       title: 'Thomas Marilleau | Playground',

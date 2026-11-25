@@ -27,7 +27,9 @@ const img = p.images;
 const alt = (n: number) => `${name} – ${locale === 'fr' ? 'visuel' : 'visual'} ${n}`;
 const three = isThreeD(p);
 const mainMeta = img.main ? localImages[img.main.file] : undefined;
-const ogImage = img.main?.url ?? SITE.ogImage;
+// LinkedIn, X et Facebook lisent mal l'AVIF : on ne partage que des formats sûrs, sinon l'image de partage par défaut
+const mainUrl = img.main?.url;
+const ogImage = mainUrl && /\.(jpe?g|png|webp)(\?|$)/i.test(mainUrl) ? mainUrl : SITE.ogImage;
 
 const jsonld = [
   {
