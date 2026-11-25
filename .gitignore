@@ -7,3 +7,6 @@ dist
 directus/database
 directus/uploads
 .DS_Store
+
+# sauvegarde locale des médias avant optimisation (ne pas pousser)
+_originals-medias/
