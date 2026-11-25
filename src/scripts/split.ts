@@ -72,9 +72,9 @@ export function splitLetters(el: HTMLElement): Split {
  * tight : masque collé à la ligne (lettres qui montent) ; sinon marge pour les accents et les jambages.
  * Renvoie une fonction qui retire le masque.
  */
-export function maskTitle(el: HTMLElement, tight: boolean): () => void {
+export function maskTitle(el: HTMLElement, tight: boolean, below = 0.3): () => void {
   if (getComputedStyle(el).display === 'inline') el.style.display = 'inline-block';
-  el.style.clipPath = tight ? 'inset(0 -100vw -0.3em -100vw)' : 'inset(-0.25em -100vw -0.3em -100vw)';
+  el.style.clipPath = tight ? `inset(0 -100vw -${below}em -100vw)` : 'inset(-0.25em -100vw -0.3em -100vw)';
   return () => {
     el.style.clipPath = '';
   };

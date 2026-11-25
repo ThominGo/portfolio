@@ -134,7 +134,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--white-refonte);
   display: flex; flex-flow: column; gap: 8px;
   padding-top: 40svh; padding-bottom: 80px;
 }
-.wrapper-hero-cate { display: flex; margin-left: auto; margin-right: auto; }
+.wrapper-hero-cate { display: flex; margin-left: auto; margin-right: auto; position: relative; z-index: 2; }
 .wrapper-hero-cate.max-width-s { gap: 16px; justify-content: center; align-items: center; }
 .txt-fill { flex: 1 1 0%; width: 100%; opacity: 0.8; }
 .txt-fill.right { text-align: right; }

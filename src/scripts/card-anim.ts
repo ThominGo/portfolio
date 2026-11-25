@@ -116,7 +116,9 @@ export function initTitleIntro() {
       const sp = splitLetters(el);
       // lettres qui montent : masque collé à la ligne (rien ne dépasse sous le titre, donc rien ne passe sur le texte voisin) ;
       // lettres qui descendent : marge au-dessus de la ligne pour ne pas rogner les accents
-      unmask.push(maskTitle(el, dir === 1));
+      // titre de l'accueil (« Marilleau », sans jambage) : masque pile sur la ligne, pour que les lettres ne passent pas sur les filtres juste dessous
+      const heroNoDescender = el.matches('body.home .wrapper-hero .split-target');
+      unmask.push(maskTitle(el, dir === 1, heroNoDescender ? 0 : 0.3));
       tl.fromTo(sp.chars, { y: dir * size * 1.45 }, { y: 0, duration: 1, ease: 'power4.out', force3D: false, stagger: { amount: 0.1 } }, 0);
       el.style.visibility = 'visible'; // état de départ posé : aucune lettre visible avant l'animation
     };
