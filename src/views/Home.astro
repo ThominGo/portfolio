@@ -87,6 +87,19 @@ const jsonld = [
     </div>
   </section>
 
+  {/* Arrivée directe sur la vue UX/UI : on l'affiche avant le chargement des scripts et on charge ses deux premières images en priorité */}
+  <script is:inline>
+    if (location.hash === '#ux-ui-webflow' || location.hash === '#ux') {
+      document.getElementById('3d').classList.add('is-hidden');
+      var ux = document.getElementById('ux');
+      ux.classList.remove('is-hidden');
+      Array.prototype.slice.call(ux.querySelectorAll('img'), 0, 2).forEach(function (img) {
+        img.setAttribute('fetchpriority', 'high');
+        img.loading = 'eager';
+      });
+    }
+  </script>
+
   <script>
     import '../scripts/home';
   </script>
